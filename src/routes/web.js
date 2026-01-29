@@ -10,21 +10,20 @@ const PriceWatcherController = require('../controllers/PriceWatcherController');
 // === DASHBOARD ===
 router.get('/', DashboardController.index);
 router.get('/settings', DashboardController.settings);
-router.get('/store', (req, res) => res.render('store/home')); // Static Page
+router.get('/store', (req, res) => res.render('store/home', { banners: [], games: [] }));
 
-// === INVENTORY & GUDANG ===
+// === INVENTORY ===
 router.get('/inventory', InventoryController.index);
 
-// === PRICE WATCHER ===
-router.get('/price-watcher', PriceWatcherController.index);
-
-// === KASIR & ORDER ===
+// === CASHIER & ORDERS ===
 router.get('/cashier', OrderController.cashier);
 router.get('/orders', OrderController.monitor);
-
-// Action Routes (Form Submit)
 router.post('/process-order', OrderController.process);
 router.post('/finish-order', OrderController.finish);
 router.post('/cancel-order', OrderController.cancel);
+router.post('/process-order-digi', OrderController.processDigi);
+
+// === PRICE WATCHER (New!) ===
+router.get('/price-watcher', PriceWatcherController.index);
 
 module.exports = router;

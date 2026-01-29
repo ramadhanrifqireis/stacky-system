@@ -1,6 +1,24 @@
 {
   "history": [
     {
+      "date": "29/1/2026, 17.39.02",
+      "name": "Hasil Scan Starlight Card",
+      "lowPrice": 33500,
+      "competitors": 54,
+      "myPrice": 0,
+      "myRank": "-",
+      "url": "https://api-gateway.itemku.com/v2/product/search?is_include_game=1&is_include_item_type=1&is_include_item_info_group=0&is_include_item_info=1&is_include_order_record=1&is_from_web=1&exclude_sharing_account_eligible=1&use_simple_pagination=1&per_page=60&page=1&sort=cheap&is_default_product_list=0&is_auto_delivery_first=0&is_enough_stock=1&platform_id=2&query=starlight%20card&is_exclusive=false&is_include_instant_delivery=true&country_codes[]=ID"
+    },
+    {
+      "date": "29/1/2026, 17.10.45",
+      "name": "Hasil Scan Starlight Card",
+      "lowPrice": 33500,
+      "competitors": 54,
+      "myPrice": 0,
+      "myRank": "-",
+      "url": "https://api-gateway.itemku.com/v2/product/search?is_include_game=1&is_include_item_type=1&is_include_item_info_group=0&is_include_item_info=1&is_include_order_record=1&is_from_web=1&exclude_sharing_account_eligible=1&use_simple_pagination=1&per_page=60&page=1&sort=cheap&is_default_product_list=0&is_auto_delivery_first=0&is_enough_stock=1&platform_id=2&query=starlight%20card&is_exclusive=false&is_include_instant_delivery=true&country_codes[]=ID"
+    },
+    {
       "date": "29/1/2026, 16.28.24",
       "name": "Hasil Scan Starlight Card",
       "lowPrice": 33500,
@@ -605,22 +623,6 @@
       "date": "16/1/2026, 10.28.32",
       "name": "Jual Beli Gift Item (7 Hari) Starlight Card MLBB Termurah | itemku",
       "lowPrice": 33500,
-      "highPrice": 99999,
-      "competitors": 9,
-      "url": "https://www.itemku.com/g/mobile-legends/gift-item-7-hari/starlight-card"
-    },
-    {
-      "date": "16/1/2026, 10.09.11",
-      "name": "Jual Beli Gift Item (7 Hari) Starlight Card MLBB Termurah | itemku",
-      "lowPrice": 34000,
-      "highPrice": 99999,
-      "competitors": 9,
-      "url": "https://www.itemku.com/g/mobile-legends/gift-item-7-hari/starlight-card"
-    },
-    {
-      "date": "16/1/2026, 10.09.03",
-      "name": "Jual Beli Gift Item (7 Hari) Starlight Card MLBB Termurah | itemku",
-      "lowPrice": 34000,
       "highPrice": 99999,
       "competitors": 9,
       "url": "https://www.itemku.com/g/mobile-legends/gift-item-7-hari/starlight-card"

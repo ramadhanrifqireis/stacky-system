@@ -1,6 +1,36 @@
 {
   "audit": [
     {
+      "time": "29/1/2026, 17.15.33",
+      "action": "REQ_CREDIT",
+      "details": "Input Stok tacer26 (Manual Web)"
+    },
+    {
+      "time": "29/1/2026, 17.15.15",
+      "action": "REQ_CREDIT",
+      "details": "Input Stok tacer26 (Manual Web)"
+    },
+    {
+      "time": "29/1/2026, 17.15.14",
+      "action": "MANUAL_FIX",
+      "details": "Koreksi Data tacer26 (Mode Penyesuaian)"
+    },
+    {
+      "time": "29/1/2026, 17.15.10",
+      "action": "MANUAL_FIX",
+      "details": "Koreksi Data tacer26 (Mode Penyesuaian)"
+    },
+    {
+      "time": "29/1/2026, 17.15.07",
+      "action": "MANUAL_FIX",
+      "details": "Koreksi Data tacer26 (Mode Penyesuaian)"
+    },
+    {
+      "time": "29/1/2026, 17.13.33",
+      "action": "REQ_CREDIT",
+      "details": "Input Stok tacer26 (Manual Web)"
+    },
+    {
       "time": "29/1/2026, 16.34.09",
       "action": "MANUAL_FIX",
       "details": "Koreksi Data tacer26 (Mode Penyesuaian)"

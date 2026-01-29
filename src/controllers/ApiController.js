@@ -1,4 +1,5 @@
 const Account = require('../models/Account');
+const Order = require('../models/Order');
 
 class ApiController {
     // Callback Topup (Dipanggil oleh script Python)
@@ -42,6 +43,15 @@ class ApiController {
         } else {
             res.json({ status: 'failed' });
         }
+    }
+    
+    static updateOrderStatus(req, res) {
+        const { orderId, status, note, sn } = req.body;
+        
+        const activeOrders = Order.getActive()
+        
+        console.log(`[API] Order ${orderId} updated to ${status}. Note: ${note}`);
+        res.json({ status: 'ok' });
     }
 }
 

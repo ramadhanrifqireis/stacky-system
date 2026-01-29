@@ -137,7 +137,8 @@
       "nominal": 300,
       "created_at": 1769076019057,
       "due_date": 1769680819057,
-      "status": "PENDING"
+      "status": "PENDING",
+      "notified": true
     },
     {
       "id": "OD000000152453854",
