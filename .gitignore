@@ -1,2 +1,7 @@
 node_modules/
+database/
+config/secrets.js
+.env
 .DS_Store
+*.log
+python/config/secrets.py
