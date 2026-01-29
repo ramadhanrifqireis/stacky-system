@@ -1,0 +1,6355 @@
+{
+  "active": [
+    {
+      "id": "OD000000152259769",
+      "item_name": "1x Starlight",
+      "target_data": "1006383229 (10986) Càrl",
+      "target_id_search": "1006383229",
+      "buyer_name": "heven",
+      "executor": "tacer13",
+      "executor_id": "1523657449(1654)",
+      "nominal": 300,
+      "created_at": 1768784484070,
+      "due_date": 1769389284070,
+      "status": "PENDING",
+      "notified": true
+    },
+    {
+      "id": "OD000000152379707",
+      "item_name": "1x Starlight",
+      "target_data": "41221525 (2037) kogashira",
+      "target_id_search": "41221525",
+      "buyer_name": "Tony T",
+      "executor": "tacer18",
+      "executor_id": "1524713749(1653)",
+      "nominal": 300,
+      "created_at": 1768986607538,
+      "due_date": 1769591407538,
+      "status": "PENDING",
+      "notified": true
+    },
+    {
+      "id": "OD000000152417978",
+      "item_name": "1x Starlight",
+      "target_data": "379585385 (3769) Cassius",
+      "target_id_search": "379585385",
+      "buyer_name": "Arsha Vee",
+      "executor": "arda3",
+      "executor_id": "1604784751(4458)",
+      "nominal": 300,
+      "created_at": 1769010315600,
+      "due_date": 1769615115600,
+      "status": "PENDING",
+      "notified": true
+    },
+    {
+      "id": "OD000000152424806",
+      "item_name": "1x Starlight",
+      "target_data": "1245305819 (11483) Rena",
+      "target_id_search": "1245305819",
+      "buyer_name": "ApexDGC",
+      "executor": "arda4",
+      "executor_id": "1604787098(4459)",
+      "nominal": 300,
+      "created_at": 1769042408457,
+      "due_date": 1769647208457,
+      "status": "PENDING",
+      "notified": true
+    },
+    {
+      "id": "OD000000152422697",
+      "item_name": "1x Starlight",
+      "target_data": "1488760868 (14322) 愛•|тнαℓια",
+      "target_id_search": "1488760868",
+      "buyer_name": "lynzhe Kate",
+      "executor": "arda5",
+      "executor_id": "1604787894(4457)",
+      "nominal": 300,
+      "created_at": 1769042565897,
+      "due_date": 1769647365897,
+      "status": "PENDING",
+      "notified": true
+    },
+    {
+      "id": "OD000000152427732",
+      "item_name": "1x Starlight",
+      "target_data": "879218401 (10698) Kane",
+      "target_id_search": "879218401",
+      "buyer_name": "Kane",
+      "executor": "arda6",
+      "executor_id": "1604788614(4459)",
+      "nominal": 300,
+      "created_at": 1769048961954,
+      "due_date": 1769653761954,
+      "status": "PENDING",
+      "notified": true
+    },
+    {
+      "id": "OD000000152428875",
+      "item_name": "1x Starlight",
+      "target_data": "860336377 (10657) shie",
+      "target_id_search": "860336377",
+      "buyer_name": "Arsha Vee",
+      "executor": "arda7",
+      "executor_id": "1604789527(4458)",
+      "nominal": 300,
+      "created_at": 1769054905984,
+      "due_date": 1769659705984,
+      "status": "PENDING",
+      "notified": true
+    },
+    {
+      "id": "OD000000152431352",
+      "item_name": "1x Starlight",
+      "target_data": "667061144 (8666) ツŁáøćøńツ",
+      "target_id_search": "667061144",
+      "buyer_name": "alif athallah",
+      "executor": "arda8",
+      "executor_id": "1604792161(4457)",
+      "nominal": 300,
+      "created_at": 1769057077920,
+      "due_date": 1769661877920,
+      "status": "PENDING",
+      "notified": true
+    },
+    {
+      "id": "OD000000152439228",
+      "item_name": "1x Starlight",
+      "target_data": "1519511725 (16979) Francisco_IDK",
+      "target_id_search": "1519511725",
+      "buyer_name": "Jogi Jogi",
+      "executor": "arda10",
+      "executor_id": "1604793871(4458)",
+      "nominal": 300,
+      "created_at": 1769070397111,
+      "due_date": 1769675197111,
+      "status": "PENDING",
+      "notified": true
+    },
+    {
+      "id": "OD000000152444557",
+      "item_name": "1x Starlight",
+      "target_data": "598499844 (10071) kopiko pink",
+      "target_id_search": "598499844",
+      "buyer_name": "Joshua Aguilar",
+      "executor": "arda11",
+      "executor_id": "1604795431(4457)",
+      "nominal": 300,
+      "created_at": 1769076019057,
+      "due_date": 1769680819057,
+      "status": "PENDING"
+    },
+    {
+      "id": "OD000000152453854",
+      "item_name": "1x Starlight",
+      "target_data": "809213829 (10529) Chie`۶ৎ",
+      "target_id_search": "809213829",
+      "buyer_name": "Joshua Aguilar",
+      "executor": "arda12",
+      "executor_id": "1604796335(4458)",
+      "nominal": 300,
+      "created_at": 1769085499066,
+      "due_date": 1769690299066,
+      "status": "PENDING"
+    },
+    {
+      "id": "OD000000152452188",
+      "item_name": "1x Starlight",
+      "target_data": "1500854525 (11710) el dè, Skyraaa.ৎ",
+      "target_id_search": "1500854525",
+      "buyer_name": "Joshua Aguilar",
+      "executor": "arda13",
+      "executor_id": "1618219204(4460)",
+      "nominal": 300,
+      "created_at": 1769085637712,
+      "due_date": 1769690437712,
+      "status": "PENDING"
+    },
+    {
+      "id": "OD000000152452188",
+      "item_name": "1x Starlight",
+      "target_data": "1500854525 (11710) el dè, Skyraaa.ৎ",
+      "target_id_search": "1500854525",
+      "buyer_name": "Joshua Aguilar",
+      "executor": "arda14",
+      "executor_id": "1618222661(4461)",
+      "nominal": 300,
+      "created_at": 1769085668297,
+      "due_date": 1769690468297,
+      "status": "PENDING"
+    },
+    {
+      "id": "OD000000152453507",
+      "item_name": "1x Starlight",
+      "target_data": "254581153 (9330) Lнο, κєѕѕ?",
+      "target_id_search": "254581153",
+      "buyer_name": "Jamiel",
+      "executor": "arda15",
+      "executor_id": "1619808529(4463)",
+      "nominal": 300,
+      "created_at": 1769085858624,
+      "due_date": 1769690658624,
+      "status": "PENDING"
+    },
+    {
+      "id": "OD000000152453507",
+      "item_name": "1x Starlight",
+      "target_data": "254581153 (9330) Lнο, κєѕѕ?",
+      "target_id_search": "254581153",
+      "buyer_name": "Jamiel",
+      "executor": "arda16",
+      "executor_id": "1620013650(4461)",
+      "nominal": 300,
+      "created_at": 1769085900043,
+      "due_date": 1769690700043,
+      "status": "PENDING"
+    },
+    {
+      "id": "OD000000152456736",
+      "item_name": "1x Starlight",
+      "target_data": "631086985 (8529) Xavy*",
+      "target_id_search": "631086985",
+      "buyer_name": "White",
+      "executor": "arda17",
+      "executor_id": "1620538906(4462)",
+      "nominal": 300,
+      "created_at": 1769087047825,
+      "due_date": 1769691847825,
+      "status": "PENDING"
+    },
+    {
+      "id": "OD000000152473633",
+      "created_at": 1769131939001,
+      "due_date": 1769736739001,
+      "item_name": "1x Starlight Card",
+      "target_data": "1897722094 (1768) GANBATE",
+      "target_id_search": "1897722094",
+      "buyer_name": "Arsha Vee",
+      "executor": "arda18",
+      "executor_id": "1626591839(4465)"
+    },
+    {
+      "id": "OD000000152477131",
+      "created_at": 1769136999860,
+      "due_date": 1769741799860,
+      "item_name": "1x Starlight Card",
+      "target_data": "1297233828 (14103) Aoi",
+      "target_id_search": "1297233828",
+      "buyer_name": "Kane",
+      "executor": "arda19",
+      "executor_id": "1629923193(4465)"
+    },
+    {
+      "id": "OD000000152477942",
+      "created_at": 1769138424755,
+      "due_date": 1769743224755,
+      "item_name": "1x Starlight Card",
+      "target_data": "1488760868 (14322) 愛•|тнαℓια",
+      "target_id_search": "1488760868",
+      "buyer_name": "lynzhe Kate",
+      "executor": "arda20",
+      "executor_id": "1629927355(4465)"
+    },
+    {
+      "id": "OD000000152485355",
+      "created_at": 1769148003586,
+      "due_date": 1769752803586,
+      "item_name": "1x Starlight Card",
+      "target_data": "2044112530 (17175) Nyxie",
+      "target_id_search": "2044112530",
+      "buyer_name": "Kane",
+      "executor": "arda21",
+      "executor_id": "1630616659(4465)"
+    },
+    {
+      "id": "OD000000152483840",
+      "created_at": 1769148088017,
+      "due_date": 1769752888017,
+      "item_name": "1x Starlight Card",
+      "target_data": "850100033 (10626) Eli Fowler?",
+      "target_id_search": "850100033",
+      "buyer_name": "Kane",
+      "executor": "arda22",
+      "executor_id": "1630620354(4464)"
+    },
+    {
+      "id": "OD000000152483698",
+      "created_at": 1769148154429,
+      "due_date": 1769752954429,
+      "item_name": "1x Starlight Card",
+      "target_data": "1334596018 (11553)  ✩Ohmyjuli✩",
+      "target_id_search": "1334596018",
+      "buyer_name": "Kane",
+      "executor": "arda23",
+      "executor_id": "1631121792(4465)"
+    },
+    {
+      "id": "OD000000152485501",
+      "created_at": 1769148232374,
+      "due_date": 1769753032374,
+      "item_name": "1x Starlight Card",
+      "target_data": "225866636 (3509)  |•Gᴜsɪᴏɴツ",
+      "target_id_search": "225866636",
+      "buyer_name": "Kane",
+      "executor": "arda24",
+      "executor_id": "1631133089(4464)"
+    },
+    {
+      "id": "OD000000152485635",
+      "created_at": 1769148298004,
+      "due_date": 1769753098004,
+      "item_name": "1x Starlight Card",
+      "target_data": "392309347 (3806) hera ۶ৎ",
+      "target_id_search": "392309347",
+      "buyer_name": "Kane",
+      "executor": "arda25",
+      "executor_id": "1631608770(4464)"
+    },
+    {
+      "id": "OD000000152485760",
+      "created_at": 1769148393035,
+      "due_date": 1769753193035,
+      "item_name": "2x Starlight Card",
+      "target_data": "1299363745 (14109) fw seía",
+      "target_id_search": "1299363745",
+      "buyer_name": "Kane",
+      "executor": "arda26,arda27",
+      "executor_id": "1631611825(4464),1634891098(4464)"
+    },
+    {
+      "id": "OD000000152486012",
+      "created_at": 1769148757611,
+      "due_date": 1769753557611,
+      "item_name": "2x Starlight Card",
+      "target_data": "1207969311 (11420)  ──アタラ",
+      "target_id_search": "1207969311",
+      "buyer_name": "Kane",
+      "executor": "arda28,arda29",
+      "executor_id": "1634895863(4464),1635553320(4465)"
+    },
+    {
+      "id": "OD000000152486177",
+      "created_at": 1769148862393,
+      "due_date": 1769753662393,
+      "item_name": "1x Starlight Card",
+      "target_data": "521470430 (3404) Cíd",
+      "target_id_search": "521470430",
+      "buyer_name": "Kane",
+      "executor": "arda30",
+      "executor_id": "1635557168(4465)"
+    },
+    {
+      "id": "OD000000152486346",
+      "created_at": 1769148929375,
+      "due_date": 1769753729375,
+      "item_name": "1x Starlight Card",
+      "target_data": "841287229 (10599) ✫ Pʀᴏᴍɪsᴇ",
+      "target_id_search": "841287229",
+      "buyer_name": "Kane",
+      "executor": "arda31",
+      "executor_id": "1636129525(4465)"
+    },
+    {
+      "id": "OD000000152492432",
+      "created_at": 1769156761414,
+      "due_date": 1769761561414,
+      "item_name": "1x Starlight Card",
+      "target_data": "1488760868 (14322) 愛•|тнαℓια",
+      "target_id_search": "1488760868",
+      "buyer_name": "lynzhe Kate",
+      "executor": "arda32",
+      "executor_id": "1636134837(4466)"
+    },
+    {
+      "id": "OD000000152503459",
+      "created_at": 1769162968481,
+      "due_date": 1769767768481,
+      "item_name": "1x Starlight Card",
+      "target_data": "30271842 (3039) Bulong",
+      "target_id_search": "30271842",
+      "buyer_name": "Joshua Aguilar",
+      "executor": "arda33",
+      "executor_id": "1639478101(4468)"
+    },
+    {
+      "id": "OD000000152509784",
+      "created_at": 1769168314218,
+      "due_date": 1769773114218,
+      "item_name": "1x Starlight Card",
+      "target_data": "1814787924 (14911) Karina Solo",
+      "target_id_search": "1814787924",
+      "buyer_name": "deirasavyil",
+      "executor": "arda34",
+      "executor_id": "1639480671(4466)"
+    },
+    {
+      "id": "OD000000152509699",
+      "created_at": 1769168398391,
+      "due_date": 1769773198391,
+      "item_name": "2x Starlight Card",
+      "target_data": "935963574 (10833) ʟɪʟʏ",
+      "target_id_search": "935963574",
+      "buyer_name": "XYNA",
+      "executor": "arda35,arda36",
+      "executor_id": "1639485368(4468),1639489049(4466)"
+    },
+    {
+      "id": "OD000000152556086",
+      "item_name": "1x Starlight Card",
+      "target_data": "1243033942 (11488) ㊝Fantz/Slayer",
+      "target_id_search": "1243033942",
+      "buyer_name": "ug99618",
+      "executor": "arda37",
+      "executor_id": "1640161763(4467)",
+      "nominal": 300,
+      "created_at": 1769236837377,
+      "due_date": 1769841637377,
+      "status": "PENDING"
+    },
+    {
+      "id": "OD000000152561653",
+      "item_name": "1x Starlight Card",
+      "target_data": "1635730914 (14347) halimaw pumalo",
+      "target_id_search": "1635730914",
+      "buyer_name": "Joshua Aguilar",
+      "executor": "arda38",
+      "executor_id": "1640181111(4468)",
+      "nominal": 300,
+      "created_at": 1769242273847,
+      "due_date": 1769847073847,
+      "status": "PENDING"
+    },
+    {
+      "id": "OD000000152574985",
+      "item_name": "1x Starlight Card",
+      "target_data": "652644061 (10205) αятємιѕ",
+      "target_id_search": "652644061",
+      "buyer_name": "Joshua Aguilar",
+      "executor": "arda39",
+      "executor_id": "1640185345(4467)",
+      "nominal": 300,
+      "created_at": 1769254754214,
+      "due_date": 1769859554214,
+      "status": "PENDING"
+    },
+    {
+      "id": "OD000000152574814",
+      "item_name": "1x Starlight Card",
+      "target_data": "832754535 (10569) Sʜɪɴ",
+      "target_id_search": "832754535",
+      "buyer_name": "Joshua Aguilar",
+      "executor": "arda40",
+      "executor_id": "1640188767(4468)",
+      "nominal": 300,
+      "created_at": 1769254808326,
+      "due_date": 1769859608326,
+      "status": "PENDING"
+    }
+  ],
+  "history": [
+    {
+      "id": "OD000000152249215",
+      "item_name": "1x Custom Item",
+      "target_data": "1057863457 (12172) Mafia Queen",
+      "target_id_search": "1057863457",
+      "buyer_name": "Joshua Aguilar",
+      "executor": "tacer21",
+      "nominal": 0,
+      "qty": 1,
+      "created_at": 1769678930862,
+      "due_date": 1770283730862,
+      "status": "CANCELLED",
+      "notified": false
+    },
+    {
+      "id": "OD000000152405508",
+      "item_name": "1x Starlight",
+      "target_data": "937732463 (12703) Sems",
+      "target_id_search": "937732463",
+      "buyer_name": "harizafiq14313027",
+      "executor": "arda2",
+      "executor_id": "1601810630(4457)",
+      "nominal": 300,
+      "created_at": 1768996822999,
+      "due_date": 1769601622999,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152385109",
+      "item_name": "1x Starlight",
+      "target_data": "1284848771 (15220) Siluman Partai",
+      "target_id_search": "1284848771",
+      "buyer_name": "luxion neil",
+      "executor": "tacer4",
+      "executor_id": "1502725187(1644)",
+      "nominal": 300,
+      "created_at": 1768986437399,
+      "due_date": 1769591237399,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152387637",
+      "item_name": "1x Starlight",
+      "target_data": "260567103 (3542) xɪɴᴋʏᴢᴇʀ",
+      "target_id_search": "260567103",
+      "buyer_name": "Christiano Deaven",
+      "executor": "tacer22",
+      "executor_id": "1528173579(1655)",
+      "nominal": 300,
+      "created_at": 1768986074754,
+      "due_date": 1769590874754,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152378011",
+      "item_name": "1x Starlight",
+      "target_data": "47257604 (Raiii) Raiii",
+      "target_id_search": "47257604",
+      "buyer_name": "Joshua Aguilar",
+      "executor": "arda1",
+      "executor_id": "1599704184(4458)",
+      "nominal": 300,
+      "created_at": 1768959870978,
+      "due_date": 1769564670978,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152370681",
+      "item_name": "1x Starlight",
+      "target_data": "412955874 (9908) A l e x x x !",
+      "target_id_search": "412955874",
+      "buyer_name": "Alterego Alexszandro",
+      "executor": "tacer7",
+      "executor_id": "1504965374(1646)",
+      "nominal": 300,
+      "created_at": 1768954199381,
+      "due_date": 1769558999381,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152364095",
+      "item_name": "1x Starlight",
+      "target_data": "803617685 (12207) Kaisel Lv-up",
+      "target_id_search": "803617685",
+      "buyer_name": "Hanif",
+      "executor": "tacer27",
+      "executor_id": "1479840519(1637)",
+      "nominal": 300,
+      "created_at": 1768918362310,
+      "due_date": 1769523162310,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152357336",
+      "item_name": "1x Starlight",
+      "target_data": "68851576 (2124) Lynx",
+      "target_id_search": "68851576",
+      "buyer_name": "Jeflin",
+      "executor": "tacer25",
+      "executor_id": "1535955126(1655)",
+      "nominal": 300,
+      "created_at": 1768912228065,
+      "due_date": 1769517028065,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152351129",
+      "item_name": "1x Starlight",
+      "target_data": "184957610 (2944) -OhMy Dann",
+      "target_id_search": "184957610",
+      "buyer_name": "Dobleh Gtl",
+      "executor": "tacer24",
+      "executor_id": "1535954596(1658)",
+      "nominal": 300,
+      "created_at": 1768908548542,
+      "due_date": 1769513348542,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152317641",
+      "item_name": "1x Starlight",
+      "target_data": "1489051458 (16223) Nothing4Me",
+      "target_id_search": "1489051458",
+      "buyer_name": "Aina nur asifa",
+      "executor": "tacer17",
+      "executor_id": "1524712903(1654)",
+      "nominal": 300,
+      "created_at": 1768837821874,
+      "due_date": 1769442621874,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152305840",
+      "item_name": "1x Starlight",
+      "target_data": "1508777544 (11730) YAMATORO",
+      "target_id_search": "1508777544",
+      "buyer_name": "Brittzel Abanggan",
+      "executor": "tacer15",
+      "executor_id": "1523898137(1651)",
+      "nominal": 300,
+      "created_at": 1768827146275,
+      "due_date": 1769431946275,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152259979",
+      "item_name": "1x Starlight",
+      "target_data": "625947920 (10146) Luciēn",
+      "target_id_search": "625947920",
+      "buyer_name": "heven",
+      "executor": "tacer14",
+      "executor_id": "1523887795(1654)",
+      "nominal": 300,
+      "created_at": 1768784579149,
+      "due_date": 1769389379149,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152226616",
+      "item_name": "1x Starlight",
+      "target_data": "1507281158 (11736) <3Kawaii:3",
+      "target_id_search": "1507281158",
+      "buyer_name": "heven",
+      "executor": "tacer8",
+      "executor_id": "1508495299(1646)",
+      "nominal": 300,
+      "created_at": 1768783839957,
+      "due_date": 1769388639957,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152226508",
+      "item_name": "1x Starlight",
+      "target_data": "1126424077 (11268) ᴱⁿᵃ",
+      "target_id_search": "1126424077",
+      "buyer_name": "heven",
+      "executor": "tacer6",
+      "executor_id": "1504947457(1645)",
+      "nominal": 300,
+      "created_at": 1768783744437,
+      "due_date": 1769388544437,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152226371",
+      "item_name": "1x Starlight",
+      "target_data": "21707480 (3031) Akira神様.",
+      "target_id_search": "21707480",
+      "buyer_name": "heven",
+      "executor": "tacer5",
+      "executor_id": "1504474428(1646)",
+      "nominal": 300,
+      "created_at": 1768783548788,
+      "due_date": 1769388348788,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152226371",
+      "item_name": "1x Starlight",
+      "target_data": "21707480 (3031) Akira神様.",
+      "target_id_search": "21707480",
+      "buyer_name": "heven",
+      "executor": "tacer3",
+      "executor_id": "1501455217(1647)",
+      "nominal": 300,
+      "created_at": 1768783526157,
+      "due_date": 1769388326157,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152225952",
+      "item_name": "1x Starlight",
+      "target_data": "1064500486 (11129) nikkie",
+      "target_id_search": "1064500486",
+      "buyer_name": "heven",
+      "executor": "tacer2",
+      "executor_id": "1499991569(1642)",
+      "nominal": 300,
+      "created_at": 1768783278424,
+      "due_date": 1769388078424,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152345109",
+      "item_name": "1x Starlight",
+      "target_data": "1671258747 (18074) Jayvyn ur 24:26",
+      "target_id_search": "1671258747",
+      "buyer_name": "Sultan Arshavin",
+      "executor": "tacer23",
+      "executor_id": "1528183892(1652)",
+      "nominal": 300,
+      "created_at": 1768903579772,
+      "due_date": 1769508379772,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152327734",
+      "item_name": "1x Starlight",
+      "target_data": "229498330 (3517) Akane Kurokawa",
+      "target_id_search": "229498330",
+      "buyer_name": "Joshua Aguilar",
+      "executor": "tacer19",
+      "executor_id": "1524714358(1652)",
+      "nominal": 300,
+      "created_at": 1768875448924,
+      "due_date": 1769480248924,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152249485",
+      "item_name": "1x Starlight",
+      "target_data": "287059275 (3585) Tsumugi Rintaro",
+      "target_id_search": "287059275",
+      "buyer_name": "Joshua Aguilar",
+      "executor": "tacer11",
+      "executor_id": "1522525866(1650)",
+      "nominal": 300,
+      "created_at": 1768784351867,
+      "due_date": 1769389151867,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152249485",
+      "item_name": "1x Starlight",
+      "target_data": "287059275 (3585) Tsumugi Rintaro",
+      "target_id_search": "287059275",
+      "buyer_name": "Joshua Aguilar",
+      "executor": "tacer10",
+      "executor_id": "1521492594(1652)",
+      "nominal": 300,
+      "created_at": 1768784331919,
+      "due_date": 1769389131919,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152249215",
+      "item_name": "1x Starlight",
+      "target_data": "1057863457 (6503) Mafia Queen",
+      "target_id_search": "1057863457",
+      "buyer_name": "Joshua Aguilar",
+      "executor": "tacer9",
+      "executor_id": "1491092721(1640)",
+      "nominal": 300,
+      "created_at": 1768784260561,
+      "due_date": 1769389060561,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152309291",
+      "item_name": "1x Starlight",
+      "target_data": "914388218 (10770) solesselle",
+      "target_id_search": "914388218",
+      "buyer_name": "Solace",
+      "executor": "tacer16",
+      "executor_id": "1524045185(1655)",
+      "nominal": 300,
+      "created_at": 1768828659357,
+      "due_date": 1769433459357,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152199682",
+      "item_name": "1x Starlight",
+      "target_data": "1590697786 (11900) Mixxy⚚",
+      "target_id_search": "1590697786",
+      "buyer_name": "heven",
+      "executor": "tacer26",
+      "executor_id": "1535955711(1654)",
+      "nominal": 300,
+      "created_at": 1768700644249,
+      "due_date": 1769305444249,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152199627",
+      "item_name": "1x Starlight",
+      "target_data": "610752049 (10101) kira",
+      "target_id_search": "610752049",
+      "buyer_name": "haven",
+      "executor": "tacer22",
+      "executor_id": "1528173579(1655)",
+      "nominal": 300,
+      "created_at": 1768700554101,
+      "due_date": 1769305354101,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152199509",
+      "item_name": "1x Starlight",
+      "target_data": "1803183116 (14695) ジェン",
+      "target_id_search": "1803183116",
+      "buyer_name": "haven",
+      "executor": "tacer20",
+      "executor_id": "1524715080(1654)",
+      "nominal": 300,
+      "created_at": 1768700480577,
+      "due_date": 1769305280577,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152199454",
+      "item_name": "1x Starlight",
+      "target_data": "701922971 (10293) ɴʏx♡",
+      "target_id_search": "701922971",
+      "buyer_name": "heven",
+      "executor": "tacer18",
+      "executor_id": "1524713749(1653)",
+      "nominal": 300,
+      "created_at": 1768700359063,
+      "due_date": 1769305159063,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152199359",
+      "item_name": "1x Starlight",
+      "target_data": "762900359 (10456) all of the stars",
+      "target_id_search": "762900359",
+      "buyer_name": "heven",
+      "executor": "tacer12",
+      "executor_id": "1523248276(1653)",
+      "nominal": 300,
+      "created_at": 1768700285123,
+      "due_date": 1769305085123,
+      "status": "DONE",
+      "notified": true
+    },
+    {
+      "id": "OD000000152187902 ",
+      "item_name": "1x Starlight",
+      "target_data": "1174688614 (11369) スヴェン",
+      "target_id_search": "1174688614",
+      "buyer_name": "Joshua Aguilar",
+      "executor": "tacer1",
+      "executor_id": "1498552249(1642)",
+      "nominal": 300,
+      "created_at": 1768656003090,
+      "due_date": 1769260803090,
+      "status": "DONE"
+    },
+    {
+      "id": "OD000000152439228",
+      "item_name": "1x Starlight",
+      "target_data": "1519511725 (16979) Francisco_IDK",
+      "target_id_search": "1519511725",
+      "buyer_name": "Jogi Jogi",
+      "executor": "arda9",
+      "executor_id": "1593004323(4459)",
+      "nominal": 300,
+      "created_at": 1769070103806,
+      "due_date": 1769674903806,
+      "status": "CANCELLED",
+      "finished_at": 1769070335167
+    },
+    {
+      "id": "OD000000152327734",
+      "item_name": "1x Starlight",
+      "target_data": "229498330 (3517) Joshua Aguilar",
+      "target_id_search": "229498330",
+      "buyer_name": "Joshua Aguilar",
+      "executor": "tacer19",
+      "executor_id": "1524714358(1652)",
+      "nominal": 300,
+      "created_at": 1768875405850,
+      "due_date": 1769480205850,
+      "status": "CANCELLED",
+      "finished_at": 1768875417628
+    },
+    {
+      "id": "OD000000152249215",
+      "item_name": "1x Starlight",
+      "target_data": "1057863457 (6503) Mafia Queen",
+      "target_id_search": "1057863457",
+      "buyer_name": "Joshua Aguilar",
+      "executor": "tacer10",
+      "executor_id": "1521492594(1652)",
+      "nominal": 300,
+      "created_at": 1768784030153,
+      "due_date": 1769388830153,
+      "status": "CANCELLED",
+      "finished_at": 1768784209704
+    },
+    {
+      "id": "OD000000152249215",
+      "item_name": "1x Starlight",
+      "target_data": "1057863457 (6503) Mafia Queen",
+      "target_id_search": "1057863457",
+      "buyer_name": "Joshua Aguilar",
+      "executor": "tacer9",
+      "executor_id": "1491092721(1640)",
+      "nominal": 300,
+      "created_at": 1768784000016,
+      "due_date": 1769388800016,
+      "status": "CANCELLED",
+      "finished_at": 1768784203595
+    },
+    {
+      "id": "OD000000152199509 ",
+      "item_name": "1x Starlight",
+      "target_data": "1803183116 (14695) ジェン",
+      "target_id_search": "1803183116",
+      "buyer_name": "heven",
+      "executor": "tacer12",
+      "executor_id": "1523248276(1653)",
+      "nominal": 300,
+      "created_at": 1768667279355,
+      "due_date": 1769272079355,
+      "status": "CANCELLED",
+      "finished_at": 1768700244147
+    },
+    {
+      "id": "OD000000151757303",
+      "item_name": "1x National Flag Card",
+      "target_data": "78838106 (78838) 2148 renz prtama",
+      "target_id_search": "78838106",
+      "buyer_name": "Pelanggan Itemku",
+      "executor": "tacer27",
+      "executor_id": "1479840519(1637)",
+      "nominal": 300,
+      "created_at": 1768003920000,
+      "due_date": 1768608720000,
+      "status": "DONE",
+      "finished_at": 1768700032082
+    },
+    {
+      "id": "OD000000151671212",
+      "item_name": "1x Starlight",
+      "target_data": "862229389 (86222) 10658 Sè",
+      "target_id_search": "862229389",
+      "buyer_name": "Pelanggan Itemku",
+      "executor": "tacer26",
+      "executor_id": "1535955711(1654)",
+      "nominal": 300,
+      "created_at": 1767876840000,
+      "due_date": 1768481640000,
+      "status": "DONE",
+      "finished_at": 1768488316028
+    },
+    {
+      "id": "OD000000151581934",
+      "item_name": "1x Starlight",
+      "target_data": "1488760868 (14887) 14322 愛",
+      "target_id_search": "1488760868",
+      "buyer_name": "Pelanggan Itemku",
+      "executor": "tacer24",
+      "executor_id": "1535954596(1658)",
+      "nominal": 300,
+      "created_at": 1767711660000,
+      "due_date": 1768316460000,
+      "status": "DONE",
+      "finished_at": 1768385496043
+    },
+    {
+      "id": "OD000000151577687",
+      "item_name": "1x Starlight",
+      "target_data": "1299363745 (12993) 14109 fw",
+      "target_id_search": "1299363745",
+      "buyer_name": "Pelanggan Itemku",
+      "executor": "tacer23",
+      "executor_id": "1528183892(1652)",
+      "nominal": 300,
+      "created_at": 1767711480000,
+      "due_date": 1768316280000,
+      "status": "DONE",
+      "finished_at": 1768357686157
+    },
+    {
+      "id": "OD000000151427388",
+      "item_name": "1x Starlight",
+      "target_data": "1299363745 (12993) 14109   fw",
+      "target_id_search": "1299363745",
+      "buyer_name": "Pelanggan Itemku",
+      "executor": "tacer22",
+      "executor_id": "1528173579(1655)",
+      "nominal": 300,
+      "created_at": 1767691560000,
+      "due_date": 1768296360000,
+      "status": "DONE",
+      "finished_at": 1768351898017
+    },
+    {
+      "id": "0D27373782",
+      "item_name": "3x Starlight",
+      "target_data": "797533444 (12172) Rifqi",
+      "target_id_search": "797533444",
+      "buyer_name": "Ld",
+      "executor": "arda1",
+      "executor_id": "1599704184(4458)",
+      "nominal": 300,
+      "created_at": 1768330604953,
+      "due_date": 1768935404953,
+      "status": "CANCELLED",
+      "finished_at": 1768330630621
+    },
+    {
+      "id": "0D27373782",
+      "item_name": "1x Starlight",
+      "target_data": "797533444 (12172) Zona",
+      "target_id_search": "797533444",
+      "buyer_name": "Leona",
+      "executor": "arda1",
+      "executor_id": "1599704184(4458)",
+      "nominal": 300,
+      "created_at": 1768329762586,
+      "due_date": 1768934562586,
+      "status": "CANCELLED",
+      "finished_at": 1768329784574
+    },
+    {
+      "id": "0D27373782",
+      "item_name": "1x Starlight",
+      "target_data": "797533444",
+      "target_id_search": "797533444",
+      "buyer_name": "Vinci",
+      "executor": "arda1",
+      "executor_id": "1599704184(4458)",
+      "nominal": 300,
+      "created_at": 1768329004600,
+      "due_date": 1768933804600,
+      "status": "CANCELLED",
+      "finished_at": 1768329737327
+    },
+    {
+      "id": "0D27373782",
+      "item_name": "1x Starlight",
+      "target_data": "797533444",
+      "buyer_name": "Rifqi",
+      "executor": "arda1",
+      "nominal": 300,
+      "created_at": 1768325382878,
+      "due_date": 1768930182878,
+      "status": "CANCELLED",
+      "finished_at": 1768326862187
+    },
+    {
+      "id": "OLD-1768003902617",
+      "item_name": "1x Starlight",
+      "target_data": "78838106 (78838) 2148 renz prtama",
+      "target_id_search": "78838106",
+      "buyer_name": "000000151757303",
+      "executor": "tacer27",
+      "executor_id": "1479840519(1637)",
+      "nominal": 300,
+      "created_at": 1768003902617,
+      "finished_at": 1768003902617,
+      "status": "DONE_MIGRATED"
+    },
+    {
+      "id": "OLD-1767876865271",
+      "item_name": "1x Starlight",
+      "target_data": "862229389 (86222) 10658 Sè",
+      "target_id_search": "862229389",
+      "buyer_name": "000000151671212",
+      "executor": "tacer26",
+      "executor_id": "1535955711(1654)",
+      "nominal": 300,
+      "created_at": 1767876865271,
+      "finished_at": 1767876865271,
+      "status": "DONE_MIGRATED"
+    },
+    {
+      "id": "OLD-1767711703989",
+      "item_name": "1x Starlight",
+      "target_data": "1488760868 (14887) 14322 愛",
+      "target_id_search": "1488760868",
+      "buyer_name": "000000151581934",
+      "executor": "tacer24",
+      "executor_id": "1535954596(1658)",
+      "nominal": 300,
+      "created_at": 1767711703989,
+      "finished_at": 1767711703989,
+      "status": "DONE_MIGRATED"
+    },
+    {
+      "id": "OLD-1767711531086",
+      "item_name": "1x Starlight",
+      "target_data": "1299363745 (12993) 14109 fw",
+      "target_id_search": "1299363745",
+      "buyer_name": "000000151577687",
+      "executor": "tacer23",
+      "executor_id": "1528183892(1652)",
+      "nominal": 300,
+      "created_at": 1767711531086,
+      "finished_at": 1767711531086,
+      "status": "DONE_MIGRATED"
+    },
+    {
+      "id": "OLD-1767691601307",
+      "item_name": "1x Starlight",
+      "target_data": "1299363745 (12993) 14109   fw",
+      "target_id_search": "1299363745",
+      "buyer_name": "000000151427388",
+      "executor": "tacer22",
+      "executor_id": "1528173579(1655)",
+      "nominal": 300,
+      "created_at": 1767691601307,
+      "finished_at": 1767691601307,
+      "status": "DONE_MIGRATED"
+    },
+    {
+      "id": "OLD-1767691376526",
+      "item_name": "1x Starlight",
+      "target_data": "797533444 (79753) ",
+      "target_id_search": "797533444",
+      "buyer_name": "6282185507174",
+      "executor": "tacer7",
+      "executor_id": "1504965374(1646)",
+      "nominal": 300,
+      "created_at": 1767691376526,
+      "finished_at": 1767691376526,
+      "status": "DONE_MIGRATED"
+    },
+    {
+      "id": "OLD-1767624071760",
+      "item_name": "1x Starlight",
+      "target_data": "18485 (18485) 1759221166  xTam",
+      "target_id_search": "18485",
+      "buyer_name": "000000151522723",
+      "executor": "tacer16",
+      "executor_id": "1524045185(1655)",
+      "nominal": 300,
+      "created_at": 1767624071760,
+      "finished_at": 1767624071760,
+      "status": "DONE_MIGRATED"
+    },
+    {
+      "id": "OLD-1767605881842",
+      "item_name": "1x Starlight",
+      "target_data": "17042 (17042) 1894381490  sᴀɪʀᴇɴ",
+      "target_id_search": "17042",
+      "buyer_name": "000000151499582",
+      "executor": "tacer13",
+      "executor_id": "1523657449(1654)",
+      "nominal": 300,
+      "created_at": 1767605881842,
+      "finished_at": 1767605881842,
+      "status": "DONE_MIGRATED"
+    },
+    {
+      "id": "OLD-1767604135133",
+      "item_name": "1x Starlight",
+      "target_data": "15321 (15321) 1293045498 bang gip alok",
+      "target_id_search": "15321",
+      "buyer_name": "000000151499256",
+      "executor": "tacer12",
+      "executor_id": "1523248276(1653)",
+      "nominal": 300,
+      "created_at": 1767604135133,
+      "finished_at": 1767604135133,
+      "status": "DONE_MIGRATED"
+    },
+    {
+      "id": "OLD-1767601572349",
+      "item_name": "1x Starlight",
+      "target_data": "13163 (13163) 1039258636 Trytobetter-mus",
+      "target_id_search": "13163",
+      "buyer_name": "000000151496342",
+      "executor": "tacer11",
+      "executor_id": "1522525866(1650)",
+      "nominal": 300,
+      "created_at": 1767601572349,
+      "finished_at": 1767601572349,
+      "status": "DONE_MIGRATED"
+    },
+    {
+      "id": "OLD-1767594636976",
+      "item_name": "1x Starlight",
+      "target_data": "13067 (13067) 1017080487 Dane*1234",
+      "target_id_search": "13067",
+      "buyer_name": "000000151488849",
+      "executor": "tacer4",
+      "executor_id": "1502725187(1644)",
+      "nominal": 300,
+      "created_at": 1767594636976,
+      "finished_at": 1767594636976,
+      "status": "DONE_MIGRATED"
+    },
+    {
+      "buyerId": "6282185507174@c.us",
+      "timestamp": 1766462899042,
+      "waktuTeks": "23/12/2025, 11.08.19",
+      "sources": [
+        {
+          "nick": "tacer11",
+          "id": "1522525866(1650)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "797533444(12172)",
+      "isManual": true
+    },
+    {
+      "buyerId": "6282185507174@c.us",
+      "timestamp": 1766466729532,
+      "waktuTeks": "23/12/2025, 12.12.09",
+      "sources": [
+        {
+          "nick": "tacer11",
+          "id": "1522525866(1650)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "797533444 (12172) Exodus",
+      "isManual": true
+    },
+    {
+      "buyerId": "6282185507174@c.us",
+      "timestamp": 1766467012615,
+      "waktuTeks": "23/12/2025, 12.16.52",
+      "sources": [
+        {
+          "nick": "tacer4",
+          "id": "1502725187(1644)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "797533444 (12172) Rifqi"
+    },
+    {
+      "buyerId": "6282185507174@c.us",
+      "timestamp": 1766467794776,
+      "waktuTeks": "23/12/2025, 12.29.54",
+      "sources": [
+        {
+          "nick": "tacer4",
+          "id": "1502725187(1644)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "797533444 (12172) Rifqi",
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "6282185507174@c.us",
+      "timestamp": 1766468771986,
+      "waktuTeks": "23/12/2025, 12.46.11",
+      "sources": [
+        {
+          "nick": "tacer4",
+          "id": "1502725187(1644)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "738292993 (1483) rifai",
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "6282185507174@c.us",
+      "timestamp": 1766469383132,
+      "waktuTeks": "23/12/2025, 12.56.23",
+      "sources": [
+        {
+          "nick": "tacer8",
+          "id": "1508495299(1646)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "3345666 (5467) tv",
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "6282185507174@c.us",
+      "timestamp": 1766471503363,
+      "waktuTeks": "23/12/2025, 13.31.43",
+      "sources": [
+        {
+          "nick": "tacer9",
+          "id": "1491092721(1640)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "7975348383 (234) stak",
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "6282185507174@c.us",
+      "timestamp": 1766472501324,
+      "waktuTeks": "23/12/2025, 13.48.21",
+      "sources": [
+        {
+          "nick": "tacer4",
+          "id": "1502725187(1644)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "79383848 (3993) uen",
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "6282185507174@c.us",
+      "timestamp": 1766472915555,
+      "waktuTeks": "23/12/2025, 13.55.15",
+      "sources": [
+        {
+          "nick": "tacer8",
+          "id": "1508495299(1646)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "797488383 (2839) stalk",
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "6282185507174@c.us",
+      "timestamp": 1766473185436,
+      "waktuTeks": "23/12/2025, 13.59.45",
+      "sources": [
+        {
+          "nick": "tacer9",
+          "id": "1491092721(1640)",
+          "qtyAmbil": 1
+        },
+        {
+          "nick": "tacer11",
+          "id": "1522525866(1650)",
+          "qtyAmbil": 1
+        },
+        {
+          "nick": "tacer13",
+          "id": "1523657449(1654)",
+          "qtyAmbil": 1
+        },
+        {
+          "nick": "tacer21",
+          "id": "1524715707(1655)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 4,
+      "dataAkun": "738282 (7373) star",
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "6282185507174@c.us",
+      "timestamp": 1766476216440,
+      "waktuTeks": "23/12/2025, 14.50.16",
+      "sources": [
+        {
+          "nick": "tacer21",
+          "id": "1524715707(1655)",
+          "qtyAmbil": 2
+        }
+      ],
+      "qty": 2,
+      "dataAkun": "838384 (3839) Stacky",
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "6282185507174@c.us",
+      "timestamp": 1766476243315,
+      "waktuTeks": "23/12/2025, 14.50.43",
+      "sources": [
+        {
+          "nick": "tacer4",
+          "id": "1502725187(1644)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "Tanpa Data",
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "6282185507174@c.us",
+      "timestamp": 1766476306041,
+      "waktuTeks": "23/12/2025, 14.51.46",
+      "sources": [
+        {
+          "nick": "tacer8",
+          "id": "1508495299(1646)",
+          "qtyAmbil": 1
+        },
+        {
+          "nick": "tacer9",
+          "id": "1491092721(1640)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 2,
+      "dataAkun": "389494 (38493) ywbe",
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "000000150681470@c.us",
+      "timestamp": 1766479959729,
+      "waktuTeks": "23/12/2025, 15.52.39",
+      "sources": [
+        {
+          "nick": "tacer4",
+          "id": "1502725187(1644)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "1139931666 (13589) `Shinobuu♡",
+      "isManual": true,
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "000000150726515@c.us",
+      "timestamp": 1766552123461,
+      "waktuTeks": "24/12/2025, 11:55:23",
+      "sources": [
+        {
+          "nick": "tacer8",
+          "id": "1508495299(1646)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "1777828907 (18590) SOLXCG",
+      "isManual": true,
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "000000150743489@c.us",
+      "timestamp": 1766571775995,
+      "waktuTeks": "24/12/2025, 17:22:55",
+      "sources": [
+        {
+          "nick": "tacer9",
+          "id": "1491092721(1640)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "12463570 (6015) Ardian07",
+      "isManual": true,
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "000000150959760@c.us",
+      "timestamp": 1766890160808,
+      "waktuTeks": "28/12/2025, 09:49:20",
+      "sources": [
+        {
+          "nick": "tacer11",
+          "id": "1522525866(1650)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "83548465 (2163) ShipalingAnyoh",
+      "isManual": true,
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "000000151275223@c.us",
+      "timestamp": 1767324725948,
+      "waktuTeks": "2/1/2026, 10:32:05",
+      "sources": [
+        {
+          "nick": "tacer13",
+          "id": "1523657449(1654)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "136293602 (2685) Taki",
+      "isManual": true,
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "000000151279582@c.us",
+      "timestamp": 1767324849510,
+      "waktuTeks": "2/1/2026, 10:34:09",
+      "sources": [
+        {
+          "nick": "tacer21",
+          "id": "1524715707(1655)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "1067872162 (13279) DEKKE",
+      "isManual": true,
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "000000151295348@c.us",
+      "timestamp": 1767338701856,
+      "waktuTeks": "2/1/2026, 14:25:01",
+      "sources": [
+        {
+          "nick": "tacer21",
+          "id": "1524715707(1655)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "229170986 (22917) 9211 Etorizt",
+      "isManual": true,
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "000000151304913@c.us",
+      "timestamp": 1767347318598,
+      "waktuTeks": "2/1/2026, 16:48:38",
+      "sources": [
+        {
+          "nick": "tacer1",
+          "id": "1498552249(1642)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "93998343 (2194) Jin Do Jun",
+      "isManual": true,
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "000000151302632@c.us",
+      "timestamp": 1767347410015,
+      "waktuTeks": "2/1/2026, 16:50:10",
+      "sources": [
+        {
+          "nick": "tacer2",
+          "id": "1499991569(1642)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "75529226 (2137) Mwuhehe",
+      "isManual": true,
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "000000151325128@c.us",
+      "timestamp": 1767393815269,
+      "waktuTeks": "3/1/2026, 05:43:35",
+      "sources": [
+        {
+          "nick": "tacer9",
+          "id": "1491092721(1640)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "10561 (10561) 828958896 KAZIMIR",
+      "isManual": true,
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "000000151427278@c.us",
+      "timestamp": 1767507918202,
+      "waktuTeks": "4/1/2026, 13:25:18",
+      "sources": [
+        {
+          "nick": "tacer3",
+          "id": "1501455217(1647)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "400872789 (3833) ✿awab_rdsl✿",
+      "isManual": true,
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "000000151488849@c.us",
+      "timestamp": 1767594636976,
+      "waktuTeks": "5/1/2026, 13:30:36",
+      "sources": [
+        {
+          "nick": "tacer4",
+          "id": "1502725187(1644)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "13067 (13067) 1017080487 Dane*1234",
+      "isManual": true,
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "000000151496342@c.us",
+      "timestamp": 1767601572349,
+      "waktuTeks": "5/1/2026, 15:26:12",
+      "sources": [
+        {
+          "nick": "tacer11",
+          "id": "1522525866(1650)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "13163 (13163) 1039258636 Trytobetter-mus",
+      "isManual": true,
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "000000151499256@c.us",
+      "timestamp": 1767604135133,
+      "waktuTeks": "5/1/2026, 16:08:55",
+      "sources": [
+        {
+          "nick": "tacer12",
+          "id": "1523248276(1653)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "15321 (15321) 1293045498 bang gip alok",
+      "isManual": true,
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "000000151499582@c.us",
+      "timestamp": 1767605881842,
+      "waktuTeks": "5/1/2026, 16:38:01",
+      "sources": [
+        {
+          "nick": "tacer13",
+          "id": "1523657449(1654)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "17042 (17042) 1894381490  sᴀɪʀᴇɴ",
+      "isManual": true,
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "000000151522723@c.us",
+      "timestamp": 1767624071760,
+      "waktuTeks": "5/1/2026, 21:41:11",
+      "sources": [
+        {
+          "nick": "tacer16",
+          "id": "1524045185(1655)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "18485 (18485) 1759221166  xTam",
+      "isManual": true,
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "6282185507174@c.us",
+      "timestamp": 1767691376526,
+      "waktuTeks": "6/1/2026, 16:22:56",
+      "sources": [
+        {
+          "nick": "tacer7",
+          "id": "1504965374(1646)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "797533444 (79753) ",
+      "isManual": true,
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "000000151427388@c.us",
+      "timestamp": 1767691601307,
+      "waktuTeks": "6/1/2026, 16:26:41",
+      "sources": [
+        {
+          "nick": "tacer22",
+          "id": "1528173579(1655)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "1299363745 (12993) 14109   fw",
+      "isManual": true,
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "000000151577687@c.us",
+      "timestamp": 1767711531086,
+      "waktuTeks": "6/1/2026, 21:58:51",
+      "sources": [
+        {
+          "nick": "tacer23",
+          "id": "1528183892(1652)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "1299363745 (12993) 14109 fw",
+      "isManual": true,
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "000000151581934@c.us",
+      "timestamp": 1767711703989,
+      "waktuTeks": "6/1/2026, 22:01:43",
+      "sources": [
+        {
+          "nick": "tacer24",
+          "id": "1535954596(1658)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "1488760868 (14887) 14322 愛",
+      "isManual": true,
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "000000151671212@c.us",
+      "timestamp": 1767876865271,
+      "waktuTeks": "8/1/2026, 19:54:25",
+      "sources": [
+        {
+          "nick": "tacer26",
+          "id": "1535955711(1654)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "862229389 (86222) 10658 Sè",
+      "isManual": true,
+      "daysToShip": 7
+    },
+    {
+      "buyerId": "000000151757303@c.us",
+      "timestamp": 1768003902617,
+      "waktuTeks": "10/1/2026, 07:11:42",
+      "sources": [
+        {
+          "nick": "tacer27",
+          "id": "1479840519(1637)",
+          "qtyAmbil": 1
+        }
+      ],
+      "qty": 1,
+      "dataAkun": "78838106 (78838) 2148 renz prtama",
+      "isManual": true,
+      "daysToShip": 7
+    },
+    {
+      "timestamp": 1768574372999,
+      "readableTime": "16/1/2026, 21.39.32",
+      "shops": {
+        "295": {
+          "name": "SatriaGS",
+          "price": 10000,
+          "stock": 123123,
+          "totalSold": 0
+        },
+        "154962": {
+          "name": "tedi",
+          "price": 345000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "196585": {
+          "name": "AryaJKshop",
+          "price": 1000,
+          "stock": 25,
+          "totalSold": 23
+        },
+        "320816": {
+          "name": "S3LL3R 4KUN ML",
+          "price": 83300,
+          "stock": 1,
+          "totalSold": 16
+        },
+        "427440": {
+          "name": "Bazar Dota 2",
+          "price": 600,
+          "stock": 3,
+          "totalSold": 1
+        },
+        "1450534": {
+          "name": "Blazz cell",
+          "price": 33000,
+          "stock": 4,
+          "totalSold": 0
+        },
+        "1472888": {
+          "name": "Amae Store",
+          "price": 110000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "1515160": {
+          "name": "SA Gamestore",
+          "price": 999,
+          "stock": 25,
+          "totalSold": 1
+        },
+        "1666088": {
+          "name": "VS MALANG RECHARGE",
+          "price": 69000,
+          "stock": 986,
+          "totalSold": 1
+        },
+        "1864536": {
+          "name": "Didinstoreid",
+          "price": 35000,
+          "stock": 92,
+          "totalSold": 8
+        },
+        "2240786": {
+          "name": "Kesiangantuk",
+          "price": 84500,
+          "stock": 3,
+          "totalSold": 22
+        },
+        "2375742": {
+          "name": "RAS SHOPP",
+          "price": 37999,
+          "stock": 455,
+          "totalSold": 674
+        },
+        "2485716": {
+          "name": "Asdarr.id",
+          "price": 40000,
+          "stock": 98,
+          "totalSold": 29
+        },
+        "2569587": {
+          "name": "John Gaming",
+          "price": 34000,
+          "stock": 624,
+          "totalSold": 1685
+        },
+        "2691717": {
+          "name": "Ruby Epic",
+          "price": 70000,
+          "stock": 3,
+          "totalSold": 2
+        },
+        "2737789": {
+          "name": "MR DIAMOND2K19",
+          "price": 72300,
+          "stock": 5,
+          "totalSold": 18
+        },
+        "3061475": {
+          "name": "PcsilasStore",
+          "price": 75000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "4598906": {
+          "name": "KIT88",
+          "price": 35000,
+          "stock": 4,
+          "totalSold": 3
+        },
+        "4602710": {
+          "name": "Marly Store",
+          "price": 38000,
+          "stock": 99,
+          "totalSold": 0
+        },
+        "5240281": {
+          "name": "arifuseyo",
+          "price": 134000,
+          "stock": 1,
+          "totalSold": 1
+        },
+        "5816050": {
+          "name": "ViperCircles",
+          "price": 240000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "7052787": {
+          "name": "Drian Storeid",
+          "price": 68000,
+          "stock": 2,
+          "totalSold": 0
+        },
+        "7713280": {
+          "name": "Iqbal gimang store",
+          "price": 39999,
+          "stock": 100,
+          "totalSold": 0
+        },
+        "8023558": {
+          "name": "NuLa Store",
+          "price": 34400,
+          "stock": 1,
+          "totalSold": 5
+        },
+        "8082646": {
+          "name": "RyooKita storee",
+          "price": 80000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "11060604": {
+          "name": "MisakiGame FSD",
+          "price": 500000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "11263230": {
+          "name": "Alazmi store",
+          "price": 39000,
+          "stock": 9999,
+          "totalSold": 86
+        },
+        "11484113": {
+          "name": "ArtStorLucky",
+          "price": 40000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "12026174": {
+          "name": "Mahveen Store",
+          "price": 45000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "12433387": {
+          "name": "D1 Shop",
+          "price": 69000,
+          "stock": 807,
+          "totalSold": 180
+        },
+        "12764811": {
+          "name": "amythicals store 2",
+          "price": 45000,
+          "stock": 91,
+          "totalSold": 9
+        },
+        "12969246": {
+          "name": "El dreyaska Shop",
+          "price": 230,
+          "stock": 10,
+          "totalSold": 0
+        },
+        "13321599": {
+          "name": "Only Lee Store",
+          "price": 37900,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "13580629": {
+          "name": "Kolektor Charisma",
+          "price": 69000,
+          "stock": 99,
+          "totalSold": 3
+        },
+        "13762622": {
+          "name": "Xzwin store",
+          "price": 900,
+          "stock": 6,
+          "totalSold": 0
+        },
+        "13766422": {
+          "name": "Yannstore Official",
+          "price": 85000,
+          "stock": 7,
+          "totalSold": 7
+        },
+        "14154199": {
+          "name": "AS stories",
+          "price": 34800,
+          "stock": 96,
+          "totalSold": 10
+        },
+        "14220174": {
+          "name": "NACA STORE",
+          "price": 78900,
+          "stock": 4,
+          "totalSold": 43
+        },
+        "14311266": {
+          "name": "Oten Shop",
+          "price": 69000,
+          "stock": 47,
+          "totalSold": 30
+        },
+        "14397202": {
+          "name": "Kageshop id",
+          "price": 85000,
+          "stock": 20,
+          "totalSold": 0
+        },
+        "14532322": {
+          "name": "Hai Imam",
+          "price": 33500,
+          "stock": 1000,
+          "totalSold": 0
+        },
+        "14613278": {
+          "name": "VeronaST",
+          "price": 47000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "14767125": {
+          "name": "Xtrium Game Credits",
+          "price": 36971,
+          "stock": 1000,
+          "totalSold": 0
+        }
+      }
+    },
+    {
+      "timestamp": 1768577400754,
+      "readableTime": "16/1/2026, 22.30.00",
+      "shops": {
+        "295": {
+          "name": "SatriaGS",
+          "price": 10000,
+          "stock": 123123,
+          "totalSold": 0
+        },
+        "154962": {
+          "name": "tedi",
+          "price": 345000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "196585": {
+          "name": "AryaJKshop",
+          "price": 1000,
+          "stock": 25,
+          "totalSold": 23
+        },
+        "320816": {
+          "name": "S3LL3R 4KUN ML",
+          "price": 83300,
+          "stock": 1,
+          "totalSold": 16
+        },
+        "427440": {
+          "name": "Bazar Dota 2",
+          "price": 600,
+          "stock": 3,
+          "totalSold": 1
+        },
+        "1450534": {
+          "name": "Blazz cell",
+          "price": 33000,
+          "stock": 4,
+          "totalSold": 0
+        },
+        "1472888": {
+          "name": "Amae Store",
+          "price": 110000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "1515160": {
+          "name": "SA Gamestore",
+          "price": 999,
+          "stock": 25,
+          "totalSold": 1
+        },
+        "1666088": {
+          "name": "VS MALANG RECHARGE",
+          "price": 69000,
+          "stock": 986,
+          "totalSold": 1
+        },
+        "1864536": {
+          "name": "Didinstoreid",
+          "price": 35000,
+          "stock": 92,
+          "totalSold": 8
+        },
+        "2240786": {
+          "name": "Kesiangantuk",
+          "price": 84500,
+          "stock": 3,
+          "totalSold": 22
+        },
+        "2375742": {
+          "name": "RAS SHOPP",
+          "price": 37999,
+          "stock": 455,
+          "totalSold": 674
+        },
+        "2485716": {
+          "name": "Asdarr.id",
+          "price": 40000,
+          "stock": 98,
+          "totalSold": 29
+        },
+        "2569587": {
+          "name": "John Gaming",
+          "price": 34000,
+          "stock": 623,
+          "totalSold": 1685
+        },
+        "2691717": {
+          "name": "Ruby Epic",
+          "price": 70000,
+          "stock": 3,
+          "totalSold": 2
+        },
+        "2737789": {
+          "name": "MR DIAMOND2K19",
+          "price": 72300,
+          "stock": 5,
+          "totalSold": 18
+        },
+        "3061475": {
+          "name": "PcsilasStore",
+          "price": 75000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "4598906": {
+          "name": "KIT88",
+          "price": 35000,
+          "stock": 4,
+          "totalSold": 3
+        },
+        "4602710": {
+          "name": "Marly Store",
+          "price": 38000,
+          "stock": 99,
+          "totalSold": 0
+        },
+        "5240281": {
+          "name": "arifuseyo",
+          "price": 134000,
+          "stock": 1,
+          "totalSold": 1
+        },
+        "5816050": {
+          "name": "ViperCircles",
+          "price": 240000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "7052787": {
+          "name": "Drian Storeid",
+          "price": 68000,
+          "stock": 2,
+          "totalSold": 0
+        },
+        "7713280": {
+          "name": "Iqbal gimang store",
+          "price": 39999,
+          "stock": 100,
+          "totalSold": 0
+        },
+        "8023558": {
+          "name": "NuLa Store",
+          "price": 34400,
+          "stock": 1,
+          "totalSold": 5
+        },
+        "8082646": {
+          "name": "RyooKita storee",
+          "price": 80000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "11060604": {
+          "name": "MisakiGame FSD",
+          "price": 500000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "11263230": {
+          "name": "Alazmi store",
+          "price": 39000,
+          "stock": 9999,
+          "totalSold": 86
+        },
+        "11484113": {
+          "name": "ArtStorLucky",
+          "price": 40000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "12026174": {
+          "name": "Mahveen Store",
+          "price": 45000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "12433387": {
+          "name": "D1 Shop",
+          "price": 69000,
+          "stock": 807,
+          "totalSold": 180
+        },
+        "12764811": {
+          "name": "amythicals store 2",
+          "price": 45000,
+          "stock": 91,
+          "totalSold": 9
+        },
+        "12969246": {
+          "name": "El dreyaska Shop",
+          "price": 230,
+          "stock": 10,
+          "totalSold": 0
+        },
+        "13321599": {
+          "name": "Only Lee Store",
+          "price": 37900,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "13580629": {
+          "name": "Kolektor Charisma",
+          "price": 69000,
+          "stock": 99,
+          "totalSold": 3
+        },
+        "13762622": {
+          "name": "Xzwin store",
+          "price": 900,
+          "stock": 6,
+          "totalSold": 0
+        },
+        "13766422": {
+          "name": "Yannstore Official",
+          "price": 85000,
+          "stock": 7,
+          "totalSold": 7
+        },
+        "14154199": {
+          "name": "AS stories",
+          "price": 34800,
+          "stock": 96,
+          "totalSold": 10
+        },
+        "14220174": {
+          "name": "NACA STORE",
+          "price": 78900,
+          "stock": 4,
+          "totalSold": 43
+        },
+        "14311266": {
+          "name": "Oten Shop",
+          "price": 69000,
+          "stock": 47,
+          "totalSold": 30
+        },
+        "14397202": {
+          "name": "Kageshop id",
+          "price": 85000,
+          "stock": 20,
+          "totalSold": 0
+        },
+        "14532322": {
+          "name": "Hai Imam",
+          "price": 33500,
+          "stock": 1000,
+          "totalSold": 0
+        },
+        "14613278": {
+          "name": "VeronaST",
+          "price": 47000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "14767125": {
+          "name": "Xtrium Game Credits",
+          "price": 36971,
+          "stock": 1000,
+          "totalSold": 0
+        }
+      }
+    },
+    {
+      "timestamp": 1768579200623,
+      "readableTime": "16/1/2026, 23.00.00",
+      "shops": {
+        "295": {
+          "name": "SatriaGS",
+          "price": 10000,
+          "stock": 123123,
+          "totalSold": 0
+        },
+        "154962": {
+          "name": "tedi",
+          "price": 345000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "196585": {
+          "name": "AryaJKshop",
+          "price": 1000,
+          "stock": 25,
+          "totalSold": 23
+        },
+        "320816": {
+          "name": "S3LL3R 4KUN ML",
+          "price": 83300,
+          "stock": 1,
+          "totalSold": 16
+        },
+        "427440": {
+          "name": "Bazar Dota 2",
+          "price": 600,
+          "stock": 3,
+          "totalSold": 1
+        },
+        "1450534": {
+          "name": "Blazz cell",
+          "price": 33000,
+          "stock": 4,
+          "totalSold": 0
+        },
+        "1472888": {
+          "name": "Amae Store",
+          "price": 110000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "1515160": {
+          "name": "SA Gamestore",
+          "price": 999,
+          "stock": 25,
+          "totalSold": 1
+        },
+        "1666088": {
+          "name": "VS MALANG RECHARGE",
+          "price": 69000,
+          "stock": 986,
+          "totalSold": 1
+        },
+        "1864536": {
+          "name": "Didinstoreid",
+          "price": 35000,
+          "stock": 92,
+          "totalSold": 8
+        },
+        "2240786": {
+          "name": "Kesiangantuk",
+          "price": 84500,
+          "stock": 3,
+          "totalSold": 22
+        },
+        "2375742": {
+          "name": "RAS SHOPP",
+          "price": 37999,
+          "stock": 455,
+          "totalSold": 674
+        },
+        "2485716": {
+          "name": "Asdarr.id",
+          "price": 40000,
+          "stock": 98,
+          "totalSold": 29
+        },
+        "2569587": {
+          "name": "John Gaming",
+          "price": 34000,
+          "stock": 623,
+          "totalSold": 1685
+        },
+        "2691717": {
+          "name": "Ruby Epic",
+          "price": 70000,
+          "stock": 3,
+          "totalSold": 2
+        },
+        "2737789": {
+          "name": "MR DIAMOND2K19",
+          "price": 72300,
+          "stock": 5,
+          "totalSold": 18
+        },
+        "3061475": {
+          "name": "PcsilasStore",
+          "price": 75000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "4598906": {
+          "name": "KIT88",
+          "price": 35000,
+          "stock": 4,
+          "totalSold": 3
+        },
+        "4602710": {
+          "name": "Marly Store",
+          "price": 38000,
+          "stock": 99,
+          "totalSold": 0
+        },
+        "5240281": {
+          "name": "arifuseyo",
+          "price": 134000,
+          "stock": 1,
+          "totalSold": 1
+        },
+        "5816050": {
+          "name": "ViperCircles",
+          "price": 240000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "7052787": {
+          "name": "Drian Storeid",
+          "price": 68000,
+          "stock": 2,
+          "totalSold": 0
+        },
+        "7713280": {
+          "name": "Iqbal gimang store",
+          "price": 39999,
+          "stock": 100,
+          "totalSold": 0
+        },
+        "8023558": {
+          "name": "NuLa Store",
+          "price": 34400,
+          "stock": 1,
+          "totalSold": 5
+        },
+        "8082646": {
+          "name": "RyooKita storee",
+          "price": 80000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "11060604": {
+          "name": "MisakiGame FSD",
+          "price": 500000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "11263230": {
+          "name": "Alazmi store",
+          "price": 39000,
+          "stock": 9999,
+          "totalSold": 86
+        },
+        "11484113": {
+          "name": "ArtStorLucky",
+          "price": 40000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "12026174": {
+          "name": "Mahveen Store",
+          "price": 45000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "12433387": {
+          "name": "D1 Shop",
+          "price": 69000,
+          "stock": 807,
+          "totalSold": 180
+        },
+        "12764811": {
+          "name": "amythicals store 2",
+          "price": 45000,
+          "stock": 91,
+          "totalSold": 9
+        },
+        "12969246": {
+          "name": "El dreyaska Shop",
+          "price": 230,
+          "stock": 10,
+          "totalSold": 0
+        },
+        "13321599": {
+          "name": "Only Lee Store",
+          "price": 37900,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "13580629": {
+          "name": "Kolektor Charisma",
+          "price": 69000,
+          "stock": 99,
+          "totalSold": 3
+        },
+        "13762622": {
+          "name": "Xzwin store",
+          "price": 900,
+          "stock": 6,
+          "totalSold": 0
+        },
+        "13766422": {
+          "name": "Yannstore Official",
+          "price": 85000,
+          "stock": 7,
+          "totalSold": 7
+        },
+        "14154199": {
+          "name": "AS stories",
+          "price": 34800,
+          "stock": 96,
+          "totalSold": 10
+        },
+        "14220174": {
+          "name": "NACA STORE",
+          "price": 78900,
+          "stock": 4,
+          "totalSold": 43
+        },
+        "14311266": {
+          "name": "Oten Shop",
+          "price": 69000,
+          "stock": 47,
+          "totalSold": 30
+        },
+        "14397202": {
+          "name": "Kageshop id",
+          "price": 85000,
+          "stock": 20,
+          "totalSold": 0
+        },
+        "14532322": {
+          "name": "Hai Imam",
+          "price": 33500,
+          "stock": 1000,
+          "totalSold": 0
+        },
+        "14613278": {
+          "name": "VeronaST",
+          "price": 47000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "14767125": {
+          "name": "Xtrium Game Credits",
+          "price": 36971,
+          "stock": 1000,
+          "totalSold": 0
+        }
+      }
+    },
+    {
+      "timestamp": 1768581000648,
+      "readableTime": "16/1/2026, 23.30.00",
+      "shops": {
+        "295": {
+          "name": "SatriaGS",
+          "price": 10000,
+          "stock": 123123,
+          "totalSold": 0
+        },
+        "154962": {
+          "name": "tedi",
+          "price": 345000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "196585": {
+          "name": "AryaJKshop",
+          "price": 1000,
+          "stock": 25,
+          "totalSold": 23
+        },
+        "320816": {
+          "name": "S3LL3R 4KUN ML",
+          "price": 83300,
+          "stock": 1,
+          "totalSold": 16
+        },
+        "427440": {
+          "name": "Bazar Dota 2",
+          "price": 600,
+          "stock": 3,
+          "totalSold": 1
+        },
+        "1450534": {
+          "name": "Blazz cell",
+          "price": 33000,
+          "stock": 4,
+          "totalSold": 0
+        },
+        "1472888": {
+          "name": "Amae Store",
+          "price": 110000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "1515160": {
+          "name": "SA Gamestore",
+          "price": 999,
+          "stock": 25,
+          "totalSold": 1
+        },
+        "1666088": {
+          "name": "VS MALANG RECHARGE",
+          "price": 69000,
+          "stock": 986,
+          "totalSold": 1
+        },
+        "1864536": {
+          "name": "Didinstoreid",
+          "price": 35000,
+          "stock": 92,
+          "totalSold": 8
+        },
+        "2240786": {
+          "name": "Kesiangantuk",
+          "price": 84500,
+          "stock": 3,
+          "totalSold": 22
+        },
+        "2375742": {
+          "name": "RAS SHOPP",
+          "price": 37999,
+          "stock": 455,
+          "totalSold": 674
+        },
+        "2485716": {
+          "name": "Asdarr.id",
+          "price": 40000,
+          "stock": 98,
+          "totalSold": 29
+        },
+        "2569587": {
+          "name": "John Gaming",
+          "price": 34000,
+          "stock": 623,
+          "totalSold": 1686
+        },
+        "2691717": {
+          "name": "Ruby Epic",
+          "price": 70000,
+          "stock": 3,
+          "totalSold": 2
+        },
+        "2737789": {
+          "name": "MR DIAMOND2K19",
+          "price": 72300,
+          "stock": 5,
+          "totalSold": 18
+        },
+        "3061475": {
+          "name": "PcsilasStore",
+          "price": 75000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "4598906": {
+          "name": "KIT88",
+          "price": 35000,
+          "stock": 4,
+          "totalSold": 3
+        },
+        "4602710": {
+          "name": "Marly Store",
+          "price": 38000,
+          "stock": 99,
+          "totalSold": 0
+        },
+        "5240281": {
+          "name": "arifuseyo",
+          "price": 134000,
+          "stock": 1,
+          "totalSold": 1
+        },
+        "5816050": {
+          "name": "ViperCircles",
+          "price": 240000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "6682755": {
+          "name": "Bng Ri Store",
+          "price": 1000,
+          "stock": 30,
+          "totalSold": 7
+        },
+        "7052787": {
+          "name": "Drian Storeid",
+          "price": 68000,
+          "stock": 2,
+          "totalSold": 0
+        },
+        "8023558": {
+          "name": "NuLa Store",
+          "price": 34400,
+          "stock": 1,
+          "totalSold": 5
+        },
+        "8082646": {
+          "name": "RyooKita storee",
+          "price": 80000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "11060604": {
+          "name": "MisakiGame FSD",
+          "price": 500000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "11263230": {
+          "name": "Alazmi store",
+          "price": 39000,
+          "stock": 9999,
+          "totalSold": 86
+        },
+        "11484113": {
+          "name": "ArtStorLucky",
+          "price": 40000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "12026174": {
+          "name": "Mahveen Store",
+          "price": 45000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "12433387": {
+          "name": "D1 Shop",
+          "price": 1000,
+          "stock": 42,
+          "totalSold": 9
+        },
+        "12764811": {
+          "name": "amythicals store 2",
+          "price": 45000,
+          "stock": 91,
+          "totalSold": 9
+        },
+        "13321599": {
+          "name": "Only Lee Store",
+          "price": 37900,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "13580629": {
+          "name": "Kolektor Charisma",
+          "price": 69000,
+          "stock": 99,
+          "totalSold": 3
+        },
+        "13762622": {
+          "name": "Xzwin store",
+          "price": 900,
+          "stock": 6,
+          "totalSold": 0
+        },
+        "13766422": {
+          "name": "Yannstore Official",
+          "price": 85000,
+          "stock": 7,
+          "totalSold": 7
+        },
+        "14154199": {
+          "name": "AS stories",
+          "price": 34800,
+          "stock": 96,
+          "totalSold": 10
+        },
+        "14220174": {
+          "name": "NACA STORE",
+          "price": 78900,
+          "stock": 4,
+          "totalSold": 43
+        },
+        "14311266": {
+          "name": "Oten Shop",
+          "price": 69000,
+          "stock": 47,
+          "totalSold": 30
+        },
+        "14397202": {
+          "name": "Kageshop id",
+          "price": 85000,
+          "stock": 20,
+          "totalSold": 0
+        },
+        "14532322": {
+          "name": "Hai Imam",
+          "price": 33500,
+          "stock": 1000,
+          "totalSold": 0
+        },
+        "14613278": {
+          "name": "VeronaST",
+          "price": 47000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "14767125": {
+          "name": "Xtrium Game Credits",
+          "price": 36971,
+          "stock": 1000,
+          "totalSold": 0
+        }
+      }
+    },
+    {
+      "timestamp": 1768582801224,
+      "readableTime": "17/1/2026, 00.00.00",
+      "shops": {
+        "295": {
+          "name": "SatriaGS",
+          "price": 10000,
+          "stock": 123123,
+          "totalSold": 0
+        },
+        "154962": {
+          "name": "tedi",
+          "price": 345000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "196585": {
+          "name": "AryaJKshop",
+          "price": 1000,
+          "stock": 25,
+          "totalSold": 23
+        },
+        "320816": {
+          "name": "S3LL3R 4KUN ML",
+          "price": 83300,
+          "stock": 1,
+          "totalSold": 16
+        },
+        "427440": {
+          "name": "Bazar Dota 2",
+          "price": 600,
+          "stock": 3,
+          "totalSold": 1
+        },
+        "1450534": {
+          "name": "Blazz cell",
+          "price": 33000,
+          "stock": 4,
+          "totalSold": 0
+        },
+        "1472888": {
+          "name": "Amae Store",
+          "price": 110000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "1515160": {
+          "name": "SA Gamestore",
+          "price": 999,
+          "stock": 25,
+          "totalSold": 1
+        },
+        "1666088": {
+          "name": "VS MALANG RECHARGE",
+          "price": 69000,
+          "stock": 986,
+          "totalSold": 1
+        },
+        "1864536": {
+          "name": "Didinstoreid",
+          "price": 35000,
+          "stock": 92,
+          "totalSold": 8
+        },
+        "2240786": {
+          "name": "Kesiangantuk",
+          "price": 84500,
+          "stock": 3,
+          "totalSold": 22
+        },
+        "2375742": {
+          "name": "RAS SHOPP",
+          "price": 37999,
+          "stock": 455,
+          "totalSold": 674
+        },
+        "2485716": {
+          "name": "Asdarr.id",
+          "price": 40000,
+          "stock": 98,
+          "totalSold": 29
+        },
+        "2569587": {
+          "name": "John Gaming",
+          "price": 34000,
+          "stock": 623,
+          "totalSold": 1686
+        },
+        "2691717": {
+          "name": "Ruby Epic",
+          "price": 70000,
+          "stock": 3,
+          "totalSold": 2
+        },
+        "2737789": {
+          "name": "MR DIAMOND2K19",
+          "price": 72300,
+          "stock": 5,
+          "totalSold": 18
+        },
+        "3061475": {
+          "name": "PcsilasStore",
+          "price": 75000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "4598906": {
+          "name": "KIT88",
+          "price": 35000,
+          "stock": 4,
+          "totalSold": 3
+        },
+        "4602710": {
+          "name": "Marly Store",
+          "price": 38000,
+          "stock": 99,
+          "totalSold": 0
+        },
+        "5240281": {
+          "name": "arifuseyo",
+          "price": 134000,
+          "stock": 1,
+          "totalSold": 1
+        },
+        "5816050": {
+          "name": "ViperCircles",
+          "price": 240000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "6682755": {
+          "name": "Bng Ri Store",
+          "price": 1000,
+          "stock": 30,
+          "totalSold": 7
+        },
+        "7052787": {
+          "name": "Drian Storeid",
+          "price": 68000,
+          "stock": 2,
+          "totalSold": 0
+        },
+        "8023558": {
+          "name": "NuLa Store",
+          "price": 34400,
+          "stock": 1,
+          "totalSold": 5
+        },
+        "8082646": {
+          "name": "RyooKita storee",
+          "price": 80000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "11060604": {
+          "name": "MisakiGame FSD",
+          "price": 500000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "11263230": {
+          "name": "Alazmi store",
+          "price": 39000,
+          "stock": 9999,
+          "totalSold": 86
+        },
+        "11484113": {
+          "name": "ArtStorLucky",
+          "price": 40000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "12026174": {
+          "name": "Mahveen Store",
+          "price": 45000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "12433387": {
+          "name": "D1 Shop",
+          "price": 1000,
+          "stock": 42,
+          "totalSold": 9
+        },
+        "12764811": {
+          "name": "amythicals store 2",
+          "price": 45000,
+          "stock": 91,
+          "totalSold": 9
+        },
+        "13230089": {
+          "name": "DIIMSHOP",
+          "price": 1000,
+          "stock": 10,
+          "totalSold": 0
+        },
+        "13321599": {
+          "name": "Only Lee Store",
+          "price": 37900,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "13580629": {
+          "name": "Kolektor Charisma",
+          "price": 69000,
+          "stock": 99,
+          "totalSold": 3
+        },
+        "13762622": {
+          "name": "Xzwin store",
+          "price": 900,
+          "stock": 6,
+          "totalSold": 0
+        },
+        "13766422": {
+          "name": "Yannstore Official",
+          "price": 85000,
+          "stock": 7,
+          "totalSold": 7
+        },
+        "14220174": {
+          "name": "NACA STORE",
+          "price": 78900,
+          "stock": 4,
+          "totalSold": 43
+        },
+        "14311266": {
+          "name": "Oten Shop",
+          "price": 69000,
+          "stock": 47,
+          "totalSold": 30
+        },
+        "14397202": {
+          "name": "Kageshop id",
+          "price": 85000,
+          "stock": 20,
+          "totalSold": 0
+        },
+        "14532322": {
+          "name": "Hai Imam",
+          "price": 33500,
+          "stock": 1000,
+          "totalSold": 0
+        },
+        "14613278": {
+          "name": "VeronaST",
+          "price": 47000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "14767125": {
+          "name": "Xtrium Game Credits",
+          "price": 36971,
+          "stock": 1000,
+          "totalSold": 0
+        }
+      }
+    },
+    {
+      "timestamp": 1768584600481,
+      "readableTime": "17/1/2026, 00.30.00",
+      "shops": {
+        "295": {
+          "name": "SatriaGS",
+          "price": 10000,
+          "stock": 123123,
+          "totalSold": 0
+        },
+        "154962": {
+          "name": "tedi",
+          "price": 345000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "196585": {
+          "name": "AryaJKshop",
+          "price": 1000,
+          "stock": 25,
+          "totalSold": 23
+        },
+        "320816": {
+          "name": "S3LL3R 4KUN ML",
+          "price": 83300,
+          "stock": 1,
+          "totalSold": 16
+        },
+        "427440": {
+          "name": "Bazar Dota 2",
+          "price": 600,
+          "stock": 3,
+          "totalSold": 1
+        },
+        "1450534": {
+          "name": "Blazz cell",
+          "price": 33000,
+          "stock": 4,
+          "totalSold": 0
+        },
+        "1472888": {
+          "name": "Amae Store",
+          "price": 110000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "1515160": {
+          "name": "SA Gamestore",
+          "price": 999,
+          "stock": 25,
+          "totalSold": 1
+        },
+        "1666088": {
+          "name": "VS MALANG RECHARGE",
+          "price": 69000,
+          "stock": 986,
+          "totalSold": 1
+        },
+        "1864536": {
+          "name": "Didinstoreid",
+          "price": 35000,
+          "stock": 92,
+          "totalSold": 8
+        },
+        "2240786": {
+          "name": "Kesiangantuk",
+          "price": 84500,
+          "stock": 3,
+          "totalSold": 22
+        },
+        "2375742": {
+          "name": "RAS SHOPP",
+          "price": 37999,
+          "stock": 455,
+          "totalSold": 674
+        },
+        "2485716": {
+          "name": "Asdarr.id",
+          "price": 40000,
+          "stock": 98,
+          "totalSold": 29
+        },
+        "2569587": {
+          "name": "John Gaming",
+          "price": 34000,
+          "stock": 623,
+          "totalSold": 1686
+        },
+        "2691717": {
+          "name": "Ruby Epic",
+          "price": 70000,
+          "stock": 3,
+          "totalSold": 2
+        },
+        "2737789": {
+          "name": "MR DIAMOND2K19",
+          "price": 72300,
+          "stock": 5,
+          "totalSold": 18
+        },
+        "3061475": {
+          "name": "PcsilasStore",
+          "price": 75000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "4598906": {
+          "name": "KIT88",
+          "price": 35000,
+          "stock": 4,
+          "totalSold": 3
+        },
+        "4602710": {
+          "name": "Marly Store",
+          "price": 38000,
+          "stock": 99,
+          "totalSold": 0
+        },
+        "5240281": {
+          "name": "arifuseyo",
+          "price": 134000,
+          "stock": 1,
+          "totalSold": 1
+        },
+        "5816050": {
+          "name": "ViperCircles",
+          "price": 240000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "6682755": {
+          "name": "Bng Ri Store",
+          "price": 1000,
+          "stock": 30,
+          "totalSold": 7
+        },
+        "7052787": {
+          "name": "Drian Storeid",
+          "price": 68000,
+          "stock": 2,
+          "totalSold": 0
+        },
+        "8023558": {
+          "name": "NuLa Store",
+          "price": 34400,
+          "stock": 1,
+          "totalSold": 5
+        },
+        "8082646": {
+          "name": "RyooKita storee",
+          "price": 80000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "11060604": {
+          "name": "MisakiGame FSD",
+          "price": 500000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "11263230": {
+          "name": "Alazmi store",
+          "price": 39000,
+          "stock": 9999,
+          "totalSold": 86
+        },
+        "11484113": {
+          "name": "ArtStorLucky",
+          "price": 40000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "12026174": {
+          "name": "Mahveen Store",
+          "price": 45000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "12433387": {
+          "name": "D1 Shop",
+          "price": 1000,
+          "stock": 42,
+          "totalSold": 9
+        },
+        "12764811": {
+          "name": "amythicals store 2",
+          "price": 45000,
+          "stock": 91,
+          "totalSold": 9
+        },
+        "13230089": {
+          "name": "DIIMSHOP",
+          "price": 1000,
+          "stock": 10,
+          "totalSold": 0
+        },
+        "13321599": {
+          "name": "Only Lee Store",
+          "price": 37900,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "13580629": {
+          "name": "Kolektor Charisma",
+          "price": 69000,
+          "stock": 99,
+          "totalSold": 3
+        },
+        "13762622": {
+          "name": "Xzwin store",
+          "price": 900,
+          "stock": 6,
+          "totalSold": 0
+        },
+        "13766422": {
+          "name": "Yannstore Official",
+          "price": 85000,
+          "stock": 7,
+          "totalSold": 7
+        },
+        "14220174": {
+          "name": "NACA STORE",
+          "price": 78900,
+          "stock": 4,
+          "totalSold": 43
+        },
+        "14311266": {
+          "name": "Oten Shop",
+          "price": 69000,
+          "stock": 47,
+          "totalSold": 30
+        },
+        "14397202": {
+          "name": "Kageshop id",
+          "price": 85000,
+          "stock": 20,
+          "totalSold": 0
+        },
+        "14532322": {
+          "name": "Hai Imam",
+          "price": 33500,
+          "stock": 1000,
+          "totalSold": 0
+        },
+        "14613278": {
+          "name": "VeronaST",
+          "price": 47000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "14767125": {
+          "name": "Xtrium Game Credits",
+          "price": 36971,
+          "stock": 1000,
+          "totalSold": 0
+        }
+      }
+    },
+    {
+      "timestamp": 1768586400522,
+      "readableTime": "17/1/2026, 01.00.00",
+      "shops": {
+        "295": {
+          "name": "SatriaGS",
+          "price": 10000,
+          "stock": 123123,
+          "totalSold": 0
+        },
+        "154962": {
+          "name": "tedi",
+          "price": 345000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "196585": {
+          "name": "AryaJKshop",
+          "price": 1000,
+          "stock": 25,
+          "totalSold": 23
+        },
+        "320816": {
+          "name": "S3LL3R 4KUN ML",
+          "price": 83300,
+          "stock": 1,
+          "totalSold": 16
+        },
+        "427440": {
+          "name": "Bazar Dota 2",
+          "price": 600,
+          "stock": 3,
+          "totalSold": 1
+        },
+        "1450534": {
+          "name": "Blazz cell",
+          "price": 33000,
+          "stock": 4,
+          "totalSold": 0
+        },
+        "1472888": {
+          "name": "Amae Store",
+          "price": 110000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "1515160": {
+          "name": "SA Gamestore",
+          "price": 999,
+          "stock": 25,
+          "totalSold": 1
+        },
+        "1666088": {
+          "name": "VS MALANG RECHARGE",
+          "price": 69000,
+          "stock": 986,
+          "totalSold": 1
+        },
+        "1864536": {
+          "name": "Didinstoreid",
+          "price": 35000,
+          "stock": 92,
+          "totalSold": 8
+        },
+        "2240786": {
+          "name": "Kesiangantuk",
+          "price": 84500,
+          "stock": 3,
+          "totalSold": 22
+        },
+        "2375742": {
+          "name": "RAS SHOPP",
+          "price": 37999,
+          "stock": 455,
+          "totalSold": 674
+        },
+        "2485716": {
+          "name": "Asdarr.id",
+          "price": 40000,
+          "stock": 98,
+          "totalSold": 29
+        },
+        "2569587": {
+          "name": "John Gaming",
+          "price": 34000,
+          "stock": 623,
+          "totalSold": 1686
+        },
+        "2691717": {
+          "name": "Ruby Epic",
+          "price": 70000,
+          "stock": 3,
+          "totalSold": 2
+        },
+        "2737789": {
+          "name": "MR DIAMOND2K19",
+          "price": 72300,
+          "stock": 5,
+          "totalSold": 18
+        },
+        "3061475": {
+          "name": "PcsilasStore",
+          "price": 75000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "4598906": {
+          "name": "KIT88",
+          "price": 35000,
+          "stock": 4,
+          "totalSold": 3
+        },
+        "4602710": {
+          "name": "Marly Store",
+          "price": 38000,
+          "stock": 99,
+          "totalSold": 0
+        },
+        "5240281": {
+          "name": "arifuseyo",
+          "price": 134000,
+          "stock": 1,
+          "totalSold": 1
+        },
+        "5816050": {
+          "name": "ViperCircles",
+          "price": 240000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "6682755": {
+          "name": "Bng Ri Store",
+          "price": 1000,
+          "stock": 30,
+          "totalSold": 7
+        },
+        "7052787": {
+          "name": "Drian Storeid",
+          "price": 68000,
+          "stock": 2,
+          "totalSold": 0
+        },
+        "8023558": {
+          "name": "NuLa Store",
+          "price": 34400,
+          "stock": 1,
+          "totalSold": 5
+        },
+        "8082646": {
+          "name": "RyooKita storee",
+          "price": 80000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "11060604": {
+          "name": "MisakiGame FSD",
+          "price": 500000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "11263230": {
+          "name": "Alazmi store",
+          "price": 39000,
+          "stock": 9999,
+          "totalSold": 86
+        },
+        "11484113": {
+          "name": "ArtStorLucky",
+          "price": 40000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "12026174": {
+          "name": "Mahveen Store",
+          "price": 45000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "12433387": {
+          "name": "D1 Shop",
+          "price": 1000,
+          "stock": 42,
+          "totalSold": 9
+        },
+        "12764811": {
+          "name": "amythicals store 2",
+          "price": 45000,
+          "stock": 91,
+          "totalSold": 9
+        },
+        "13230089": {
+          "name": "DIIMSHOP",
+          "price": 1000,
+          "stock": 10,
+          "totalSold": 0
+        },
+        "13321599": {
+          "name": "Only Lee Store",
+          "price": 37900,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "13580629": {
+          "name": "Kolektor Charisma",
+          "price": 69000,
+          "stock": 99,
+          "totalSold": 3
+        },
+        "13762622": {
+          "name": "Xzwin store",
+          "price": 900,
+          "stock": 6,
+          "totalSold": 0
+        },
+        "13766422": {
+          "name": "Yannstore Official",
+          "price": 85000,
+          "stock": 7,
+          "totalSold": 7
+        },
+        "14220174": {
+          "name": "NACA STORE",
+          "price": 78900,
+          "stock": 4,
+          "totalSold": 43
+        },
+        "14311266": {
+          "name": "Oten Shop",
+          "price": 69000,
+          "stock": 46,
+          "totalSold": 30
+        },
+        "14397202": {
+          "name": "Kageshop id",
+          "price": 85000,
+          "stock": 20,
+          "totalSold": 0
+        },
+        "14532322": {
+          "name": "Hai Imam",
+          "price": 33500,
+          "stock": 1000,
+          "totalSold": 0
+        },
+        "14613278": {
+          "name": "VeronaST",
+          "price": 47000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "14767125": {
+          "name": "Xtrium Game Credits",
+          "price": 36971,
+          "stock": 1000,
+          "totalSold": 0
+        }
+      }
+    },
+    {
+      "timestamp": 1768593600721,
+      "readableTime": "17/1/2026, 03.00.00",
+      "shops": {
+        "295": {
+          "name": "SatriaGS",
+          "price": 10000,
+          "stock": 123123,
+          "totalSold": 0
+        },
+        "154962": {
+          "name": "tedi",
+          "price": 345000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "196585": {
+          "name": "AryaJKshop",
+          "price": 1000,
+          "stock": 25,
+          "totalSold": 23
+        },
+        "320816": {
+          "name": "S3LL3R 4KUN ML",
+          "price": 83300,
+          "stock": 1,
+          "totalSold": 16
+        },
+        "427440": {
+          "name": "Bazar Dota 2",
+          "price": 600,
+          "stock": 3,
+          "totalSold": 1
+        },
+        "1450534": {
+          "name": "Blazz cell",
+          "price": 33000,
+          "stock": 4,
+          "totalSold": 0
+        },
+        "1472888": {
+          "name": "Amae Store",
+          "price": 110000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "1515160": {
+          "name": "SA Gamestore",
+          "price": 999,
+          "stock": 25,
+          "totalSold": 1
+        },
+        "1666088": {
+          "name": "VS MALANG RECHARGE",
+          "price": 69000,
+          "stock": 986,
+          "totalSold": 1
+        },
+        "1864536": {
+          "name": "Didinstoreid",
+          "price": 35000,
+          "stock": 92,
+          "totalSold": 8
+        },
+        "2240786": {
+          "name": "Kesiangantuk",
+          "price": 84500,
+          "stock": 3,
+          "totalSold": 22
+        },
+        "2375742": {
+          "name": "RAS SHOPP",
+          "price": 37999,
+          "stock": 455,
+          "totalSold": 674
+        },
+        "2485716": {
+          "name": "Asdarr.id",
+          "price": 40000,
+          "stock": 98,
+          "totalSold": 29
+        },
+        "2569587": {
+          "name": "John Gaming",
+          "price": 34000,
+          "stock": 622,
+          "totalSold": 1686
+        },
+        "2691717": {
+          "name": "Ruby Epic",
+          "price": 70000,
+          "stock": 3,
+          "totalSold": 2
+        },
+        "2737789": {
+          "name": "MR DIAMOND2K19",
+          "price": 72300,
+          "stock": 5,
+          "totalSold": 18
+        },
+        "3061475": {
+          "name": "PcsilasStore",
+          "price": 75000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "4598906": {
+          "name": "KIT88",
+          "price": 35000,
+          "stock": 4,
+          "totalSold": 3
+        },
+        "4602710": {
+          "name": "Marly Store",
+          "price": 38000,
+          "stock": 99,
+          "totalSold": 0
+        },
+        "5240281": {
+          "name": "arifuseyo",
+          "price": 134000,
+          "stock": 1,
+          "totalSold": 1
+        },
+        "5816050": {
+          "name": "ViperCircles",
+          "price": 240000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "6682755": {
+          "name": "Bng Ri Store",
+          "price": 1000,
+          "stock": 30,
+          "totalSold": 7
+        },
+        "7052787": {
+          "name": "Drian Storeid",
+          "price": 68000,
+          "stock": 2,
+          "totalSold": 0
+        },
+        "8023558": {
+          "name": "NuLa Store",
+          "price": 34400,
+          "stock": 1,
+          "totalSold": 5
+        },
+        "8082646": {
+          "name": "RyooKita storee",
+          "price": 80000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "11060604": {
+          "name": "MisakiGame FSD",
+          "price": 500000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "11263230": {
+          "name": "Alazmi store",
+          "price": 39000,
+          "stock": 9999,
+          "totalSold": 86
+        },
+        "11484113": {
+          "name": "ArtStorLucky",
+          "price": 40000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "12026174": {
+          "name": "Mahveen Store",
+          "price": 45000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "12433387": {
+          "name": "D1 Shop",
+          "price": 1000,
+          "stock": 42,
+          "totalSold": 9
+        },
+        "12764811": {
+          "name": "amythicals store 2",
+          "price": 45000,
+          "stock": 91,
+          "totalSold": 9
+        },
+        "13321599": {
+          "name": "Only Lee Store",
+          "price": 37900,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "13580629": {
+          "name": "Kolektor Charisma",
+          "price": 69000,
+          "stock": 99,
+          "totalSold": 3
+        },
+        "13762622": {
+          "name": "Xzwin store",
+          "price": 900,
+          "stock": 6,
+          "totalSold": 0
+        },
+        "13766422": {
+          "name": "Yannstore Official",
+          "price": 85000,
+          "stock": 7,
+          "totalSold": 7
+        },
+        "14220174": {
+          "name": "NACA STORE",
+          "price": 78900,
+          "stock": 4,
+          "totalSold": 43
+        },
+        "14311266": {
+          "name": "Oten Shop",
+          "price": 69000,
+          "stock": 46,
+          "totalSold": 30
+        },
+        "14397202": {
+          "name": "Kageshop id",
+          "price": 85000,
+          "stock": 20,
+          "totalSold": 0
+        },
+        "14532322": {
+          "name": "Hai Imam",
+          "price": 33500,
+          "stock": 1000,
+          "totalSold": 0
+        },
+        "14613278": {
+          "name": "VeronaST",
+          "price": 47000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "14767125": {
+          "name": "Xtrium Game Credits",
+          "price": 36971,
+          "stock": 1000,
+          "totalSold": 0
+        }
+      }
+    },
+    {
+      "timestamp": 1768595400599,
+      "readableTime": "17/1/2026, 03.30.00",
+      "shops": {
+        "295": {
+          "name": "SatriaGS",
+          "price": 10000,
+          "stock": 123123,
+          "totalSold": 0
+        },
+        "154962": {
+          "name": "tedi",
+          "price": 345000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "196585": {
+          "name": "AryaJKshop",
+          "price": 1000,
+          "stock": 25,
+          "totalSold": 23
+        },
+        "320816": {
+          "name": "S3LL3R 4KUN ML",
+          "price": 83300,
+          "stock": 1,
+          "totalSold": 16
+        },
+        "427440": {
+          "name": "Bazar Dota 2",
+          "price": 600,
+          "stock": 3,
+          "totalSold": 1
+        },
+        "1450534": {
+          "name": "Blazz cell",
+          "price": 33000,
+          "stock": 4,
+          "totalSold": 0
+        },
+        "1472888": {
+          "name": "Amae Store",
+          "price": 110000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "1515160": {
+          "name": "SA Gamestore",
+          "price": 999,
+          "stock": 25,
+          "totalSold": 1
+        },
+        "1666088": {
+          "name": "VS MALANG RECHARGE",
+          "price": 69000,
+          "stock": 986,
+          "totalSold": 1
+        },
+        "1864536": {
+          "name": "Didinstoreid",
+          "price": 35000,
+          "stock": 92,
+          "totalSold": 8
+        },
+        "2240786": {
+          "name": "Kesiangantuk",
+          "price": 84500,
+          "stock": 3,
+          "totalSold": 22
+        },
+        "2375742": {
+          "name": "RAS SHOPP",
+          "price": 37999,
+          "stock": 455,
+          "totalSold": 674
+        },
+        "2485716": {
+          "name": "Asdarr.id",
+          "price": 40000,
+          "stock": 98,
+          "totalSold": 29
+        },
+        "2569587": {
+          "name": "John Gaming",
+          "price": 34000,
+          "stock": 622,
+          "totalSold": 1686
+        },
+        "2691717": {
+          "name": "Ruby Epic",
+          "price": 70000,
+          "stock": 3,
+          "totalSold": 2
+        },
+        "2737789": {
+          "name": "MR DIAMOND2K19",
+          "price": 72300,
+          "stock": 5,
+          "totalSold": 18
+        },
+        "3061475": {
+          "name": "PcsilasStore",
+          "price": 75000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "4598906": {
+          "name": "KIT88",
+          "price": 35000,
+          "stock": 4,
+          "totalSold": 3
+        },
+        "4602710": {
+          "name": "Marly Store",
+          "price": 38000,
+          "stock": 99,
+          "totalSold": 0
+        },
+        "5240281": {
+          "name": "arifuseyo",
+          "price": 134000,
+          "stock": 1,
+          "totalSold": 1
+        },
+        "5816050": {
+          "name": "ViperCircles",
+          "price": 240000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "6682755": {
+          "name": "Bng Ri Store",
+          "price": 1000,
+          "stock": 30,
+          "totalSold": 7
+        },
+        "7052787": {
+          "name": "Drian Storeid",
+          "price": 68000,
+          "stock": 2,
+          "totalSold": 0
+        },
+        "8023558": {
+          "name": "NuLa Store",
+          "price": 34400,
+          "stock": 1,
+          "totalSold": 5
+        },
+        "8082646": {
+          "name": "RyooKita storee",
+          "price": 80000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "11060604": {
+          "name": "MisakiGame FSD",
+          "price": 500000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "11263230": {
+          "name": "Alazmi store",
+          "price": 39000,
+          "stock": 9999,
+          "totalSold": 86
+        },
+        "11484113": {
+          "name": "ArtStorLucky",
+          "price": 40000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "12026174": {
+          "name": "Mahveen Store",
+          "price": 45000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "12433387": {
+          "name": "D1 Shop",
+          "price": 1000,
+          "stock": 42,
+          "totalSold": 9
+        },
+        "12764811": {
+          "name": "amythicals store 2",
+          "price": 45000,
+          "stock": 91,
+          "totalSold": 9
+        },
+        "13321599": {
+          "name": "Only Lee Store",
+          "price": 37900,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "13580629": {
+          "name": "Kolektor Charisma",
+          "price": 69000,
+          "stock": 99,
+          "totalSold": 3
+        },
+        "13762622": {
+          "name": "Xzwin store",
+          "price": 900,
+          "stock": 6,
+          "totalSold": 0
+        },
+        "13766422": {
+          "name": "Yannstore Official",
+          "price": 85000,
+          "stock": 7,
+          "totalSold": 7
+        },
+        "14220174": {
+          "name": "NACA STORE",
+          "price": 78900,
+          "stock": 4,
+          "totalSold": 43
+        },
+        "14311266": {
+          "name": "Oten Shop",
+          "price": 69000,
+          "stock": 46,
+          "totalSold": 30
+        },
+        "14397202": {
+          "name": "Kageshop id",
+          "price": 85000,
+          "stock": 20,
+          "totalSold": 0
+        },
+        "14532322": {
+          "name": "Hai Imam",
+          "price": 33500,
+          "stock": 1000,
+          "totalSold": 0
+        },
+        "14613278": {
+          "name": "VeronaST",
+          "price": 47000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "14767125": {
+          "name": "Xtrium Game Credits",
+          "price": 36971,
+          "stock": 1000,
+          "totalSold": 0
+        }
+      }
+    },
+    {
+      "timestamp": 1768597200717,
+      "readableTime": "17/1/2026, 04.00.00",
+      "shops": {
+        "295": {
+          "name": "SatriaGS",
+          "price": 10000,
+          "stock": 123123,
+          "totalSold": 0
+        },
+        "154962": {
+          "name": "tedi",
+          "price": 345000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "196585": {
+          "name": "AryaJKshop",
+          "price": 1000,
+          "stock": 25,
+          "totalSold": 23
+        },
+        "320816": {
+          "name": "S3LL3R 4KUN ML",
+          "price": 83300,
+          "stock": 1,
+          "totalSold": 16
+        },
+        "427440": {
+          "name": "Bazar Dota 2",
+          "price": 600,
+          "stock": 3,
+          "totalSold": 1
+        },
+        "1450534": {
+          "name": "Blazz cell",
+          "price": 33000,
+          "stock": 4,
+          "totalSold": 0
+        },
+        "1472888": {
+          "name": "Amae Store",
+          "price": 110000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "1515160": {
+          "name": "SA Gamestore",
+          "price": 999,
+          "stock": 25,
+          "totalSold": 1
+        },
+        "1666088": {
+          "name": "VS MALANG RECHARGE",
+          "price": 69000,
+          "stock": 986,
+          "totalSold": 1
+        },
+        "1864536": {
+          "name": "Didinstoreid",
+          "price": 35000,
+          "stock": 92,
+          "totalSold": 8
+        },
+        "2240786": {
+          "name": "Kesiangantuk",
+          "price": 84500,
+          "stock": 3,
+          "totalSold": 22
+        },
+        "2375742": {
+          "name": "RAS SHOPP",
+          "price": 37999,
+          "stock": 455,
+          "totalSold": 674
+        },
+        "2485716": {
+          "name": "Asdarr.id",
+          "price": 40000,
+          "stock": 98,
+          "totalSold": 29
+        },
+        "2569587": {
+          "name": "John Gaming",
+          "price": 34000,
+          "stock": 622,
+          "totalSold": 1686
+        },
+        "2691717": {
+          "name": "Ruby Epic",
+          "price": 70000,
+          "stock": 3,
+          "totalSold": 2
+        },
+        "2737789": {
+          "name": "MR DIAMOND2K19",
+          "price": 72300,
+          "stock": 5,
+          "totalSold": 18
+        },
+        "3061475": {
+          "name": "PcsilasStore",
+          "price": 75000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "4598906": {
+          "name": "KIT88",
+          "price": 35000,
+          "stock": 4,
+          "totalSold": 3
+        },
+        "4602710": {
+          "name": "Marly Store",
+          "price": 38000,
+          "stock": 99,
+          "totalSold": 0
+        },
+        "5240281": {
+          "name": "arifuseyo",
+          "price": 134000,
+          "stock": 1,
+          "totalSold": 1
+        },
+        "5816050": {
+          "name": "ViperCircles",
+          "price": 240000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "6682755": {
+          "name": "Bng Ri Store",
+          "price": 1000,
+          "stock": 30,
+          "totalSold": 7
+        },
+        "7052787": {
+          "name": "Drian Storeid",
+          "price": 68000,
+          "stock": 2,
+          "totalSold": 0
+        },
+        "8023558": {
+          "name": "NuLa Store",
+          "price": 34400,
+          "stock": 1,
+          "totalSold": 5
+        },
+        "8082646": {
+          "name": "RyooKita storee",
+          "price": 80000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "11060604": {
+          "name": "MisakiGame FSD",
+          "price": 500000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "11263230": {
+          "name": "Alazmi store",
+          "price": 39000,
+          "stock": 9999,
+          "totalSold": 86
+        },
+        "11484113": {
+          "name": "ArtStorLucky",
+          "price": 40000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "12026174": {
+          "name": "Mahveen Store",
+          "price": 45000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "12433387": {
+          "name": "D1 Shop",
+          "price": 1000,
+          "stock": 42,
+          "totalSold": 9
+        },
+        "12764811": {
+          "name": "amythicals store 2",
+          "price": 45000,
+          "stock": 91,
+          "totalSold": 9
+        },
+        "13321599": {
+          "name": "Only Lee Store",
+          "price": 37900,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "13580629": {
+          "name": "Kolektor Charisma",
+          "price": 69000,
+          "stock": 99,
+          "totalSold": 3
+        },
+        "13762622": {
+          "name": "Xzwin store",
+          "price": 900,
+          "stock": 6,
+          "totalSold": 0
+        },
+        "13766422": {
+          "name": "Yannstore Official",
+          "price": 85000,
+          "stock": 7,
+          "totalSold": 7
+        },
+        "14220174": {
+          "name": "NACA STORE",
+          "price": 78900,
+          "stock": 4,
+          "totalSold": 43
+        },
+        "14311266": {
+          "name": "Oten Shop",
+          "price": 69000,
+          "stock": 46,
+          "totalSold": 30
+        },
+        "14397202": {
+          "name": "Kageshop id",
+          "price": 85000,
+          "stock": 20,
+          "totalSold": 0
+        },
+        "14532322": {
+          "name": "Hai Imam",
+          "price": 33500,
+          "stock": 1000,
+          "totalSold": 0
+        },
+        "14613278": {
+          "name": "VeronaST",
+          "price": 47000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "14767125": {
+          "name": "Xtrium Game Credits",
+          "price": 36971,
+          "stock": 1000,
+          "totalSold": 0
+        }
+      }
+    },
+    {
+      "timestamp": 1768600800793,
+      "readableTime": "17/1/2026, 05.00.00",
+      "shops": {
+        "295": {
+          "name": "SatriaGS",
+          "price": 10000,
+          "stock": 123123,
+          "totalSold": 0
+        },
+        "154962": {
+          "name": "tedi",
+          "price": 345000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "196585": {
+          "name": "AryaJKshop",
+          "price": 1000,
+          "stock": 25,
+          "totalSold": 23
+        },
+        "320816": {
+          "name": "S3LL3R 4KUN ML",
+          "price": 83300,
+          "stock": 1,
+          "totalSold": 16
+        },
+        "427440": {
+          "name": "Bazar Dota 2",
+          "price": 600,
+          "stock": 3,
+          "totalSold": 1
+        },
+        "1450534": {
+          "name": "Blazz cell",
+          "price": 33000,
+          "stock": 4,
+          "totalSold": 0
+        },
+        "1472888": {
+          "name": "Amae Store",
+          "price": 110000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "1515160": {
+          "name": "SA Gamestore",
+          "price": 999,
+          "stock": 25,
+          "totalSold": 1
+        },
+        "1666088": {
+          "name": "VS MALANG RECHARGE",
+          "price": 69000,
+          "stock": 986,
+          "totalSold": 1
+        },
+        "1864536": {
+          "name": "Didinstoreid",
+          "price": 35000,
+          "stock": 92,
+          "totalSold": 8
+        },
+        "2240786": {
+          "name": "Kesiangantuk",
+          "price": 84500,
+          "stock": 3,
+          "totalSold": 22
+        },
+        "2375742": {
+          "name": "RAS SHOPP",
+          "price": 37999,
+          "stock": 455,
+          "totalSold": 674
+        },
+        "2485716": {
+          "name": "Asdarr.id",
+          "price": 40000,
+          "stock": 98,
+          "totalSold": 29
+        },
+        "2569587": {
+          "name": "John Gaming",
+          "price": 34000,
+          "stock": 622,
+          "totalSold": 1686
+        },
+        "2691717": {
+          "name": "Ruby Epic",
+          "price": 70000,
+          "stock": 3,
+          "totalSold": 2
+        },
+        "2737789": {
+          "name": "MR DIAMOND2K19",
+          "price": 72300,
+          "stock": 5,
+          "totalSold": 18
+        },
+        "3061475": {
+          "name": "PcsilasStore",
+          "price": 75000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "4598906": {
+          "name": "KIT88",
+          "price": 35000,
+          "stock": 4,
+          "totalSold": 3
+        },
+        "4602710": {
+          "name": "Marly Store",
+          "price": 38000,
+          "stock": 99,
+          "totalSold": 0
+        },
+        "5240281": {
+          "name": "arifuseyo",
+          "price": 134000,
+          "stock": 1,
+          "totalSold": 1
+        },
+        "5816050": {
+          "name": "ViperCircles",
+          "price": 240000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "6682755": {
+          "name": "Bng Ri Store",
+          "price": 1000,
+          "stock": 30,
+          "totalSold": 7
+        },
+        "7052787": {
+          "name": "Drian Storeid",
+          "price": 68000,
+          "stock": 2,
+          "totalSold": 0
+        },
+        "8023558": {
+          "name": "NuLa Store",
+          "price": 34400,
+          "stock": 1,
+          "totalSold": 5
+        },
+        "8082646": {
+          "name": "RyooKita storee",
+          "price": 80000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "11060604": {
+          "name": "MisakiGame FSD",
+          "price": 500000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "11484113": {
+          "name": "ArtStorLucky",
+          "price": 40000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "12026174": {
+          "name": "Mahveen Store",
+          "price": 45000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "12433387": {
+          "name": "D1 Shop",
+          "price": 1000,
+          "stock": 42,
+          "totalSold": 9
+        },
+        "12764811": {
+          "name": "amythicals store 2",
+          "price": 45000,
+          "stock": 91,
+          "totalSold": 9
+        },
+        "13230089": {
+          "name": "DIIMSHOP",
+          "price": 1000,
+          "stock": 10,
+          "totalSold": 0
+        },
+        "13321599": {
+          "name": "Only Lee Store",
+          "price": 37900,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "13580629": {
+          "name": "Kolektor Charisma",
+          "price": 69000,
+          "stock": 99,
+          "totalSold": 3
+        },
+        "13762622": {
+          "name": "Xzwin store",
+          "price": 900,
+          "stock": 6,
+          "totalSold": 0
+        },
+        "13766422": {
+          "name": "Yannstore Official",
+          "price": 85000,
+          "stock": 7,
+          "totalSold": 7
+        },
+        "14220174": {
+          "name": "NACA STORE",
+          "price": 78900,
+          "stock": 4,
+          "totalSold": 43
+        },
+        "14311266": {
+          "name": "Oten Shop",
+          "price": 69000,
+          "stock": 46,
+          "totalSold": 30
+        },
+        "14397202": {
+          "name": "Kageshop id",
+          "price": 85000,
+          "stock": 20,
+          "totalSold": 0
+        },
+        "14532322": {
+          "name": "Hai Imam",
+          "price": 33500,
+          "stock": 1000,
+          "totalSold": 0
+        },
+        "14613278": {
+          "name": "VeronaST",
+          "price": 47000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "14767125": {
+          "name": "Xtrium Game Credits",
+          "price": 36971,
+          "stock": 1000,
+          "totalSold": 0
+        }
+      }
+    },
+    {
+      "timestamp": 1768602600672,
+      "readableTime": "17/1/2026, 05.30.00",
+      "shops": {
+        "295": {
+          "name": "SatriaGS",
+          "price": 10000,
+          "stock": 123123,
+          "totalSold": 0
+        },
+        "154962": {
+          "name": "tedi",
+          "price": 345000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "196585": {
+          "name": "AryaJKshop",
+          "price": 1000,
+          "stock": 25,
+          "totalSold": 23
+        },
+        "320816": {
+          "name": "S3LL3R 4KUN ML",
+          "price": 83300,
+          "stock": 1,
+          "totalSold": 16
+        },
+        "427440": {
+          "name": "Bazar Dota 2",
+          "price": 600,
+          "stock": 3,
+          "totalSold": 1
+        },
+        "1450534": {
+          "name": "Blazz cell",
+          "price": 33000,
+          "stock": 4,
+          "totalSold": 0
+        },
+        "1472888": {
+          "name": "Amae Store",
+          "price": 110000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "1515160": {
+          "name": "SA Gamestore",
+          "price": 999,
+          "stock": 25,
+          "totalSold": 1
+        },
+        "1666088": {
+          "name": "VS MALANG RECHARGE",
+          "price": 69000,
+          "stock": 986,
+          "totalSold": 1
+        },
+        "1864536": {
+          "name": "Didinstoreid",
+          "price": 35000,
+          "stock": 92,
+          "totalSold": 8
+        },
+        "2240786": {
+          "name": "Kesiangantuk",
+          "price": 84500,
+          "stock": 3,
+          "totalSold": 22
+        },
+        "2375742": {
+          "name": "RAS SHOPP",
+          "price": 37999,
+          "stock": 455,
+          "totalSold": 674
+        },
+        "2485716": {
+          "name": "Asdarr.id",
+          "price": 40000,
+          "stock": 98,
+          "totalSold": 29
+        },
+        "2569587": {
+          "name": "John Gaming",
+          "price": 34000,
+          "stock": 622,
+          "totalSold": 1686
+        },
+        "2691717": {
+          "name": "Ruby Epic",
+          "price": 70000,
+          "stock": 3,
+          "totalSold": 2
+        },
+        "2737789": {
+          "name": "MR DIAMOND2K19",
+          "price": 72300,
+          "stock": 5,
+          "totalSold": 18
+        },
+        "3061475": {
+          "name": "PcsilasStore",
+          "price": 75000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "4598906": {
+          "name": "KIT88",
+          "price": 35000,
+          "stock": 4,
+          "totalSold": 3
+        },
+        "4602710": {
+          "name": "Marly Store",
+          "price": 38000,
+          "stock": 99,
+          "totalSold": 0
+        },
+        "5240281": {
+          "name": "arifuseyo",
+          "price": 134000,
+          "stock": 1,
+          "totalSold": 1
+        },
+        "5816050": {
+          "name": "ViperCircles",
+          "price": 240000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "6682755": {
+          "name": "Bng Ri Store",
+          "price": 1000,
+          "stock": 30,
+          "totalSold": 7
+        },
+        "7052787": {
+          "name": "Drian Storeid",
+          "price": 68000,
+          "stock": 2,
+          "totalSold": 0
+        },
+        "8023558": {
+          "name": "NuLa Store",
+          "price": 34400,
+          "stock": 1,
+          "totalSold": 5
+        },
+        "8082646": {
+          "name": "RyooKita storee",
+          "price": 80000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "11060604": {
+          "name": "MisakiGame FSD",
+          "price": 500000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "11263230": {
+          "name": "Alazmi store",
+          "price": 39000,
+          "stock": 9999,
+          "totalSold": 86
+        },
+        "11484113": {
+          "name": "ArtStorLucky",
+          "price": 40000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "12026174": {
+          "name": "Mahveen Store",
+          "price": 45000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "12433387": {
+          "name": "D1 Shop",
+          "price": 1000,
+          "stock": 42,
+          "totalSold": 9
+        },
+        "12764811": {
+          "name": "amythicals store 2",
+          "price": 45000,
+          "stock": 91,
+          "totalSold": 9
+        },
+        "13321599": {
+          "name": "Only Lee Store",
+          "price": 37900,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "13580629": {
+          "name": "Kolektor Charisma",
+          "price": 69000,
+          "stock": 99,
+          "totalSold": 3
+        },
+        "13762622": {
+          "name": "Xzwin store",
+          "price": 900,
+          "stock": 6,
+          "totalSold": 0
+        },
+        "13766422": {
+          "name": "Yannstore Official",
+          "price": 85000,
+          "stock": 7,
+          "totalSold": 7
+        },
+        "14220174": {
+          "name": "NACA STORE",
+          "price": 78900,
+          "stock": 4,
+          "totalSold": 43
+        },
+        "14311266": {
+          "name": "Oten Shop",
+          "price": 69000,
+          "stock": 46,
+          "totalSold": 30
+        },
+        "14397202": {
+          "name": "Kageshop id",
+          "price": 85000,
+          "stock": 20,
+          "totalSold": 0
+        },
+        "14532322": {
+          "name": "Hai Imam",
+          "price": 33500,
+          "stock": 1000,
+          "totalSold": 0
+        },
+        "14613278": {
+          "name": "VeronaST",
+          "price": 47000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "14767125": {
+          "name": "Xtrium Game Credits",
+          "price": 36971,
+          "stock": 1000,
+          "totalSold": 0
+        }
+      }
+    },
+    {
+      "timestamp": 1768604400677,
+      "readableTime": "17/1/2026, 06.00.00",
+      "shops": {
+        "295": {
+          "name": "SatriaGS",
+          "price": 10000,
+          "stock": 123123,
+          "totalSold": 0
+        },
+        "154962": {
+          "name": "tedi",
+          "price": 345000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "196585": {
+          "name": "AryaJKshop",
+          "price": 1000,
+          "stock": 25,
+          "totalSold": 23
+        },
+        "320816": {
+          "name": "S3LL3R 4KUN ML",
+          "price": 83300,
+          "stock": 1,
+          "totalSold": 16
+        },
+        "427440": {
+          "name": "Bazar Dota 2",
+          "price": 600,
+          "stock": 3,
+          "totalSold": 1
+        },
+        "1450534": {
+          "name": "Blazz cell",
+          "price": 33000,
+          "stock": 4,
+          "totalSold": 0
+        },
+        "1472888": {
+          "name": "Amae Store",
+          "price": 110000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "1515160": {
+          "name": "SA Gamestore",
+          "price": 999,
+          "stock": 25,
+          "totalSold": 1
+        },
+        "1666088": {
+          "name": "VS MALANG RECHARGE",
+          "price": 69000,
+          "stock": 986,
+          "totalSold": 1
+        },
+        "1864536": {
+          "name": "Didinstoreid",
+          "price": 35000,
+          "stock": 92,
+          "totalSold": 8
+        },
+        "2240786": {
+          "name": "Kesiangantuk",
+          "price": 84500,
+          "stock": 3,
+          "totalSold": 22
+        },
+        "2375742": {
+          "name": "RAS SHOPP",
+          "price": 37999,
+          "stock": 455,
+          "totalSold": 674
+        },
+        "2485716": {
+          "name": "Asdarr.id",
+          "price": 40000,
+          "stock": 98,
+          "totalSold": 29
+        },
+        "2569587": {
+          "name": "John Gaming",
+          "price": 34000,
+          "stock": 622,
+          "totalSold": 1686
+        },
+        "2691717": {
+          "name": "Ruby Epic",
+          "price": 70000,
+          "stock": 3,
+          "totalSold": 2
+        },
+        "2737789": {
+          "name": "MR DIAMOND2K19",
+          "price": 72300,
+          "stock": 5,
+          "totalSold": 18
+        },
+        "3061475": {
+          "name": "PcsilasStore",
+          "price": 75000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "4598906": {
+          "name": "KIT88",
+          "price": 35000,
+          "stock": 4,
+          "totalSold": 3
+        },
+        "4602710": {
+          "name": "Marly Store",
+          "price": 38000,
+          "stock": 99,
+          "totalSold": 0
+        },
+        "5240281": {
+          "name": "arifuseyo",
+          "price": 134000,
+          "stock": 1,
+          "totalSold": 1
+        },
+        "5816050": {
+          "name": "ViperCircles",
+          "price": 240000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "6682755": {
+          "name": "Bng Ri Store",
+          "price": 1000,
+          "stock": 30,
+          "totalSold": 7
+        },
+        "7052787": {
+          "name": "Drian Storeid",
+          "price": 68000,
+          "stock": 2,
+          "totalSold": 0
+        },
+        "8023558": {
+          "name": "NuLa Store",
+          "price": 34400,
+          "stock": 1,
+          "totalSold": 5
+        },
+        "8082646": {
+          "name": "RyooKita storee",
+          "price": 80000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "11060604": {
+          "name": "MisakiGame FSD",
+          "price": 500000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "11263230": {
+          "name": "Alazmi store",
+          "price": 39000,
+          "stock": 9999,
+          "totalSold": 86
+        },
+        "11484113": {
+          "name": "ArtStorLucky",
+          "price": 40000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "12026174": {
+          "name": "Mahveen Store",
+          "price": 45000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "12433387": {
+          "name": "D1 Shop",
+          "price": 1000,
+          "stock": 42,
+          "totalSold": 9
+        },
+        "12764811": {
+          "name": "amythicals store 2",
+          "price": 45000,
+          "stock": 91,
+          "totalSold": 9
+        },
+        "13321599": {
+          "name": "Only Lee Store",
+          "price": 37900,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "13580629": {
+          "name": "Kolektor Charisma",
+          "price": 69000,
+          "stock": 99,
+          "totalSold": 3
+        },
+        "13762622": {
+          "name": "Xzwin store",
+          "price": 900,
+          "stock": 6,
+          "totalSold": 0
+        },
+        "13766422": {
+          "name": "Yannstore Official",
+          "price": 85000,
+          "stock": 7,
+          "totalSold": 7
+        },
+        "14220174": {
+          "name": "NACA STORE",
+          "price": 78900,
+          "stock": 4,
+          "totalSold": 43
+        },
+        "14311266": {
+          "name": "Oten Shop",
+          "price": 69000,
+          "stock": 46,
+          "totalSold": 30
+        },
+        "14397202": {
+          "name": "Kageshop id",
+          "price": 85000,
+          "stock": 20,
+          "totalSold": 0
+        },
+        "14532322": {
+          "name": "Hai Imam",
+          "price": 33500,
+          "stock": 1000,
+          "totalSold": 0
+        },
+        "14613278": {
+          "name": "VeronaST",
+          "price": 47000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "14767125": {
+          "name": "Xtrium Game Credits",
+          "price": 36971,
+          "stock": 1000,
+          "totalSold": 0
+        }
+      }
+    },
+    {
+      "timestamp": 1768608000754,
+      "readableTime": "17/1/2026, 07.00.00",
+      "shops": {
+        "295": {
+          "name": "SatriaGS",
+          "price": 10000,
+          "stock": 123123,
+          "totalSold": 0
+        },
+        "154962": {
+          "name": "tedi",
+          "price": 345000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "196585": {
+          "name": "AryaJKshop",
+          "price": 1000,
+          "stock": 25,
+          "totalSold": 23
+        },
+        "320816": {
+          "name": "S3LL3R 4KUN ML",
+          "price": 83300,
+          "stock": 1,
+          "totalSold": 16
+        },
+        "427440": {
+          "name": "Bazar Dota 2",
+          "price": 600,
+          "stock": 3,
+          "totalSold": 1
+        },
+        "1450534": {
+          "name": "Blazz cell",
+          "price": 33000,
+          "stock": 4,
+          "totalSold": 0
+        },
+        "1472888": {
+          "name": "Amae Store",
+          "price": 110000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "1515160": {
+          "name": "SA Gamestore",
+          "price": 999,
+          "stock": 25,
+          "totalSold": 1
+        },
+        "1666088": {
+          "name": "VS MALANG RECHARGE",
+          "price": 69000,
+          "stock": 986,
+          "totalSold": 1
+        },
+        "1864536": {
+          "name": "Didinstoreid",
+          "price": 35000,
+          "stock": 92,
+          "totalSold": 8
+        },
+        "2240786": {
+          "name": "Kesiangantuk",
+          "price": 84500,
+          "stock": 3,
+          "totalSold": 22
+        },
+        "2375742": {
+          "name": "RAS SHOPP",
+          "price": 37999,
+          "stock": 455,
+          "totalSold": 674
+        },
+        "2485716": {
+          "name": "Asdarr.id",
+          "price": 40000,
+          "stock": 98,
+          "totalSold": 29
+        },
+        "2569587": {
+          "name": "John Gaming",
+          "price": 34000,
+          "stock": 622,
+          "totalSold": 1686
+        },
+        "2691717": {
+          "name": "Ruby Epic",
+          "price": 70000,
+          "stock": 3,
+          "totalSold": 2
+        },
+        "2737789": {
+          "name": "MR DIAMOND2K19",
+          "price": 72300,
+          "stock": 5,
+          "totalSold": 18
+        },
+        "3061475": {
+          "name": "PcsilasStore",
+          "price": 75000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "4598906": {
+          "name": "KIT88",
+          "price": 35000,
+          "stock": 4,
+          "totalSold": 3
+        },
+        "4602710": {
+          "name": "Marly Store",
+          "price": 38000,
+          "stock": 99,
+          "totalSold": 0
+        },
+        "5240281": {
+          "name": "arifuseyo",
+          "price": 134000,
+          "stock": 1,
+          "totalSold": 1
+        },
+        "5816050": {
+          "name": "ViperCircles",
+          "price": 240000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "7052787": {
+          "name": "Drian Storeid",
+          "price": 68000,
+          "stock": 2,
+          "totalSold": 0
+        },
+        "8023558": {
+          "name": "NuLa Store",
+          "price": 34400,
+          "stock": 1,
+          "totalSold": 5
+        },
+        "8082646": {
+          "name": "RyooKita storee",
+          "price": 80000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "11060604": {
+          "name": "MisakiGame FSD",
+          "price": 500000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "11263230": {
+          "name": "Alazmi store",
+          "price": 39000,
+          "stock": 9999,
+          "totalSold": 86
+        },
+        "11484113": {
+          "name": "ArtStorLucky",
+          "price": 40000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "12026174": {
+          "name": "Mahveen Store",
+          "price": 45000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "12433387": {
+          "name": "D1 Shop",
+          "price": 1000,
+          "stock": 42,
+          "totalSold": 9
+        },
+        "12764811": {
+          "name": "amythicals store 2",
+          "price": 45000,
+          "stock": 91,
+          "totalSold": 9
+        },
+        "13321599": {
+          "name": "Only Lee Store",
+          "price": 37900,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "13580629": {
+          "name": "Kolektor Charisma",
+          "price": 69000,
+          "stock": 99,
+          "totalSold": 3
+        },
+        "13762622": {
+          "name": "Xzwin store",
+          "price": 900,
+          "stock": 6,
+          "totalSold": 0
+        },
+        "13766422": {
+          "name": "Yannstore Official",
+          "price": 85000,
+          "stock": 7,
+          "totalSold": 7
+        },
+        "14154199": {
+          "name": "AS stories",
+          "price": 34800,
+          "stock": 96,
+          "totalSold": 10
+        },
+        "14220174": {
+          "name": "NACA STORE",
+          "price": 78900,
+          "stock": 4,
+          "totalSold": 43
+        },
+        "14311266": {
+          "name": "Oten Shop",
+          "price": 69000,
+          "stock": 46,
+          "totalSold": 30
+        },
+        "14397202": {
+          "name": "Kageshop id",
+          "price": 85000,
+          "stock": 20,
+          "totalSold": 0
+        },
+        "14532322": {
+          "name": "Hai Imam",
+          "price": 33500,
+          "stock": 1000,
+          "totalSold": 0
+        },
+        "14613278": {
+          "name": "VeronaST",
+          "price": 47000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "14767125": {
+          "name": "Xtrium Game Credits",
+          "price": 36971,
+          "stock": 1000,
+          "totalSold": 0
+        }
+      }
+    },
+    {
+      "timestamp": 1768609800481,
+      "readableTime": "17/1/2026, 07.30.00",
+      "shops": {
+        "295": {
+          "name": "SatriaGS",
+          "price": 10000,
+          "stock": 123123,
+          "totalSold": 0
+        },
+        "154962": {
+          "name": "tedi",
+          "price": 345000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "196585": {
+          "name": "AryaJKshop",
+          "price": 1000,
+          "stock": 25,
+          "totalSold": 23
+        },
+        "320816": {
+          "name": "S3LL3R 4KUN ML",
+          "price": 83300,
+          "stock": 1,
+          "totalSold": 16
+        },
+        "427440": {
+          "name": "Bazar Dota 2",
+          "price": 600,
+          "stock": 3,
+          "totalSold": 1
+        },
+        "1450534": {
+          "name": "Blazz cell",
+          "price": 33000,
+          "stock": 4,
+          "totalSold": 0
+        },
+        "1472888": {
+          "name": "Amae Store",
+          "price": 110000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "1515160": {
+          "name": "SA Gamestore",
+          "price": 999,
+          "stock": 25,
+          "totalSold": 1
+        },
+        "1666088": {
+          "name": "VS MALANG RECHARGE",
+          "price": 69000,
+          "stock": 986,
+          "totalSold": 1
+        },
+        "1864536": {
+          "name": "Didinstoreid",
+          "price": 35000,
+          "stock": 92,
+          "totalSold": 8
+        },
+        "2240786": {
+          "name": "Kesiangantuk",
+          "price": 84500,
+          "stock": 3,
+          "totalSold": 22
+        },
+        "2375742": {
+          "name": "RAS SHOPP",
+          "price": 37999,
+          "stock": 455,
+          "totalSold": 674
+        },
+        "2485716": {
+          "name": "Asdarr.id",
+          "price": 40000,
+          "stock": 98,
+          "totalSold": 29
+        },
+        "2569587": {
+          "name": "John Gaming",
+          "price": 34000,
+          "stock": 622,
+          "totalSold": 1686
+        },
+        "2691717": {
+          "name": "Ruby Epic",
+          "price": 70000,
+          "stock": 3,
+          "totalSold": 2
+        },
+        "2737789": {
+          "name": "MR DIAMOND2K19",
+          "price": 72300,
+          "stock": 5,
+          "totalSold": 18
+        },
+        "3061475": {
+          "name": "PcsilasStore",
+          "price": 75000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "4598906": {
+          "name": "KIT88",
+          "price": 35000,
+          "stock": 4,
+          "totalSold": 3
+        },
+        "4602710": {
+          "name": "Marly Store",
+          "price": 38000,
+          "stock": 99,
+          "totalSold": 0
+        },
+        "5240281": {
+          "name": "arifuseyo",
+          "price": 134000,
+          "stock": 1,
+          "totalSold": 1
+        },
+        "5816050": {
+          "name": "ViperCircles",
+          "price": 240000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "7052787": {
+          "name": "Drian Storeid",
+          "price": 68000,
+          "stock": 2,
+          "totalSold": 0
+        },
+        "8023558": {
+          "name": "NuLa Store",
+          "price": 34400,
+          "stock": 1,
+          "totalSold": 5
+        },
+        "8082646": {
+          "name": "RyooKita storee",
+          "price": 80000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "11060604": {
+          "name": "MisakiGame FSD",
+          "price": 500000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "11263230": {
+          "name": "Alazmi store",
+          "price": 39000,
+          "stock": 9999,
+          "totalSold": 86
+        },
+        "11484113": {
+          "name": "ArtStorLucky",
+          "price": 40000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "12026174": {
+          "name": "Mahveen Store",
+          "price": 45000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "12433387": {
+          "name": "D1 Shop",
+          "price": 1000,
+          "stock": 42,
+          "totalSold": 9
+        },
+        "12764811": {
+          "name": "amythicals store 2",
+          "price": 45000,
+          "stock": 91,
+          "totalSold": 9
+        },
+        "13321599": {
+          "name": "Only Lee Store",
+          "price": 37900,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "13580629": {
+          "name": "Kolektor Charisma",
+          "price": 69000,
+          "stock": 99,
+          "totalSold": 3
+        },
+        "13762622": {
+          "name": "Xzwin store",
+          "price": 900,
+          "stock": 6,
+          "totalSold": 0
+        },
+        "13766422": {
+          "name": "Yannstore Official",
+          "price": 85000,
+          "stock": 7,
+          "totalSold": 7
+        },
+        "14154199": {
+          "name": "AS stories",
+          "price": 34800,
+          "stock": 96,
+          "totalSold": 10
+        },
+        "14220174": {
+          "name": "NACA STORE",
+          "price": 78900,
+          "stock": 4,
+          "totalSold": 43
+        },
+        "14311266": {
+          "name": "Oten Shop",
+          "price": 69000,
+          "stock": 46,
+          "totalSold": 30
+        },
+        "14397202": {
+          "name": "Kageshop id",
+          "price": 85000,
+          "stock": 20,
+          "totalSold": 0
+        },
+        "14532322": {
+          "name": "Hai Imam",
+          "price": 33500,
+          "stock": 1000,
+          "totalSold": 0
+        },
+        "14613278": {
+          "name": "VeronaST",
+          "price": 47000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "14767125": {
+          "name": "Xtrium Game Credits",
+          "price": 36971,
+          "stock": 1000,
+          "totalSold": 0
+        }
+      }
+    },
+    {
+      "timestamp": 1768611600631,
+      "readableTime": "17/1/2026, 08.00.00",
+      "shops": {
+        "295": {
+          "name": "SatriaGS",
+          "price": 10000,
+          "stock": 123123,
+          "totalSold": 0
+        },
+        "154962": {
+          "name": "tedi",
+          "price": 345000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "196585": {
+          "name": "AryaJKshop",
+          "price": 1000,
+          "stock": 25,
+          "totalSold": 23
+        },
+        "320816": {
+          "name": "S3LL3R 4KUN ML",
+          "price": 83300,
+          "stock": 1,
+          "totalSold": 16
+        },
+        "427440": {
+          "name": "Bazar Dota 2",
+          "price": 600,
+          "stock": 3,
+          "totalSold": 1
+        },
+        "1450534": {
+          "name": "Blazz cell",
+          "price": 33000,
+          "stock": 4,
+          "totalSold": 0
+        },
+        "1472888": {
+          "name": "Amae Store",
+          "price": 110000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "1515160": {
+          "name": "SA Gamestore",
+          "price": 999,
+          "stock": 25,
+          "totalSold": 1
+        },
+        "1666088": {
+          "name": "VS MALANG RECHARGE",
+          "price": 69000,
+          "stock": 986,
+          "totalSold": 1
+        },
+        "1864536": {
+          "name": "Didinstoreid",
+          "price": 35000,
+          "stock": 92,
+          "totalSold": 8
+        },
+        "2240786": {
+          "name": "Kesiangantuk",
+          "price": 84500,
+          "stock": 3,
+          "totalSold": 22
+        },
+        "2375742": {
+          "name": "RAS SHOPP",
+          "price": 37999,
+          "stock": 455,
+          "totalSold": 674
+        },
+        "2485716": {
+          "name": "Asdarr.id",
+          "price": 40000,
+          "stock": 98,
+          "totalSold": 29
+        },
+        "2569587": {
+          "name": "John Gaming",
+          "price": 34000,
+          "stock": 622,
+          "totalSold": 1686
+        },
+        "2691717": {
+          "name": "Ruby Epic",
+          "price": 70000,
+          "stock": 3,
+          "totalSold": 2
+        },
+        "2737789": {
+          "name": "MR DIAMOND2K19",
+          "price": 72300,
+          "stock": 5,
+          "totalSold": 18
+        },
+        "3061475": {
+          "name": "PcsilasStore",
+          "price": 75000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "4598906": {
+          "name": "KIT88",
+          "price": 35000,
+          "stock": 4,
+          "totalSold": 3
+        },
+        "4602710": {
+          "name": "Marly Store",
+          "price": 38000,
+          "stock": 99,
+          "totalSold": 0
+        },
+        "5240281": {
+          "name": "arifuseyo",
+          "price": 134000,
+          "stock": 1,
+          "totalSold": 1
+        },
+        "5816050": {
+          "name": "ViperCircles",
+          "price": 240000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "7052787": {
+          "name": "Drian Storeid",
+          "price": 68000,
+          "stock": 2,
+          "totalSold": 0
+        },
+        "8023558": {
+          "name": "NuLa Store",
+          "price": 34400,
+          "stock": 1,
+          "totalSold": 5
+        },
+        "8082646": {
+          "name": "RyooKita storee",
+          "price": 80000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "11060604": {
+          "name": "MisakiGame FSD",
+          "price": 500000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "11263230": {
+          "name": "Alazmi store",
+          "price": 39000,
+          "stock": 9999,
+          "totalSold": 86
+        },
+        "11484113": {
+          "name": "ArtStorLucky",
+          "price": 40000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "12026174": {
+          "name": "Mahveen Store",
+          "price": 45000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "12433387": {
+          "name": "D1 Shop",
+          "price": 1000,
+          "stock": 42,
+          "totalSold": 9
+        },
+        "12764811": {
+          "name": "amythicals store 2",
+          "price": 45000,
+          "stock": 91,
+          "totalSold": 9
+        },
+        "13321599": {
+          "name": "Only Lee Store",
+          "price": 37900,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "13580629": {
+          "name": "Kolektor Charisma",
+          "price": 69000,
+          "stock": 99,
+          "totalSold": 3
+        },
+        "13762622": {
+          "name": "Xzwin store",
+          "price": 900,
+          "stock": 6,
+          "totalSold": 0
+        },
+        "13766422": {
+          "name": "Yannstore Official",
+          "price": 85000,
+          "stock": 7,
+          "totalSold": 7
+        },
+        "14154199": {
+          "name": "AS stories",
+          "price": 34800,
+          "stock": 96,
+          "totalSold": 10
+        },
+        "14220174": {
+          "name": "NACA STORE",
+          "price": 78900,
+          "stock": 4,
+          "totalSold": 43
+        },
+        "14311266": {
+          "name": "Oten Shop",
+          "price": 69000,
+          "stock": 46,
+          "totalSold": 30
+        },
+        "14397202": {
+          "name": "Kageshop id",
+          "price": 85000,
+          "stock": 20,
+          "totalSold": 0
+        },
+        "14532322": {
+          "name": "Hai Imam",
+          "price": 33500,
+          "stock": 1000,
+          "totalSold": 0
+        },
+        "14613278": {
+          "name": "VeronaST",
+          "price": 47000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "14767125": {
+          "name": "Xtrium Game Credits",
+          "price": 36971,
+          "stock": 1000,
+          "totalSold": 0
+        }
+      }
+    },
+    {
+      "timestamp": 1768615300474,
+      "readableTime": "17/1/2026, 09.01.40",
+      "shops": {
+        "295": {
+          "name": "SatriaGS",
+          "price": 10000,
+          "stock": 123123,
+          "totalSold": 0
+        },
+        "154962": {
+          "name": "tedi",
+          "price": 345000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "196585": {
+          "name": "AryaJKshop",
+          "price": 1000,
+          "stock": 25,
+          "totalSold": 23
+        },
+        "320816": {
+          "name": "S3LL3R 4KUN ML",
+          "price": 83300,
+          "stock": 1,
+          "totalSold": 16
+        },
+        "427440": {
+          "name": "Bazar Dota 2",
+          "price": 600,
+          "stock": 3,
+          "totalSold": 1
+        },
+        "1450534": {
+          "name": "Blazz cell",
+          "price": 33000,
+          "stock": 4,
+          "totalSold": 0
+        },
+        "1472888": {
+          "name": "Amae Store",
+          "price": 110000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "1515160": {
+          "name": "SA Gamestore",
+          "price": 999,
+          "stock": 25,
+          "totalSold": 1
+        },
+        "1666088": {
+          "name": "VS MALANG RECHARGE",
+          "price": 69000,
+          "stock": 986,
+          "totalSold": 1
+        },
+        "1864536": {
+          "name": "Didinstoreid",
+          "price": 35000,
+          "stock": 92,
+          "totalSold": 8
+        },
+        "2240786": {
+          "name": "Kesiangantuk",
+          "price": 84500,
+          "stock": 3,
+          "totalSold": 22
+        },
+        "2375742": {
+          "name": "RAS SHOPP",
+          "price": 37999,
+          "stock": 455,
+          "totalSold": 674
+        },
+        "2485716": {
+          "name": "Asdarr.id",
+          "price": 40000,
+          "stock": 98,
+          "totalSold": 29
+        },
+        "2569587": {
+          "name": "John Gaming",
+          "price": 34000,
+          "stock": 621,
+          "totalSold": 1688
+        },
+        "2691717": {
+          "name": "Ruby Epic",
+          "price": 70000,
+          "stock": 3,
+          "totalSold": 2
+        },
+        "2737789": {
+          "name": "MR DIAMOND2K19",
+          "price": 72300,
+          "stock": 5,
+          "totalSold": 18
+        },
+        "3061475": {
+          "name": "PcsilasStore",
+          "price": 75000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "4598906": {
+          "name": "KIT88",
+          "price": 35000,
+          "stock": 4,
+          "totalSold": 3
+        },
+        "4602710": {
+          "name": "Marly Store",
+          "price": 38000,
+          "stock": 99,
+          "totalSold": 0
+        },
+        "5240281": {
+          "name": "arifuseyo",
+          "price": 134000,
+          "stock": 1,
+          "totalSold": 1
+        },
+        "5816050": {
+          "name": "ViperCircles",
+          "price": 240000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "7052787": {
+          "name": "Drian Storeid",
+          "price": 68000,
+          "stock": 2,
+          "totalSold": 0
+        },
+        "7713280": {
+          "name": "Iqbal gimang store",
+          "price": 39999,
+          "stock": 100,
+          "totalSold": 0
+        },
+        "8023558": {
+          "name": "NuLa Store",
+          "price": 34400,
+          "stock": 1,
+          "totalSold": 5
+        },
+        "8082646": {
+          "name": "RyooKita storee",
+          "price": 80000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "11060604": {
+          "name": "MisakiGame FSD",
+          "price": 500000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "11263230": {
+          "name": "Alazmi store",
+          "price": 39000,
+          "stock": 9999,
+          "totalSold": 86
+        },
+        "11484113": {
+          "name": "ArtStorLucky",
+          "price": 40000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "12026174": {
+          "name": "Mahveen Store",
+          "price": 45000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "12433387": {
+          "name": "D1 Shop",
+          "price": 1000,
+          "stock": 42,
+          "totalSold": 9
+        },
+        "12764811": {
+          "name": "amythicals store 2",
+          "price": 45000,
+          "stock": 91,
+          "totalSold": 9
+        },
+        "13321599": {
+          "name": "Only Lee Store",
+          "price": 37900,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "13580629": {
+          "name": "Kolektor Charisma",
+          "price": 69000,
+          "stock": 99,
+          "totalSold": 3
+        },
+        "13762622": {
+          "name": "Xzwin store",
+          "price": 900,
+          "stock": 6,
+          "totalSold": 0
+        },
+        "13766422": {
+          "name": "Yannstore Official",
+          "price": 85000,
+          "stock": 7,
+          "totalSold": 7
+        },
+        "14220174": {
+          "name": "NACA STORE",
+          "price": 78900,
+          "stock": 3,
+          "totalSold": 43
+        },
+        "14311266": {
+          "name": "Oten Shop",
+          "price": 69000,
+          "stock": 46,
+          "totalSold": 30
+        },
+        "14397202": {
+          "name": "Kageshop id",
+          "price": 85000,
+          "stock": 20,
+          "totalSold": 0
+        },
+        "14532322": {
+          "name": "Hai Imam",
+          "price": 33500,
+          "stock": 1000,
+          "totalSold": 0
+        },
+        "14613278": {
+          "name": "VeronaST",
+          "price": 47000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "14767125": {
+          "name": "Xtrium Game Credits",
+          "price": 36971,
+          "stock": 1000,
+          "totalSold": 0
+        }
+      }
+    },
+    {
+      "timestamp": 1768615708818,
+      "readableTime": "17/1/2026, 09.08.28",
+      "shops": {
+        "295": {
+          "name": "SatriaGS",
+          "price": 10000,
+          "stock": 123123,
+          "totalSold": 0
+        },
+        "154962": {
+          "name": "tedi",
+          "price": 345000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "196585": {
+          "name": "AryaJKshop",
+          "price": 1000,
+          "stock": 25,
+          "totalSold": 23
+        },
+        "320816": {
+          "name": "S3LL3R 4KUN ML",
+          "price": 83300,
+          "stock": 1,
+          "totalSold": 16
+        },
+        "427440": {
+          "name": "Bazar Dota 2",
+          "price": 600,
+          "stock": 3,
+          "totalSold": 1
+        },
+        "1450534": {
+          "name": "Blazz cell",
+          "price": 33000,
+          "stock": 4,
+          "totalSold": 0
+        },
+        "1472888": {
+          "name": "Amae Store",
+          "price": 110000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "1515160": {
+          "name": "SA Gamestore",
+          "price": 999,
+          "stock": 25,
+          "totalSold": 1
+        },
+        "1666088": {
+          "name": "VS MALANG RECHARGE",
+          "price": 69000,
+          "stock": 986,
+          "totalSold": 1
+        },
+        "1864536": {
+          "name": "Didinstoreid",
+          "price": 35000,
+          "stock": 92,
+          "totalSold": 8
+        },
+        "2240786": {
+          "name": "Kesiangantuk",
+          "price": 84500,
+          "stock": 3,
+          "totalSold": 22
+        },
+        "2375742": {
+          "name": "RAS SHOPP",
+          "price": 37999,
+          "stock": 455,
+          "totalSold": 674
+        },
+        "2485716": {
+          "name": "Asdarr.id",
+          "price": 40000,
+          "stock": 98,
+          "totalSold": 29
+        },
+        "2569587": {
+          "name": "John Gaming",
+          "price": 34000,
+          "stock": 621,
+          "totalSold": 1688
+        },
+        "2691717": {
+          "name": "Ruby Epic",
+          "price": 70000,
+          "stock": 3,
+          "totalSold": 2
+        },
+        "2737789": {
+          "name": "MR DIAMOND2K19",
+          "price": 72300,
+          "stock": 5,
+          "totalSold": 18
+        },
+        "3061475": {
+          "name": "PcsilasStore",
+          "price": 75000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "4598906": {
+          "name": "KIT88",
+          "price": 35000,
+          "stock": 4,
+          "totalSold": 3
+        },
+        "4602710": {
+          "name": "Marly Store",
+          "price": 38000,
+          "stock": 99,
+          "totalSold": 0
+        },
+        "5240281": {
+          "name": "arifuseyo",
+          "price": 134000,
+          "stock": 1,
+          "totalSold": 1
+        },
+        "5816050": {
+          "name": "ViperCircles",
+          "price": 240000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "7052787": {
+          "name": "Drian Storeid",
+          "price": 68000,
+          "stock": 2,
+          "totalSold": 0
+        },
+        "7713280": {
+          "name": "Iqbal gimang store",
+          "price": 39999,
+          "stock": 100,
+          "totalSold": 0
+        },
+        "8023558": {
+          "name": "NuLa Store",
+          "price": 34400,
+          "stock": 1,
+          "totalSold": 5
+        },
+        "8082646": {
+          "name": "RyooKita storee",
+          "price": 80000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "11060604": {
+          "name": "MisakiGame FSD",
+          "price": 500000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "11263230": {
+          "name": "Alazmi store",
+          "price": 39000,
+          "stock": 9999,
+          "totalSold": 86
+        },
+        "11484113": {
+          "name": "ArtStorLucky",
+          "price": 40000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "12026174": {
+          "name": "Mahveen Store",
+          "price": 45000,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "12433387": {
+          "name": "D1 Shop",
+          "price": 1000,
+          "stock": 42,
+          "totalSold": 9
+        },
+        "12764811": {
+          "name": "amythicals store 2",
+          "price": 45000,
+          "stock": 91,
+          "totalSold": 9
+        },
+        "13321599": {
+          "name": "Only Lee Store",
+          "price": 37900,
+          "stock": 3,
+          "totalSold": 0
+        },
+        "13580629": {
+          "name": "Kolektor Charisma",
+          "price": 69000,
+          "stock": 99,
+          "totalSold": 3
+        },
+        "13762622": {
+          "name": "Xzwin store",
+          "price": 900,
+          "stock": 6,
+          "totalSold": 0
+        },
+        "13766422": {
+          "name": "Yannstore Official",
+          "price": 85000,
+          "stock": 7,
+          "totalSold": 7
+        },
+        "14220174": {
+          "name": "NACA STORE",
+          "price": 78900,
+          "stock": 3,
+          "totalSold": 43
+        },
+        "14311266": {
+          "name": "Oten Shop",
+          "price": 69000,
+          "stock": 46,
+          "totalSold": 30
+        },
+        "14397202": {
+          "name": "Kageshop id",
+          "price": 85000,
+          "stock": 20,
+          "totalSold": 0
+        },
+        "14532322": {
+          "name": "Hai Imam",
+          "price": 33500,
+          "stock": 1000,
+          "totalSold": 0
+        },
+        "14613278": {
+          "name": "VeronaST",
+          "price": 47000,
+          "stock": 1,
+          "totalSold": 0
+        },
+        "14767125": {
+          "name": "Xtrium Game Credits",
+          "price": 36971,
+          "stock": 1000,
+          "totalSold": 0
+        }
+      }
+    }
+  ]
+}

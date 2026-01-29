@@ -1,0 +1,662 @@
+[
+  {
+    "id": "1599704184(4458)",
+    "nick": "arda1",
+    "diamond": 20,
+    "wdp_days": 6,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1601810630(4457)",
+    "nick": "arda2",
+    "diamond": 40,
+    "wdp_days": 7,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1604784751(4458)",
+    "nick": "arda3",
+    "diamond": 0,
+    "wdp_days": 7,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1604787098(4459)",
+    "nick": "arda4",
+    "diamond": 0,
+    "wdp_days": 7,
+    "pending_wdp": false,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1604787894(4457)",
+    "nick": "arda5",
+    "diamond": 0,
+    "wdp_days": 7,
+    "pending_wdp": false,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1604788614(4459)",
+    "nick": "arda6",
+    "diamond": 0,
+    "wdp_days": 7,
+    "pending_wdp": false,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1604789527(4458)",
+    "nick": "arda7",
+    "diamond": 0,
+    "wdp_days": 7,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1604792161(4457)",
+    "nick": "arda8",
+    "diamond": 0,
+    "wdp_days": 7,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1604793871(4458)",
+    "nick": "arda10",
+    "diamond": -20,
+    "wdp_days": 8,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250312140
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1604795431(4457)",
+    "nick": "arda11",
+    "diamond": -20,
+    "wdp_days": 8,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250313793
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1604796335(4458)",
+    "nick": "arda12",
+    "diamond": -20,
+    "wdp_days": 8,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250315780
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1618219204(4460)",
+    "nick": "arda13",
+    "diamond": -20,
+    "wdp_days": 8,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250317716
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1618222661(4461)",
+    "nick": "arda14",
+    "diamond": -20,
+    "wdp_days": 8,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250319064
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1619808529(4463)",
+    "nick": "arda15",
+    "diamond": -20,
+    "wdp_days": 8,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250321071
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1620013650(4461)",
+    "nick": "arda16",
+    "diamond": -40,
+    "wdp_days": 8,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250322812
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1620538906(4462)",
+    "nick": "arda17",
+    "diamond": -20,
+    "wdp_days": 8,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250324552
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1626591839(4465)",
+    "nick": "arda18",
+    "diamond": -20,
+    "wdp_days": 8,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250325815
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1629923193(4465)",
+    "nick": "arda19",
+    "diamond": -20,
+    "wdp_days": 8,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250327435
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1629927355(4465)",
+    "nick": "arda20",
+    "diamond": -20,
+    "wdp_days": 8,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250329495
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1630616659(4465)",
+    "nick": "arda21",
+    "diamond": -20,
+    "wdp_days": 8,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250330914
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1630620354(4464)",
+    "nick": "arda22",
+    "diamond": -20,
+    "wdp_days": 8,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250332259
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1631121792(4465)",
+    "nick": "arda23",
+    "diamond": -20,
+    "wdp_days": 8,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250333790
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1631133089(4464)",
+    "nick": "arda24",
+    "diamond": -20,
+    "wdp_days": 8,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250335619
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1631608770(4464)",
+    "nick": "arda25",
+    "diamond": -20,
+    "wdp_days": 8,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250337353
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1631611825(4464)",
+    "nick": "arda26",
+    "diamond": -20,
+    "wdp_days": 8,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250338643
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1634891098(4464)",
+    "nick": "arda27",
+    "diamond": -20,
+    "wdp_days": 8,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250339930
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1634895863(4464)",
+    "nick": "arda28",
+    "diamond": -20,
+    "wdp_days": 8,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250341540
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1635553320(4465)",
+    "nick": "arda29",
+    "diamond": -20,
+    "wdp_days": 8,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250342772
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1635557168(4465)",
+    "nick": "arda30",
+    "diamond": -20,
+    "wdp_days": 8,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250344161
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1636129525(4465)",
+    "nick": "arda31",
+    "diamond": -20,
+    "wdp_days": 8,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250345761
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1636134837(4466)",
+    "nick": "arda32",
+    "diamond": -40,
+    "wdp_days": 9,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250347252
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1639478101(4468)",
+    "nick": "arda33",
+    "diamond": -40,
+    "wdp_days": 9,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250348663
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1639480671(4466)",
+    "nick": "arda34",
+    "diamond": -40,
+    "wdp_days": 9,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250350392
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1639485368(4468)",
+    "nick": "arda35",
+    "diamond": -40,
+    "wdp_days": 9,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769250351953
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1639489049(4466)",
+    "nick": "arda36",
+    "diamond": -40,
+    "wdp_days": 9,
+    "pending_wdp": false,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1640161763(4467)",
+    "nick": "arda37",
+    "diamond": -40,
+    "wdp_days": 9,
+    "pending_wdp": false,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1640181111(4468)",
+    "nick": "arda38",
+    "diamond": -40,
+    "wdp_days": 9,
+    "pending_wdp": false,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1640185345(4467)",
+    "nick": "arda39",
+    "diamond": -40,
+    "wdp_days": 9,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769254719711
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1640188767(4468)",
+    "nick": "arda40",
+    "diamond": -40,
+    "wdp_days": 9,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769254731208
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1664156823(4472)",
+    "nick": "arda41",
+    "diamond": 260,
+    "wdp_days": 9,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769254732756
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1664158048(4471)",
+    "nick": "arda42",
+    "diamond": 260,
+    "wdp_days": 9,
+    "pending_wdp": true,
+    "last_req": {
+      "dm": 80,
+      "days": 7,
+      "ts": 1769254734681
+    },
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1498552249(1642)",
+    "nick": "Zorkaa",
+    "diamond": 43,
+    "wdp_days": 0
+  },
+  {
+    "id": "1499991569(1642)",
+    "nick": "Remlob",
+    "diamond": 127,
+    "wdp_days": 4,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1501455217(1647)",
+    "nick": "Jaxinc",
+    "diamond": 121,
+    "wdp_days": 4,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1502725187(1644)",
+    "nick": "Veldad",
+    "diamond": 2,
+    "wdp_days": 6,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1504474428(1646)",
+    "nick": "Qorine",
+    "diamond": 112,
+    "wdp_days": 4,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1504947457(1645)",
+    "nick": "tacer6",
+    "diamond": 60,
+    "wdp_days": 4,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1504965374(1646)",
+    "nick": "tacer7",
+    "diamond": 43,
+    "wdp_days": 0,
+    "last_wdp_date": "2026-01-28",
+    "pending_wdp": false
+  },
+  {
+    "id": "1508495299(1646)",
+    "nick": "tacer8",
+    "diamond": 80,
+    "wdp_days": 4,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1491092721(1640)",
+    "nick": "tacer9",
+    "diamond": 101,
+    "wdp_days": 4,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1521492594(1652)",
+    "nick": "tacer10",
+    "diamond": 84,
+    "wdp_days": 4,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1522525866(1650)",
+    "nick": "tacer11",
+    "diamond": 127,
+    "wdp_days": 4,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1523248276(1653)",
+    "nick": "tacer12",
+    "diamond": 41,
+    "wdp_days": 0
+  },
+  {
+    "id": "1523657449(1654)",
+    "nick": "tacer13",
+    "diamond": 105,
+    "wdp_days": 4,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1523887795(1654)",
+    "nick": "tacer14",
+    "diamond": 60,
+    "wdp_days": 4,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1523898137(1651)",
+    "nick": "tacer15",
+    "diamond": 77,
+    "wdp_days": 5,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1524045185(1655)",
+    "nick": "tacer16",
+    "diamond": 113,
+    "wdp_days": 5,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1524712903(1654)",
+    "nick": "tacer17",
+    "diamond": 101,
+    "wdp_days": 5,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1524713749(1653)",
+    "nick": "tacer18",
+    "diamond": 168,
+    "wdp_days": 24,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1524714358(1652)",
+    "nick": "tacer19",
+    "diamond": 100,
+    "wdp_days": 5,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1524715080(1654)",
+    "nick": "tacer20",
+    "diamond": 41,
+    "wdp_days": 0
+  },
+  {
+    "id": "1524715707(1655)",
+    "nick": "tacer21",
+    "diamond": 280,
+    "wdp_days": 0,
+    "pending_wdp": false
+  },
+  {
+    "id": "1528173579(1655)",
+    "nick": "tacer22",
+    "diamond": 81,
+    "wdp_days": 11,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1528183892(1652)",
+    "nick": "tacer23",
+    "diamond": 20,
+    "wdp_days": 6,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1535954596(1658)",
+    "nick": "tacer24",
+    "diamond": 21,
+    "wdp_days": 6,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1535955126(1655)",
+    "nick": "tacer25",
+    "diamond": 80,
+    "wdp_days": 6,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1535955711(1654)",
+    "nick": "tacer26",
+    "diamond": 51,
+    "wdp_days": 0,
+    "last_wdp_date": "2026-01-29"
+  },
+  {
+    "id": "1479840519(1637)",
+    "nick": "tacer27",
+    "diamond": 89,
+    "wdp_days": 6,
+    "last_wdp_date": "2026-01-29"
+  }
+]

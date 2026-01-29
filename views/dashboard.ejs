@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacky Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/png" href="/icon.png">
+    <meta name="theme-color" content="#0d6efd">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">🎮 STACKY SYSTEM</a>
+            <span class="badge bg-light text-primary">Connected</span>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0 mb-2">
+                    <div class="card-body">
+                        <h5 class="text-muted">Total Potensi Aset</h5>
+                        <h2 class="text-primary fw-bold">💎 <%= stats.pot.toLocaleString() %></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="text-muted">Slot Tersedia</h5>
+                        <h2 class="text-success fw-bold">📦 <%= stats.slot %> Slot</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-sm mb-4 border-0">
+            <div class="card-header bg-white fw-bold">📝 Input Order Manual</div>
+            <div class="card-body">
+                <form action="/order-manual" method="POST" class="row g-2">
+                    <div class="col-md-4">
+                        <input type="text" name="buyerName" class="form-control" placeholder="Nama Pembeli" required>
+                    </div>
+                    <div class="col-md-2">
+                        <input type="number" name="qty" class="form-control" value="1" min="1" required>
+                    </div>
+                    <div class="col-md-4">
+                        <select name="akunAdmin" class="form-select">
+                            <% accounts.forEach(acc => { %>
+                                <option value="<%= acc.nick %>"><%= acc.nick %> (Sisa: <%= acc.diamond %>)</option>
+                            <% }) %>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" class="btn btn-success w-100">Proses</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="card shadow-sm border-0">
+            <div class="card-header bg-white fw-bold">📦 Data Stok Akun</div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Nickname</th>
+                                <th>Diamond</th>
+                                <th>Sisa WDP</th>
+                                <th class="text-end">Aksi Edit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% accounts.forEach(acc => { %>
+                            <tr>
+                                <td class="fw-bold"><%= acc.nick %></td>
+                                <td><span class="badge bg-secondary"><%= acc.diamond %></span></td>
+                                <td><%= acc.wdp_days || 0 %> Hari</td>
+                                <td class="text-end">
+                                    <form action="/update-stok" method="POST" class="d-flex justify-content-end gap-1">
+                                        <input type="hidden" name="nick" value="<%= acc.nick %>">
+                                        <input type="number" name="amount" class="form-control form-control-sm" style="width: 70px;" value="100">
+                                        <button name="action" value="add" class="btn btn-sm btn-outline-primary fw-bold">+</button>
+                                        <button name="action" value="min" class="btn btn-sm btn-outline-danger fw-bold">-</button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <% }) %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4 text-muted small">
+            <p>Stacky System v2.0 &bull; Modular Edition</p>
+        </div>
+    </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').then(registration => {
+                    console.log('SW Registered');
+                });
+            });
+        }
+    </script>
+</body>
+</html>

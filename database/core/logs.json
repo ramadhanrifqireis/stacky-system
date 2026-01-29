@@ -1,0 +1,299 @@
+{
+  "audit": [
+    {
+      "time": "29/1/2026, 16.34.09",
+      "action": "MANUAL_FIX",
+      "details": "Koreksi Data tacer26 (Mode Penyesuaian)"
+    },
+    {
+      "time": "29/1/2026, 16.32.44",
+      "action": "MANUAL_FIX",
+      "details": "Koreksi Data tacer26 (Mode Penyesuaian)"
+    },
+    {
+      "time": "29/1/2026, 16.29.05",
+      "action": "ORDER_CANCEL",
+      "details": "Order OD000000152249215 dibatalkan. Stok refund."
+    },
+    {
+      "time": "29/1/2026, 16.28.50",
+      "action": "NEW_ORDER",
+      "details": "Order OD000000152249215 dibuat oleh tacer21"
+    },
+    {
+      "time": "28/1/2026, 20.46.06",
+      "action": "MANUAL_FIX",
+      "details": "Koreksi Data tacer26 (Mode Penyesuaian)"
+    },
+    {
+      "time": "28/1/2026, 20.44.13",
+      "action": "AUTO_WDP",
+      "details": "Smart Harvest: 1 Akun berhasil diklaim. Total +20 DM."
+    },
+    {
+      "time": "28/1/2026, 20.43.32",
+      "action": "MANUAL_FIX",
+      "details": "Koreksi Data tacer26 (Mode Penyesuaian)"
+    },
+    {
+      "time": "28/1/2026, 20.41.08",
+      "action": "MANUAL_FIX",
+      "details": "Koreksi Data tacer26 (Mode Penyesuaian)"
+    },
+    {
+      "time": "28/1/2026, 20.41.03",
+      "action": "MANUAL_FIX",
+      "details": "Koreksi Data tacer26 (Mode Penyesuaian)"
+    },
+    {
+      "time": "28/1/2026, 20.39.26",
+      "action": "MANUAL_FIX",
+      "details": "Koreksi Data tacer7 (Mode Penyesuaian)"
+    },
+    {
+      "time": "28/1/2026, 20.39.03",
+      "action": "MANUAL_FIX",
+      "details": "Koreksi Data tacer7 (Mode Penyesuaian)"
+    },
+    {
+      "time": "28/1/2026, 20.38.26",
+      "action": "REQ_CREDIT",
+      "details": "Input Stok tacer7 (+80). Menunggu Topup."
+    },
+    {
+      "time": "28/1/2026, 20.38.12",
+      "action": "AUTO_WDP",
+      "details": "Smart Harvest: 63 Akun berhasil diklaim. Total +1260 DM."
+    },
+    {
+      "time": "28/1/2026, 20.19.59",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152405508 selesai."
+    },
+    {
+      "time": "28/1/2026, 20.17.14",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152385109 selesai."
+    },
+    {
+      "time": "28/1/2026, 20.14.37",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152387637 selesai."
+    },
+    {
+      "time": "28/1/2026, 20.12.13",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152378011 selesai."
+    },
+    {
+      "time": "28/1/2026, 20.10.44",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152370681 selesai."
+    },
+    {
+      "time": "28/1/2026, 20.08.41",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152364095 selesai."
+    },
+    {
+      "time": "28/1/2026, 20.07.23",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152357336 selesai."
+    },
+    {
+      "time": "28/1/2026, 20.06.04",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152351129 selesai."
+    },
+    {
+      "time": "28/1/2026, 20.04.33",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152317641 selesai."
+    },
+    {
+      "time": "28/1/2026, 20.02.51",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152305840 selesai."
+    },
+    {
+      "time": "28/1/2026, 15.00.01",
+      "action": "AUTO_WDP",
+      "details": "Panen Otomatis (Catch-Up): 63 Akun. +1260 DM."
+    },
+    {
+      "time": "27/1/2026, 23.36.13",
+      "action": "SYSTEM_TOPUP",
+      "details": "Restock Sukses: tacer18 (+160 DM)"
+    },
+    {
+      "time": "27/1/2026, 23.34.21",
+      "action": "SYSTEM_TOPUP",
+      "details": "Restock Sukses: tacer22 (+80 DM)"
+    },
+    {
+      "time": "27/1/2026, 23.33.03",
+      "action": "SYSTEM_TOPUP",
+      "details": "Restock Sukses: tacer22 (+80 DM)"
+    },
+    {
+      "time": "27/1/2026, 23.28.16",
+      "action": "REQ_CREDIT",
+      "details": "Input Stok tacer22 (+160). Menunggu Topup."
+    },
+    {
+      "time": "27/1/2026, 23.28.12",
+      "action": "REQ_CREDIT",
+      "details": "Input Stok tacer22 (+20). Menunggu Topup."
+    },
+    {
+      "time": "27/1/2026, 21.12.08",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152259979 selesai."
+    },
+    {
+      "time": "27/1/2026, 21.08.49",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152226616 selesai."
+    },
+    {
+      "time": "27/1/2026, 21.07.08",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152226508 selesai."
+    },
+    {
+      "time": "27/1/2026, 21.03.24",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152226371 selesai."
+    },
+    {
+      "time": "27/1/2026, 21.01.56",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152226371 selesai."
+    },
+    {
+      "time": "27/1/2026, 20.57.53",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152225952 selesai."
+    },
+    {
+      "time": "27/1/2026, 17.55.43",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152345109 selesai."
+    },
+    {
+      "time": "27/1/2026, 15.00.05",
+      "action": "AUTO_WDP",
+      "details": "Panen Otomatis (Catch-Up): 63 Akun. +1260 DM."
+    },
+    {
+      "time": "27/1/2026, 12.32.57",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152327734 selesai."
+    },
+    {
+      "time": "27/1/2026, 12.31.05",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152249485 selesai."
+    },
+    {
+      "time": "27/1/2026, 12.26.44",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152249485 selesai."
+    },
+    {
+      "time": "27/1/2026, 12.24.02",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152249215 selesai."
+    },
+    {
+      "time": "27/1/2026, 12.19.45",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152309291 selesai."
+    },
+    {
+      "time": "26/1/2026, 15.00.40",
+      "action": "AUTO_WDP",
+      "details": "Panen Otomatis (Catch-Up): 67 Akun. +1340 DM."
+    },
+    {
+      "time": "26/1/2026, 11.59.39",
+      "action": "MANUAL_FIX",
+      "details": "Koreksi Data tacer21 (Mode Penyesuaian)"
+    },
+    {
+      "time": "26/1/2026, 11.38.54",
+      "action": "MANUAL_FIX",
+      "details": "Koreksi Data tacer21 (Mode Penyesuaian)"
+    },
+    {
+      "time": "26/1/2026, 11.38.45",
+      "action": "MANUAL_FIX",
+      "details": "Koreksi Data tacer21 (Mode Penyesuaian)"
+    },
+    {
+      "time": "26/1/2026, 11.32.39",
+      "action": "REQ_CREDIT",
+      "details": "Input Stok tacer21 (+80). Menunggu Topup."
+    },
+    {
+      "time": "26/1/2026, 11.32.31",
+      "action": "MANUAL_FIX",
+      "details": "Koreksi Data tacer21 (Mode Penyesuaian)"
+    },
+    {
+      "time": "26/1/2026, 08.56.38",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152199682 selesai."
+    },
+    {
+      "time": "26/1/2026, 08.54.56",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152199627 selesai."
+    },
+    {
+      "time": "26/1/2026, 08.53.37",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152199509 selesai."
+    },
+    {
+      "time": "26/1/2026, 08.52.02",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152199454 selesai."
+    },
+    {
+      "time": "26/1/2026, 08.49.13",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152199359 selesai."
+    },
+    {
+      "time": "25/1/2026, 10.12.30",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152187902  selesai."
+    }
+  ],
+  "daily": {
+    "date": "2026-01-27",
+    "entries": [
+      {
+        "time": "23:36:12",
+        "nick": "tacer18",
+        "sku": "WDP_BR"
+      },
+      {
+        "time": "23:36:09",
+        "nick": "tacer18",
+        "sku": "WDP_BR"
+      },
+      {
+        "time": "23:34:20",
+        "nick": "tacer22",
+        "sku": "WDP_BR"
+      },
+      {
+        "time": "23:33:03",
+        "nick": "tacer22",
+        "sku": "WDP_BR"
+      }
+    ]
+  }
+}

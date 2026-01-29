@@ -1,0 +1,138 @@
+/* STACKY STORE - DARK THEME */
+:root {
+    --bg-dark: #0f172a;       /* Deep Navy */
+    --bg-card: #1e293b;       /* Lighter Navy */
+    --primary: #0d6efd;       /* Stacky Blue */
+    --accent: #f59e0b;        /* Gold/Amber */
+    --text-main: #ffffff;
+    --text-muted: #94a3b8;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Segoe UI', sans-serif;
+    padding-bottom: 80px; /* Space for bottom nav */
+}
+
+/* NAVBAR */
+.store-navbar {
+    background-color: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.search-input {
+    background-color: var(--bg-card);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: white;
+    border-radius: 20px;
+    padding-left: 15px;
+}
+.search-input:focus {
+    background-color: var(--bg-card);
+    color: white;
+    border-color: var(--primary);
+    box-shadow: none;
+}
+
+/* BANNER */
+.carousel-item img {
+    border-radius: 15px;
+    height: 160px;
+    object-fit: cover;
+}
+
+/* CATEGORY TITLE */
+.section-title {
+    border-left: 4px solid var(--primary);
+    padding-left: 10px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+/* GAME GRID */
+.game-card {
+    background-color: var(--bg-card);
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s, border 0.2s;
+    border: 1px solid transparent;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.game-card:active {
+    transform: scale(0.95);
+    background-color: #334155;
+}
+
+.game-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    object-fit: cover;
+}
+
+.game-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.game-dev {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+}
+
+.tag-hot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--accent);
+    color: black;
+    font-size: 0.6rem;
+    padding: 2px 8px;
+    border-bottom-left-radius: 8px;
+    font-weight: bold;
+}
+
+/* BOTTOM NAV */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(30, 41, 59, 0.95);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.nav-item-store {
+    text-align: center;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.nav-item-store.active {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.nav-icon {
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+    display: block;
+}
