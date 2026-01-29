@@ -1,24 +1,36 @@
 const DigiflazzService = require('../services/DigiflazzService');
-const JSONDriver = require('../models/JSONDriver');
 
 class ProductController {
-    
-    // Halaman "Real Stock"
     static async realStock(req, res) {
-        // 1. Ambil Data Live dari Digiflazz
-        const liveProducts = await DigiflazzService.getPriceList();
-        
-        // 2. Filter hanya produk yang kita jual (misal: Mobile Legends)
-        const mlbbProducts = liveProducts.filter(p => 
-            p.brand === "MOBILE LEGENDS" && p.buyer_product_status === true
-        );
+        try {
+            const [products, saldo] = await Promise.all([
+                DigiflazzService.getPriceList(),
+                DigiflazzService.checkBalance()
+            ]);
 
-        // 3. Render ke Dashboard
-        // Admin bisa lihat mana yang Gangguan (Stok Kosong di Pusat)
-        res.render('realstock', { 
-            products: mlbbProducts,
-            saldo: await DigiflazzService.checkBalance() // Opsional
-        }); 
+            // Filter aman (Pastikan products adalah array)
+            const safeProducts = Array.isArray(products) ? products : [];
+
+            // Filter hanya Mobile Legends (Sesuaikan brand jika perlu)
+            const filtered = safeProducts.filter(p => 
+                p.buyer_product_status === true && 
+                p.category === "Games" &&
+                (p.brand.includes("MOBILE LEGENDS") || p.product_name.toLowerCase().includes("mobile legends"))
+            );
+
+            // Urutkan harga termurah
+            filtered.sort((a, b) => a.price - b.price);
+
+            res.render('realstock', { 
+                products: filtered, 
+                saldo: saldo 
+            });
+
+        } catch (e) {
+            console.error("[CONTROLLER ERROR]", e);
+            // Render halaman kosong jika error parah, jangan biarkan white screen
+            res.render('realstock', { products: [], saldo: 0 });
+        }
     }
 }
 

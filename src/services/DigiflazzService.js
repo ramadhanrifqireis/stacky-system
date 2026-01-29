@@ -16,29 +16,21 @@ class DigiflazzService {
                 sign: this.sign("pricelist")
             };
             
-            // Timeout 25 detik (jaga-jaga sinyal lemot)
-            const response = await axios.post("https://api.digiflazz.com/v1/price-list", payload, { timeout: 25000 });
+            console.log("[DIGI] Mengambil data produk...");
+            const response = await axios.post("https://api.digiflazz.com/v1/price-list", payload, { timeout: 30000 });
             
-            // === BAGIAN PERBAIKAN (ANTI-CRASH) ===
+            // --- FIX UTAMA: Validasi Array ---
             const result = response.data.data;
-            
-            // Cek: Apakah ini beneran Array (Daftar Produk)?
             if (Array.isArray(result)) {
                 return result; 
             } else {
-                // Kalau bukan Array (berarti pesan error), catat di log tapi JANGAN CRASH
-                console.error("⚠️ [DIGI API ERROR] Respon bukan list produk:", JSON.stringify(result));
-                return []; // Kasih daftar kosong biar web tetap kebuka
+                console.error("[DIGI ERROR] Respon bukan Array:", JSON.stringify(response.data));
+                return []; // Balikin array kosong biar Web GAK CRASH
             }
-            // ======================================
 
         } catch (error) {
-            console.error("❌ [DIGI KONEKSI GAGAL]", error.message);
-            // Cek kalau ada respon error dari server
-            if (error.response) {
-                console.error("Detail Error:", JSON.stringify(error.response.data));
-            }
-            return []; // Tetap return array kosong biar aman
+            console.error("[DIGI NETWORK ERROR]", error.message);
+            return []; // Tetap aman walau error
         }
     }
 
@@ -50,12 +42,9 @@ class DigiflazzService {
                 sign: this.sign("depo")
             };
             const response = await axios.post("https://api.digiflazz.com/v1/cek-saldo", payload, { timeout: 10000 });
-            
-            return (response.data && response.data.data && response.data.data.deposit) 
-                ? response.data.data.deposit 
-                : 0;
+            return (response.data && response.data.data) ? response.data.data.deposit : 0;
         } catch (error) {
-            console.error("❌ [DIGI SALDO ERROR]", error.message);
+            console.error("[DIGI BALANCE ERROR]", error.message);
             return 0;
         }
     }

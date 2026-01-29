@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gudang Pusat Digiflazz</title>
+    <link rel="stylesheet" href="/store.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Style untuk Halaman Ini */
+        body { background: #f3f4f6; font-family: 'Poppins', sans-serif; padding-bottom: 80px; }
+        
+        .header-section {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            color: white;
+            padding: 30px 20px;
+            border-radius: 0 0 30px 30px;
+            box-shadow: 0 10px 25px rgba(79, 70, 229, 0.2);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .balance-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 15px;
+            border-radius: 15px;
+            display: inline-block;
+            margin-top: 10px;
+            min-width: 200px;
+        }
+
+        /* GRID SYSTEM (Agar rapi di HP) */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 Kolom di HP */
+            gap: 15px;
+            padding: 0 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        @media (min-width: 768px) {
+            .product-grid { grid-template-columns: repeat(4, 1fr); } /* 4 Kolom di PC */
+        }
+
+        /* PRODUCT CARD DESIGN */
+        .product-card {
+            background: white;
+            border-radius: 16px;
+            padding: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 2px solid transparent;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: #4f46e5;
+        }
+
+        .product-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
+
+        .product-sku {
+            font-size: 10px;
+            color: #9ca3af;
+            font-family: monospace;
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 16px;
+            font-weight: 700;
+            color: #4f46e5;
+            margin: 10px 0;
+        }
+
+        .status-badge {
+            font-size: 10px;
+            padding: 4px 8px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .status-ready { background: #d1fae5; color: #065f46; }
+        .status-gangguan { background: #fee2e2; color: #991b1b; }
+
+        .btn-buy {
+            background: #4f46e5;
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.2s;
+        }
+        .btn-buy:hover { background: #4338ca; }
+        .btn-disabled { background: #e5e7eb; color: #9ca3af; cursor: not-allowed; }
+
+        /* MODAL */
+        .modal { display: none; position: fixed; z-index: 100; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); backdrop-filter: blur(3px); }
+        .modal-content { background: white; margin: 20% auto; padding: 25px; border-radius: 20px; width: 85%; max-width: 400px; box-shadow: 0 20px 50px rgba(0,0,0,0.2); animation: slideUp 0.3s ease; }
+        @keyframes slideUp { from {transform: translateY(20px); opacity: 0;} to {transform: translateY(0); opacity: 1;} }
+        
+        .form-group input { width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 10px; margin-top: 5px; font-size: 14px; box-sizing: border-box; }
+        .form-group input:focus { border-color: #4f46e5; outline: none; }
+    </style>
+</head>
+<body>
+
+    <div class="header-section">
+        <h2 style="margin:0;">🔥 Gudang Digiflazz</h2>
+        <div class="balance-card">
+            <span style="font-size: 12px; opacity: 0.8;">Saldo Aktif</span><br>
+            <strong style="font-size: 24px;">Rp <%= typeof saldo !== 'undefined' ? saldo.toLocaleString('id-ID') : 0 %></strong>
+        </div>
+        <br>
+        <a href="/" style="color: white; text-decoration: none; font-size: 12px; margin-top: 10px; display: inline-block;">⬅ Kembali ke Dashboard</a>
+    </div>
+
+    <div class="product-grid">
+        <% if (products && products.length > 0) { %>
+            <% products.forEach(p => { %>
+            <div class="product-card">
+                <div>
+                    <div class="product-sku"><%= p.buyer_sku_code %></div>
+                    <div class="product-name"><%= p.product_name %></div>
+                    
+                    <% if(p.seller_product_status && p.stock_status === 'available') { %>
+                        <span class="status-badge status-ready">✅ READY</span>
+                    <% } else { %>
+                        <span class="status-badge status-gangguan">❌ GANGGUAN</span>
+                    <% } %>
+                </div>
+
+                <div>
+                    <div class="product-price">Rp <%= p.price.toLocaleString('id-ID') %></div>
+                    
+                    <% if(p.seller_product_status && p.stock_status === 'available') { %>
+                        <button class="btn-buy" onclick="bukaModal('<%= p.buyer_sku_code %>', '<%= p.product_name %>', <%= p.price %>)">
+                            AMBIL STOK
+                        </button>
+                    <% } else { %>
+                        <button class="btn-buy btn-disabled" disabled>KOSONG</button>
+                    <% } %>
+                </div>
+            </div>
+            <% }) %>
+        <% } else { %>
+            <div style="grid-column: span 2; text-align: center; color: #666; padding: 40px;">
+                <h3>📭 Data Tidak Ditemukan</h3>
+                <p>Cek koneksi internet atau saldo Digiflazz Anda.</p>
+            </div>
+        <% } %>
+    </div>
+
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <h3 style="margin-top: 0;">⚡ Konfirmasi Restock</h3>
+            <div style="background: #f9fafb; padding: 10px; border-radius: 10px; margin-bottom: 15px;">
+                <small style="color:#6b7280">Produk:</small><br>
+                <strong id="namaProdukDisplay" style="color: #4f46e5;">-</strong>
+            </div>
+            
+            <form action="/process-order-digi" method="POST">
+                <input type="hidden" name="sku" id="skuInput">
+                <input type="hidden" name="item_name" id="itemNameInput">
+                <input type="hidden" name="modal_price" id="modalPriceInput">
+                
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <label style="font-weight: 600; font-size: 13px;">Target (User ID + Zone)</label>
+                    <input type="number" name="target_data" placeholder="Contoh: 123456782020" required>
+                </div>
+                
+                <div class="form-group" style="margin-bottom: 20px;">
+                    <label style="font-weight: 600; font-size: 13px;">Catatan (Opsional)</label>
+                    <input type="text" name="buyer_name" placeholder="Misal: Stok Toko">
+                </div>
+
+                <div style="display: flex; gap: 10px;">
+                    <button type="button" onclick="tutupModal()" style="flex:1; padding: 12px; border: none; background: #e5e7eb; border-radius: 10px; font-weight: 600;">Batal</button>
+                    <button type="submit" style="flex:1; padding: 12px; border: none; background: #4f46e5; color: white; border-radius: 10px; font-weight: 600;">GAS! 🚀</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function bukaModal(sku, name, price) {
+            document.getElementById('skuInput').value = sku;
+            document.getElementById('itemNameInput').value = name;
+            document.getElementById('modalPriceInput').value = price;
+            document.getElementById('namaProdukDisplay').innerText = name + " (Rp " + price.toLocaleString() + ")";
+            document.getElementById('orderModal').style.display = "block";
+        }
+        function tutupModal() {
+            document.getElementById('orderModal').style.display = "none";
+        }
+        // Tutup modal kalau klik di luar
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('orderModal')) {
+                tutupModal();
+            }
+        }
+    </script>
+</body>
+</html>
