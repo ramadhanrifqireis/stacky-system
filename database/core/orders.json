@@ -151,7 +151,8 @@
       "nominal": 300,
       "created_at": 1769085499066,
       "due_date": 1769690299066,
-      "status": "PENDING"
+      "status": "PENDING",
+      "notified": true
     },
     {
       "id": "OD000000152452188",
@@ -164,7 +165,8 @@
       "nominal": 300,
       "created_at": 1769085637712,
       "due_date": 1769690437712,
-      "status": "PENDING"
+      "status": "PENDING",
+      "notified": true
     },
     {
       "id": "OD000000152452188",
@@ -190,7 +192,8 @@
       "nominal": 300,
       "created_at": 1769085858624,
       "due_date": 1769690658624,
-      "status": "PENDING"
+      "status": "PENDING",
+      "notified": true
     },
     {
       "id": "OD000000152453507",
@@ -216,7 +219,8 @@
       "nominal": 300,
       "created_at": 1769087047825,
       "due_date": 1769691847825,
-      "status": "PENDING"
+      "status": "PENDING",
+      "notified": true
     },
     {
       "id": "OD000000152473633",

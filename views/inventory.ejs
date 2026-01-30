@@ -1,168 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Gudang Stok</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <style>
-        .btn-action { padding: 8px 15px; border-radius: 8px; font-weight: 600; }
-        tr td { vertical-align: middle; padding: 15px 10px !important; }
-        .badge-wdp { background-color: #6610f2; color: white; font-size: 0.75rem; }
-        .swal-custom-input { border: none; background: #f8f9fa; font-size: 1.5rem; font-weight: bold; color: #212529; }
-        .swal2-actions { flex-direction: row-reverse !important; justify-content: center !important; gap: 10px; }
-        @keyframes blink { 50% { opacity: 0.5; } }
-        .pending-blink { animation: blink 1.5s infinite; }
-    </style>
+    <title>Gudang Akun</title>
+    <link rel="stylesheet" href="/css/store.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script> 
 </head>
-<body class="bg-light">
-    <div class="container-fluid p-0 bg-white shadow-sm sticky-top">
-        <div class="d-flex align-items-center p-3">
-            <a href="/" class="btn btn-light me-3 border">←</a>
-            <h5 class="fw-bold m-0">📦 Gudang Stok</h5>
-        </div>
+<body>
+
+    <div class="header">
+        <h1>Gudang Akun</h1>
+        <button class="btn" style="width: auto; padding: 8px 12px; background: #f0f2f5; color: var(--primary);" onclick="alert('Tambah akun manual di file accounts.json untuk saat ini.')">
+            <i class="ph-bold ph-plus"></i> Baru
+        </button>
     </div>
 
-    <div class="container-fluid mt-2 pb-5 px-0">
-        <div class="bg-white">
-            <table class="table table-striped mb-0">
-                <thead>
-                    <tr class="table-light">
-                        <th class="ps-3 py-3">Akun</th>
-                        <th class="py-3">Stok Real</th>
-                        <th class="py-3">WDP</th> 
-                        <th class="text-end pe-3 py-3">Aksi</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <% accounts.forEach(acc => { 
-                        // --- LOGIKA TAMPILAN TANDA KUNING ---
-                        let isPending = acc.pending_wdp === true;
-                        let infoPending = acc.last_req ? `(+${acc.last_req.dm})` : '';
-                    %>
-                    <tr class="<%= isPending ? 'table-warning' : '' %>">
-                        <td class="ps-3">
-                            <span class="fw-bold d-block text-dark">
-                                <%= acc.nick %>
-                                <% if(isPending) { %>
-                                    <span class="badge bg-danger text-white ms-1 pending-blink">⚠️ BUTUH TOPUP <%= infoPending %></span>
-                                <% } %>
-                            </span>
-                            <small class="text-muted" style="font-size: 0.7rem;"><%= acc.id %></small>
-                        </td>
-                        <td>
-                            <span class="badge <%= acc.diamond < 0 ? 'bg-danger' : 'bg-success' %> rounded-pill">
-                                <%= acc.diamond %>
-                            </span>
-                        </td>
-                        <td>
-                            <% if(acc.wdp_days > 0) { %>
-                                <span class="badge badge-wdp rounded-pill">
-                                    <%= acc.wdp_days %> Hari
-                                    <br><small>(+<%= acc.wdp_days * 20 %>)</small>
+    <div class="container">
+        <div class="card" style="background: linear-gradient(135deg, #007AFF 0%, #0055FF 100%); color: white; border:none;">
+            <div class="flex-row">
+                <div>
+                    <span style="font-size: 13px; opacity: 0.9;">Total Aset Diamond</span>
+                    <div style="font-size: 28px; font-weight: 800; margin-top: 5px;">
+                        <%= typeof totalDiamond !== 'undefined' ? totalDiamond.toLocaleString('id-ID') : 0 %> 
+                        <span style="font-size: 14px; font-weight: 500;">DM</span>
+                    </div>
+                </div>
+                <i class="ph-duotone ph-diamond" style="font-size: 40px; opacity: 0.8;"></i>
+            </div>
+        </div>
+
+        <h3 style="margin: 25px 0 10px; font-size: 13px; text-transform: uppercase; color: #888; letter-spacing: 1px;">
+            Daftar Akun (<%= accounts.length %>)
+        </h3>
+
+        <% if (accounts && accounts.length > 0) { %>
+            <% accounts.forEach(acc => { %>
+                <div class="card" onclick="bukaKelola('<%= acc.nickname %>', '<%= acc.id %>', <%= acc.diamond %>, <%= acc.wdp_remaining %>)">
+                    <div class="flex-row">
+                        <div style="display:flex; align-items:center; gap: 12px;">
+                            
+                            <div style="background: #E5F1FF; width: 45px; height: 45px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                                <i class="ph-fill ph-game-controller" style="font-size: 24px;"></i>
+                            </div>
+                            
+                            <div>
+                                <span class="account-name"><%= acc.nickname %></span>
+                                <div class="account-meta">
+                                    <i class="ph-bold ph-identification-card"></i> 
+                                    <%= acc.id %>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="text-align: right;">
+                            <div class="diamond-count"><%= acc.diamond.toLocaleString('id-ID') %></div>
+                            
+                            <% if(acc.wdp_remaining > 0) { %>
+                                <span class="badge bg-green" style="display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class="ph-fill ph-calendar-check" style="font-size: 12px;"></i> 
+                                    <%= acc.wdp_remaining %>h
                                 </span>
-                            <% } else { %> <span class="text-muted small">-</span> <% } %>
-                        </td>
-                        <td class="text-end pe-3">
-                            <button onclick="editStok('<%= acc.nick %>', <%= acc.diamond %>, <%= acc.wdp_days || 0 %>)" class="btn btn-primary btn-action text-white btn-sm">
-                                📝 Atur
-                            </button>
-                        </td>
-                    </tr>
-                    <% }) %>
-                </tbody>
-            </table>
+                            <% } else { %>
+                                <span class="badge bg-red" style="display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class="ph-fill ph-calendar-x" style="font-size: 12px;"></i> 
+                                    Habis
+                                </span>
+                            <% } %>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <div style="text-align: center; padding: 50px; color: #999;">
+                <i class="ph-duotone ph-ghost" style="font-size: 48px; margin-bottom: 10px;"></i><br>
+                Database Kosong.
+            </div>
+        <% } %>
+    </div>
+
+<div class="modal-overlay" id="overlay" onclick="tutupModal()"></div>
+    <div class="bottom-sheet" id="sheet">
+        <div class="sheet-handle"></div>
+        <div style="text-align: center; margin-bottom: 25px;">
+            <h3 id="modalTitle" style="margin:0; font-size: 20px;">-</h3>
+            <p id="modalSub" style="margin: 5px 0 0; color: #888; font-size: 14px;">-</p>
+        </div>
+
+        <div class="tabs-nav">
+            <div class="tab-item active" onclick="gantiTab('tab-inject', this)">
+                <i class="ph-bold ph-syringe" style="font-size: 18px;"></i> Inject
+            </div>
+            <div class="tab-item" onclick="gantiTab('tab-koreksi', this)">
+                <i class="ph-bold ph-sliders-horizontal" style="font-size: 18px;"></i> Koreksi
+            </div>
+            <div class="tab-item" onclick="gantiTab('tab-hapus', this)">
+                <i class="ph-bold ph-trash-simple" style="font-size: 18px;"></i> Hapus
+            </div>
+        </div>
+
+        <div id="tab-inject" class="tab-content active">
+            <form action="/api/update-stok" method="POST">
+                <input type="hidden" name="nickname" class="target-nick">
+                <input type="hidden" name="action" value="inject_wdp">
+                
+                <p style="font-size: 12px; color: #666; margin-bottom: 10px;">Paket WDP Masuk:</p>
+                <div class="grid-3">
+                    <button type="button" class="btn-big" onclick="setWdp(1)"><i class="ph-bold ph-package"></i> 1x</button>
+                    <button type="button" class="btn-big" onclick="setWdp(2)"><i class="ph-bold ph-package"></i> 2x</button>
+                    <button type="button" class="btn-big" onclick="setWdp(5)"><i class="ph-bold ph-package"></i> 5x</button>
+                </div>
+                <div class="flex-row" style="gap: 10px;">
+                    <input type="number" name="amount" id="wdpInput" class="input-box" placeholder="Jml Paket WDP" required style="margin-bottom:0;">
+                    <button type="submit" class="btn-primary" style="width: 120px; margin-bottom:0;">Simpan</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="tab-koreksi" class="tab-content">
+            <form action="/api/update-stok" method="POST" style="margin-bottom: 15px;">
+                <input type="hidden" name="nickname" class="target-nick">
+                <input type="hidden" name="action" value="manual_dm">
+                <label style="font-size:12px; color:#666;">Edit Diamond Manual</label>
+                <div class="flex-row" style="gap:10px;">
+                    <input type="number" name="amount" class="input-box" placeholder="+/- (Contoh: -50)" style="margin:0">
+                    <button type="submit" class="btn" style="width:auto; background:#eee; margin:0">Ok</button>
+                </div>
+            </form>
+            <form action="/api/update-stok" method="POST">
+                <input type="hidden" name="nickname" class="target-nick">
+                <input type="hidden" name="action" value="manual_days">
+                <label style="font-size:12px; color:#666;">Edit Hari Manual</label>
+                <div class="flex-row" style="gap:10px;">
+                    <input type="number" name="days" class="input-box" placeholder="+/- (Contoh: +1)" style="margin:0">
+                    <button type="submit" class="btn" style="width:auto; background:#eee; margin:0">Ok</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="tab-hapus" class="tab-content">
+             <form action="/api/delete-account" method="POST" onsubmit="return confirm('Hapus permanen?');">
+                <input type="hidden" name="nickname" class="target-nick">
+                <button type="submit" class="btn-danger"><i class="ph-bold ph-trash"></i> Hapus Akun</button>
+            </form>
         </div>
     </div>
 
-<script>
-    function editStok(nick, currentDm, currentWdp) {
-        Swal.fire({
-            title: `${nick}`,
-            html: `
-                <div class="mb-3">
-                    <label class="small text-muted mb-1">Stok Diamond (Real)</label>
-                    <div class="d-flex align-items-center gap-2">
-                        <button class="btn btn-outline-danger btn-sm" type="button" onclick="modDm(-20)">-20</button>
-                        <input type="number" id="swal-input-dm" class="form-control text-center swal-custom-input" value="${currentDm}">
-                        <button class="btn btn-outline-primary btn-sm" type="button" onclick="modDm(20)">+20</button>
-                    </div>
-                </div>
-                
-                <div class="mb-3">
-                    <label class="small text-muted mb-1">Sisa Hari WDP</label>
-                    <input type="number" id="swal-input-wdp" class="form-control text-center swal-custom-input py-2" style="font-size: 1.2rem;" value="${currentWdp}">
-                </div>
+    <%- include('partials/bottom_nav') %>
 
-                <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2 mb-3 p-2 border rounded bg-light">
-                    <input class="form-check-input" type="checkbox" id="swal-adjust-mode" style="transform: scale(1.3);">
-                    <label class="form-check-label fw-bold text-secondary small pt-1" for="swal-adjust-mode">
-                        Mode Penyesuaian Data<br>
-                        <span style="font-size:0.65rem; font-weight:normal;">(Ubah angka TANPA lapor ke Web)</span>
-                    </label>
-                </div>
-
-                <div class="row g-2">
-                    <div class="col-6">
-                        <button type="button" class="btn btn-outline-danger w-100 py-2" onclick="paketWdp('min')">
-                            <div class="fw-bold">➖ KURANGI</div>
-                            <div style="font-size: 0.65rem; opacity: 0.8">-80 DM & 7 Hari</div>
-                        </button>
-                    </div>
-                    <div class="col-6">
-                        <button type="button" class="btn btn-success w-100 py-2" onclick="paketWdp('add')">
-                            <div class="fw-bold">➕ TAMBAH</div>
-                            <div style="font-size: 0.65rem; opacity: 0.8">+80 DM & 7 Hari</div>
-                        </button>
-                    </div>
-                </div>
-            `,
-            showCancelButton: true,
-            confirmButtonText: 'SIMPAN',
-            cancelButtonText: 'Batal',
-            confirmButtonColor: '#6610f2', 
-            reverseButtons: true,
-            preConfirm: () => {
-                // KIRIM DATA KE BACKEND
-                return { 
-                    nick, 
-                    amount: document.getElementById('swal-input-dm').value,
-                    wdp: document.getElementById('swal-input-wdp').value,
-                    // PENTING: Kirim status checkbox ini!
-                    is_adjustment: document.getElementById('swal-adjust-mode').checked
-                };
-            }
-        }).then((result) => {
-            if (result.isConfirmed) {
-                fetch('/api/update-stok', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(result.value)
-                }).then(() => window.location.reload());
-            }
-        });
-    }
-
-    function modDm(val) {
-        const el = document.getElementById('swal-input-dm');
-        el.value = parseInt(el.value) + val;
-    }
-
-    function paketWdp(mode) {
-        const elDm = document.getElementById('swal-input-dm');
-        const elWdp = document.getElementById('swal-input-wdp');
-        let curDm = parseInt(elDm.value) || 0;
-        let curWdp = parseInt(elWdp.value) || 0;
-
-        if (mode === 'add') {
-            elDm.value = curDm + 80;   
-            elWdp.value = curWdp + 7;  
-        } else if (mode === 'min') {
-            elDm.value = curDm - 80;   
-            elWdp.value = curWdp - 7;  
+    <script>
+        function bukaKelola(nick, id, dm, days) {
+            document.getElementById('modalTitle').innerText = nick;
+            document.getElementById('modalSub').innerText = `ID: ${id} • ${parseInt(dm).toLocaleString()} DM • ${days} Hari`;
+            
+            // Set value ke semua hidden input class 'target-nick'
+            document.querySelectorAll('.target-nick').forEach(el => el.value = nick);
+            
+            gantiTab('tab-inject', document.querySelector('.tab-item'));
+            document.getElementById('overlay').classList.add('active');
+            document.getElementById('sheet').classList.add('active');
         }
-    }
-</script>
+
+        function tutupModal() {
+            document.getElementById('overlay').classList.remove('active');
+            document.getElementById('sheet').classList.remove('active');
+        }
+
+        function gantiTab(id, btn) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-item').forEach(el => el.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            btn.classList.add('active');
+        }
+
+        function setWdp(n) { document.getElementById('wdpInput').value = n; }
+    </script>
 </body>
 </html>
