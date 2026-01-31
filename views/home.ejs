@@ -4,102 +4,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Stacky Hub</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/store.css">
     <link rel="manifest" href="/manifest.json">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <style>
-        body { background-color: #f0f2f5; font-family: 'Segoe UI', sans-serif; }
-        .menu-card { 
-            border: none; 
-            border-radius: 15px; 
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
-            transition: transform 0.1s;
+        body { padding-bottom: 120px; background: #f8fafc; }
+        .hero-badge { background: rgba(34, 197, 94, 0.2); color: #16a34a; padding: 6px 12px; border-radius: 999px; font-size: 11px; font-weight: 700; }
+        .grid-home { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
+        .menu-card { min-height: 108px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 6px; padding: 16px 10px; text-decoration: none; color: inherit; transition: transform 0.15s, box-shadow 0.15s; }
+        .menu-card:active { transform: scale(0.98); }
+        .menu-icon { font-size: 28px; color: var(--primary); }
+        .menu-title { font-weight: 700; color: var(--text-main); font-size: 15px; }
+        .menu-sub { font-size: 12px; color: var(--text-sec); }
+        .count-badge { position: absolute; top: -6px; right: -8px; background: var(--danger); color: #fff; border-radius: 999px; font-size: 10px; padding: 2px 6px; border: 2px solid #fff; }
+        .tips-card { background: #fff; border-radius: 16px; padding: 14px 16px; border: 1px solid rgba(0,0,0,0.04); box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+        .section-title { font-size: 11px; color: var(--text-sec); font-weight: 700; margin: 18px 0 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+        /* Hero visual berganti-ganti */
+        .hero-visual {
+            position: relative;
+            height: 140px;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 16px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+        .hero-slide {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.6s ease;
+        }
+        .hero-slide.active { opacity: 1; z-index: 1; }
+        .hero-slide .slide-inner {
+            width: 100%;
             height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
         }
-        .menu-card:active { transform: scale(0.96); background-color: #e9ecef; }
-        .icon-large { font-size: 3rem; margin-bottom: 5px; }
-        .card-header-custom {
-            background: linear-gradient(135deg, #0d6efd, #0043a8);
-            color: white;
-            border-radius: 0 0 20px 20px;
-            padding: 25px 20px 40px 20px;
-            margin-bottom: -30px;
+        .hero-slide .blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(40px);
+            opacity: 0.5;
         }
+        .hero-slide .center-icon {
+            font-size: 48px;
+            position: relative;
+            z-index: 2;
+            text-shadow: 0 2px 12px rgba(0,0,0,0.15);
+        }
+        .hero-dots {
+            position: absolute;
+            bottom: 12px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            z-index: 3;
+        }
+        .hero-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.4);
+            transition: transform 0.2s, background 0.2s;
+        }
+        .hero-dot.active { background: #fff; transform: scale(1.2); }
     </style>
 </head>
 <body>
-    <div class="card-header-custom shadow-sm">
-        <div class="d-flex justify-content-between align-items-center mb-2">
-            <div>
-                <h4 class="fw-bold m-0">Stacky v3.1</h4>
-                <small class="opacity-75">Itemku Mobile Edition</small>
+    <div class="header">
+        <h1>Dashboard</h1>
+        <span class="hero-badge">Bot Online</span>
+    </div>
+
+    <div class="container">
+        <div class="hero-visual" id="heroVisual">
+            <div class="hero-slide active" data-slide="0">
+                <div class="slide-inner" style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);">
+                    <div class="blob" style="width:120px;height:120px;background:#c4b5fd;top:-20px;right:-20px;"></div>
+                    <div class="blob" style="width:80px;height:80px;background:#a78bfa;bottom:-10px;left:10%;"></div>
+                    <span class="center-icon">📦</span>
+                </div>
             </div>
-            <span class="badge bg-light text-primary fw-bold px-3 py-2 rounded-pill">Bot Online</span>
+            <div class="hero-slide" data-slide="1">
+                <div class="slide-inner" style="background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 50%, #14b8a6 100%);">
+                    <div class="blob" style="width:100px;height:100px;background:rgba(255,255,255,0.3);top:10%;left:-30px;"></div>
+                    <div class="blob" style="width:90px;height:90px;background:rgba(255,255,255,0.2);bottom:10%;right:-20px;"></div>
+                    <span class="center-icon">🛒</span>
+                </div>
+            </div>
+            <div class="hero-slide" data-slide="2">
+                <div class="slide-inner" style="background: linear-gradient(135deg, #f43f5e 0%, #ec4899 50%, #d946ef 100%);">
+                    <div class="blob" style="width:110px;height:110px;background:rgba(255,255,255,0.25);bottom:-30px;right:20%;"></div>
+                    <div class="blob" style="width:70px;height:70px;background:rgba(255,255,255,0.2);top:20%;right:10%;"></div>
+                    <span class="center-icon">✨</span>
+                </div>
+            </div>
+            <div class="hero-slide" data-slide="3">
+                <div class="slide-inner" style="background: linear-gradient(135deg, #f59e0b 0%, #eab308 50%, #84cc16 100%);">
+                    <div class="blob" style="width:100px;height:100px;background:rgba(255,255,255,0.3);top:-15px;left:15%;"></div>
+                    <div class="blob" style="width:80px;height:80px;background:rgba(255,255,255,0.2);bottom:-15px;right:15%;"></div>
+                    <span class="center-icon">⚡</span>
+                </div>
+            </div>
+            <div class="hero-dots" id="heroDots"></div>
         </div>
-        <div class="mt-3 text-center">
-            <small class="opacity-75 d-block">Total Potensi Aset</small>
-            <h1 class="fw-bold m-0">💎 <%= totalAset.toLocaleString() %></h1>
+
+        <div class="tips-card" style="margin-bottom: 14px;">
+            <div style="font-size: 12px; font-weight: 700; color: var(--text-sec);">Tips Hari Ini</div>
+            <div id="homeTips" style="font-size: 13px; color: var(--text-main); margin-top: 4px;">Pantau order aktif dan selesaikan tepat waktu.</div>
+        </div>
+
+        <div class="section-title">Menu Utama</div>
+        <div class="grid-home">
+            <a href="/inventory" class="card menu-card">
+                <i class="ph-fill ph-package menu-icon"></i>
+                <div class="menu-title">Gudang</div>
+                <div class="menu-sub">Atur Stok</div>
+            </a>
+            <a href="/cashier" class="card menu-card">
+                <i class="ph-fill ph-shopping-cart menu-icon"></i>
+                <div class="menu-title">Kasir</div>
+                <div class="menu-sub">Input Order</div>
+            </a>
+            <a href="/orders" class="card menu-card" style="position:relative;">
+                <i class="ph-fill ph-monitor menu-icon"></i>
+                <% if (activeCount > 0) { %><span class="count-badge"><%= activeCount %></span><% } %>
+                <div class="menu-title">Monitor</div>
+                <div class="menu-sub">Status Order</div>
+            </a>
+            <a href="/settings" class="card menu-card">
+                <i class="ph-fill ph-gear menu-icon"></i>
+                <div class="menu-title">Setting</div>
+                <div class="menu-sub">Config Bot</div>
+            </a>
+            <a href="/real-stock" class="card menu-card">
+                <i class="ph-fill ph-package menu-icon"></i>
+                <div class="menu-title">Main Stock</div>
+                <div class="menu-sub">Web Topup / Digiflazz</div>
+            </a>
+            <a href="/price-watcher" class="card menu-card">
+                <i class="ph-fill ph-chart-line menu-icon"></i>
+                <div class="menu-title">Market Radar</div>
+                <div class="menu-sub">Scan Harga / Kompetitor</div>
+            </a>
         </div>
     </div>
 
-    <div class="container px-3 mt-5 pb-5">
-        <div class="row g-3">
-            <div class="col-6">
-                <a href="/inventory" class="text-decoration-none">
-                    <div class="card menu-card text-center py-4">
-                        <div class="icon-large">📦</div>
-                        <h6 class="fw-bold text-dark m-0">Gudang</h6>
-                        <small class="text-muted">Atur Stok</small>
-                    </div>
-                </a>
-            </div>
-            <div class="col-6">
-                <a href="/cashier" class="text-decoration-none">
-                    <div class="card menu-card text-center py-4">
-                        <div class="icon-large">🛒</div>
-                        <h6 class="fw-bold text-dark m-0">Kasir</h6>
-                        <small class="text-muted">Input Order</small>
-                    </div>
-                </a>
-            </div>
-            <div class="col-6">
-                <a href="/orders" class="text-decoration-none">
-                    <div class="card menu-card text-center py-4">
-                        <div class="icon-large position-relative d-inline-block">
-                            🖥️
-                            <% if(activeCount > 0) { %>
-                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger border border-light" style="font-size: 0.8rem;">
-                                <%= activeCount %>
-                            </span>
-                            <% } %>
-                        </div>
-                        <h6 class="fw-bold text-dark m-0">Monitor</h6>
-                        <small class="text-muted">Status Order</small>
-                    </div>
-                </a>
-            </div>
-            <div class="col-6">
-                <a href="/settings" class="text-decoration-none">
-                    <div class="card menu-card text-center py-4">
-                        <div class="icon-large text-secondary">⚙️</div>
-                        <h6 class="fw-bold text-dark m-0">Setting</h6>
-                        <small class="text-muted">Config Bot</small>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
+    <script>
+        (function() {
+            var HERO_INTERVAL_MS = 4000;
+            var slides = document.querySelectorAll('#heroVisual .hero-slide');
+            var dotsContainer = document.getElementById('heroDots');
+            var currentIdx = 0;
+
+            if (slides.length && dotsContainer) {
+                slides.forEach(function(_, i) {
+                    var dot = document.createElement('span');
+                    dot.className = 'hero-dot' + (i === 0 ? ' active' : '');
+                    dot.setAttribute('aria-label', 'Slide ' + (i + 1));
+                    dotsContainer.appendChild(dot);
+                });
+                var dots = dotsContainer.querySelectorAll('.hero-dot');
+
+                function goTo(idx) {
+                    currentIdx = (idx + slides.length) % slides.length;
+                    slides.forEach(function(s, i) { s.classList.toggle('active', i === currentIdx); });
+                    dots.forEach(function(d, i) { d.classList.toggle('active', i === currentIdx); });
+                }
+
+                setInterval(function() { goTo(currentIdx + 1); }, HERO_INTERVAL_MS);
+            }
+        })();
+        (function() {
+            var tips = [
+                'Pantau order aktif dan selesaikan tepat waktu.',
+                'Gunakan fitur tunda jika buyer belum add friend.',
+                'Cek saldo Digiflazz sebelum topup internal.',
+                'Rapikan template struk agar konsisten.'
+            ];
+            var idx = 0;
+            var el = document.getElementById('homeTips');
+            if (!el) return;
+            setInterval(function() {
+                idx = (idx + 1) % tips.length;
+                el.textContent = tips[idx];
+            }, 5000);
+        })();
+    </script>
+
+    <%- include('./bottom_nav') %>
 </body>
-<div class="col-6 col-md-3 mb-4">
-    <a href="/price-watcher" class="text-decoration-none">
-        <div class="card shadow-sm h-100 border-0">
-            <div class="card-body text-center py-4">
-                <i class="fas fa-search-dollar fa-3x text-warning mb-3"></i>
-                <h5 class="card-title text-dark fw-bold">Pantau Harga</h5>
-                <p class="card-text text-muted small">Cek Kompetitor</p>
-            </div>
-        </div>
-    </a>
-</div>
-
-
 </html>

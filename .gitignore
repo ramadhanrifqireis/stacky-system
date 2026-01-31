@@ -1,7 +1,23 @@
+# Dependencies & runtime
 node_modules/
+venv/
+
+# Database (optional: remove to track JSON)
 database/
+
+# Secrets
 config/secrets.js
 .env
-.DS_Store
-*.log
 python/config/secrets.py
+
+# OS junk
+.DS_Store
+Thumbs.db
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so

@@ -3,7 +3,14 @@
   "adminGroupId": "",
   "lastWdpCheck": "2026-01-28",
   "price_targets": {
-    "WDP_TR": "22400",
+    "WDP_TR": "22600",
     "WDP_BR": "21150"
-  }
+  },
+  "products": [
+    {
+      "id": "P1769835001604",
+      "name": "Starlight Card",
+      "price": 300
+    }
+  ]
 }

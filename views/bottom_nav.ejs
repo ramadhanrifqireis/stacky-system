@@ -1,0 +1,18 @@
+<nav class="nav-bar" id="bottomNav">
+    <a href="/" class="nav-item" data-nav="home"><i class="ph ph-house"></i><span>Home</span></a>
+    <a href="/inventory" class="nav-item" data-nav="inventory"><i class="ph ph-package"></i><span>Gudang</span></a>
+    <a href="/cashier" class="nav-item" data-nav="cashier"><i class="ph ph-shopping-cart"></i><span>Kasir</span></a>
+    <a href="/orders" class="nav-item" data-nav="orders"><i class="ph ph-list-checks"></i><span>Order</span></a>
+    <a href="/real-stock" class="nav-item" data-nav="realstock"><i class="ph ph-package"></i><span>Main Stock</span></a>
+    <a href="/settings" class="nav-item" data-nav="settings"><i class="ph ph-gear"></i><span>Setelan</span></a>
+</nav>
+<script>
+(function() {
+    var path = (typeof window !== 'undefined' && window.location && window.location.pathname) ? window.location.pathname : '';
+    var nav = path === '/' ? 'home' : path.replace(/^\//, '').split('/')[0].replace(/-/g, '');
+    if (nav === 'realstock') nav = 'realstock';
+    else if (nav === 'real') nav = 'realstock';
+    document.querySelectorAll('#bottomNav .nav-item[data-nav="' + nav + '"]').forEach(function(el) { el.classList.add('active'); });
+})();
+</script>
+<script src="https://unpkg.com/@phosphor-icons/web"></script>

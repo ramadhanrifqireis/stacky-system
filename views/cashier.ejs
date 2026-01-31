@@ -1,230 +1,180 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Kasir Itemku</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/store.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <style>
-        body { background-color: #f8f9fa; }
-        .form-control, .form-select { padding: 12px; font-size: 1rem; border-radius: 10px; }
-        .btn-qty { width: 45px; font-weight: bold; }
-        .card { border: none; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        optgroup { font-weight: bold; color: #6c757d; }
+        .card-form { cursor: default; }
+        .card-form:active { transform: none; background: var(--surface); }
+        .card-data-pesanan { border-left: 4px solid var(--primary); }
+        .select-box { width: 100%; padding: 14px; background: #F2F2F7; border: 1px solid transparent; border-radius: 12px; font-size: 16px; color: var(--text-main); font-weight: 600; }
+        .select-box:focus { background: white; border-color: var(--primary); outline: none; }
+        .flex-row-wrap { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+        .flex-row-wrap .input-box { flex: 1; min-width: 80px; margin-bottom: 0; }
+        .btn-qty { width: 44px; height: 44px; border-radius: 12px; background: #f0f2f5; color: var(--text-main); font-weight: 700; display: flex; align-items: center; justify-content: center; }
     </style>
 </head>
-<body>
-    <div class="container-fluid p-0 bg-white shadow-sm sticky-top mb-3">
-        <div class="d-flex align-items-center p-3">
-            <a href="/" class="btn btn-light me-3 border">←</a>
-            <h5 class="fw-bold m-0">🛒 Input Order Baru</h5>
-        </div>
+<body style="padding-bottom: 100px;">
+
+    <div class="header">
+        <h1>Kasir</h1>
+        <a href="/" class="btn" style="width: auto; padding: 8px 12px; background: #f0f2f5; color: var(--primary); text-decoration: none;">
+            <i class="ph-bold ph-arrow-left"></i> Kembali
+        </a>
     </div>
 
-    <div class="container px-3 pb-5">
+    <div class="container">
         <form action="/process-order" method="POST" onsubmit="this.querySelector('button[type=submit]').disabled=true">
-           
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h6 class="text-primary fw-bold mb-3">DATA PESANAN</h6>
-                    
-                    <div class="mb-3">
-                        <label class="form-label text-muted small">Produk / Layanan</label>
-                        <select id="productSelect" class="form-select fw-bold text-dark" onchange="updateProduct()">
-                            <% products.forEach(p => { %>
-                                <option value="<%= p.name %>" data-price="<%= p.price %>"><%= p.name %> (Modal: <%= p.price %>)</option>
-                            <% }) %>
-                            <option value="custom" data-price="0">-- Input Manual --</option>
-                        </select>
-                        <input type="hidden" name="item" id="realItemName">
-                    </div>
 
-                    <div class="row g-2 mb-3">
-                        <div class="col-7">
-                            <label class="form-label text-muted small">Total Beban (Diamond)</label>
-                            <input type="number" name="qty" id="totalCost" class="form-control bg-light text-start fw-bold text-danger" readonly>
-                        </div>
-                        <div class="col-5">
-                            <label class="form-label text-muted small text-end d-block">Jumlah (Qty)</label>
-                            <div class="input-group justify-content-end">
-                                <button type="button" class="btn btn-outline-secondary btn-qty" onclick="modQty(-1)">-</button>
-                                <input type="number" id="qtyInput" class="form-control text-center fw-bold px-0" value="1" min="1" oninput="calculateTotal()">
-                                <button type="button" class="btn btn-outline-primary btn-qty" onclick="modQty(1)">+</button>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Card 1: Data Pesanan (border-left primary, orderId menonjol) -->
+            <div class="card card-form card-data-pesanan" style="margin-bottom: 12px;">
+                <h3 style="margin: 0 0 12px; font-size: 13px; text-transform: uppercase; color: var(--text-sec); letter-spacing: 0.5px;">
+                    <i class="ph-bold ph-receipt"></i> Data Pesanan
+                </h3>
+                <label style="font-size: 12px; color: var(--text-sec); margin-bottom: 4px; display: block;">Produk / Layanan</label>
+                <select id="productSelect" class="select-box" style="margin-bottom: 12px;" onchange="updateProduct()">
+                    <% products.forEach(p => { %>
+                        <option value="<%= p.name %>" data-price="<%= p.price %>"><%= p.name %> (Modal: <%= p.price %>)</option>
+                    <% }) %>
+                    <option value="custom" data-price="0">-- Input Manual --</option>
+                </select>
+                <input type="hidden" name="item" id="realItemName">
 
-                    <hr class="border-light my-3">
-
-                    <div class="mb-3">
-                        <label class="form-label text-muted small">Nomor Pesanan</label>
-                        <input type="text" name="orderId" class="form-control fw-bold" placeholder="ODxxxxxxxxxxx" required>
+                <div class="flex-row" style="margin-bottom: 12px; gap: 10px;">
+                    <div style="flex: 1;">
+                        <label style="font-size: 12px; color: var(--text-sec);">Total Beban (DM)</label>
+                        <input type="number" id="totalCost" class="input-box" readonly style="font-weight: 700; color: var(--danger);">
                     </div>
-
-                    <div class="row g-2 mb-2">
-                        <div class="col-5">
-                            <input type="text" name="targetId" class="form-control" placeholder="ID Game" required>
-                        </div>
-                        <div class="col-3">
-                            <input type="text" name="targetZone" class="form-control" placeholder="Server" required>
-                        </div>
-                        <div class="col-4">
-                            <input type="text" name="targetNick" class="form-control" placeholder="Nickname">
-                        </div>
+                    <div style="display: flex; align-items: flex-end; gap: 6px;">
+                        <button type="button" class="btn-qty" onclick="modQty(-1)">−</button>
+                        <input type="number" name="qty" id="qtyInput" class="input-box" value="1" min="1" style="width: 56px; text-align: center; font-weight: 700;" oninput="calculateTotal()">
+                        <button type="button" class="btn-qty" onclick="modQty(1)">+</button>
                     </div>
+                </div>
 
-                    <div class="mb-2">
-                        <input type="text" name="buyer" class="form-control" placeholder="Nama Pembeli (Itemku)" required>
-                    </div>
+                <label style="font-size: 12px; color: var(--text-sec); margin-bottom: 4px; display: block;">Nomor Pesanan (ID Transaksi Itemku) <span style="color: var(--danger);">*</span></label>
+                <input type="text" name="orderId" class="input-box" placeholder="Contoh: OD123..." required style="font-weight: 700; font-size: 15px; margin-bottom: 12px;">
+
+                <label style="font-size: 12px; color: var(--text-sec); margin-bottom: 4px; display: block;">Target (ID Game & Zone)</label>
+                <div class="flex-row-wrap" style="margin-bottom: 0;">
+                    <input type="text" name="targetId" class="input-box" placeholder="ID Game" required>
+                    <input type="text" name="targetZone" class="input-box" placeholder="Zone ID" required>
+                    <input type="text" name="targetNick" class="input-box" placeholder="Nickname">
                 </div>
             </div>
 
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h6 class="text-success fw-bold mb-2">SUMBER DANA</h6>
-                    <small class="text-muted d-block mb-3" id="helperText">Menghitung rekomendasi...</small>
-                    <select name="akunAdmin" id="accountSelector" class="form-select bg-light fw-bold" required>
-                        <option value="" disabled selected>-- Sedang Memuat --</option>
-                    </select>
-                </div>
+            <!-- Card 2: Sumber Stok (dropdown: Admin - Sisa X DM) -->
+            <div class="card card-form" style="margin-bottom: 12px;">
+                <h3 style="margin: 0 0 8px; font-size: 13px; text-transform: uppercase; color: var(--text-sec); letter-spacing: 0.5px;">
+                    <i class="ph-fill ph-package"></i> Sumber Stok
+                </h3>
+                <p style="font-size: 12px; color: var(--text-sec); margin: 0 0 10px;" id="helperText">Menghitung rekomendasi...</p>
+                <select name="akunAdmin" id="accountSelector" class="select-box" required>
+                    <option value="" disabled selected>-- Pilih Akun Gudang --</option>
+                </select>
             </div>
 
-            <button type="submit" class="btn btn-primary w-100 py-3 fw-bold shadow rounded-3" style="font-size: 1.1rem;">🚀 PROSES ORDER</button>
+            <!-- Card 3: Target / Data Pembeli -->
+            <div class="card card-form" style="margin-bottom: 16px;">
+                <h3 style="margin: 0 0 8px; font-size: 13px; text-transform: uppercase; color: var(--text-sec); letter-spacing: 0.5px;">
+                    <i class="ph-fill ph-user-circle"></i> Data Pembeli
+                </h3>
+                <input type="text" name="buyer" class="input-box" placeholder="Nama Pembeli (Itemku)" required style="font-weight: 600;">
+            </div>
+
+            <button type="submit" class="btn-primary" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                <i class="ph-bold ph-paper-plane-right" style="font-size: 20px;"></i> Proses Order
+            </button>
         </form>
     </div>
 
     <script>
         const accountsData = <%- JSON.stringify(accounts) %>;
 
-        window.onload = function() {
-            updateProduct();
-        };
+        window.onload = function() { updateProduct(); };
 
         function updateProduct() {
             const select = document.getElementById('productSelect');
             const selectedOpt = select.options[select.selectedIndex];
-            const price = parseInt(selectedOpt.getAttribute('data-price'));
-            window.currentBasePrice = price; 
-            
+            const price = parseInt(selectedOpt.getAttribute('data-price')) || 0;
+            window.currentBasePrice = price;
             const qty = parseInt(document.getElementById('qtyInput').value) || 1;
             const itemName = selectedOpt.value === 'custom' ? 'Custom Item' : selectedOpt.value;
-            document.getElementById('realItemName').value = `${qty}x ${itemName}`;
-
+            document.getElementById('realItemName').value = qty + 'x ' + itemName;
             calculateTotal();
         }
 
         function modQty(val) {
             const el = document.getElementById('qtyInput');
-            let newVal = parseInt(el.value) + val;
-            if (newVal < 1) newVal = 1;
-            el.value = newVal;
+            let v = parseInt(el.value) + val;
+            if (v < 1) v = 1;
+            el.value = v;
             updateProduct();
         }
 
         function calculateTotal() {
             const qty = parseInt(document.getElementById('qtyInput').value) || 1;
-            let unitPrice = window.currentBasePrice;
-            let totalPrice = unitPrice * qty;
-
-            document.getElementById('totalCost').value = totalPrice;
-            document.getElementById('helperText').innerText = `Mencari kombinasi akun untuk ${qty} item (@${unitPrice})...`;
-            
-            // Panggil render dengan Harga Total DAN Harga Satuan
-            renderAccountList(totalPrice, unitPrice, qty);
+            const total = (window.currentBasePrice || 0) * qty;
+            document.getElementById('totalCost').value = total;
+            document.getElementById('helperText').innerText = 'Mencari akun untuk ' + qty + ' item...';
+            renderAccountList(total, window.currentBasePrice || 0, qty);
         }
 
         function renderAccountList(totalCost, unitPrice, qty) {
             const select = document.getElementById('accountSelector');
-            select.innerHTML = '<option value="" disabled selected>-- Pilih Metode Pengiriman --</option>';
+            select.innerHTML = '<option value="" disabled selected>-- Pilih Akun Gudang --</option>';
 
-            // 1. CARI SINGLE FIGHTER (1 Akun borong semua)
-            // Syarat: Aset >= Total Harga
             let singleCandidates = [];
             accountsData.forEach(acc => {
-                const potWdp = Math.min((acc.wdp_days || 0) * 20, 140); 
-                const totalAsset = acc.diamond + potWdp;
-                
-                // Klasifikasi Status
-                let status = "🔴";
-                if (acc.diamond >= totalCost) status = "🟢"; // Available Real
-                else if (totalAsset >= totalCost) status = "🔵"; // Forecast
-                
-                if (totalAsset >= totalCost) { // Masukkan yang mampu saja
-                    singleCandidates.push({
-                        ...acc,
-                        label: `${status} ${acc.nick} (Single Cover)`,
-                        val: acc.nick
-                    });
+                const potWdp = Math.min((acc.wdp_days || 0) * 20, 140);
+                const totalAsset = (acc.diamond || 0) + potWdp;
+                if (totalAsset >= totalCost) {
+                    const sisa = (acc.diamond || 0).toLocaleString('id-ID');
+                    singleCandidates.push({ ...acc, label: acc.nick + ' - Sisa ' + sisa + ' DM', val: acc.nick });
                 }
             });
 
-            // 2. CARI COMBO SQUAD (Hanya jika Qty > 1)
-            // Syarat: Cari N akun yang masing-masing asetnya >= Harga Satuan
             let comboOption = null;
             if (qty > 1) {
-                // Filter akun yang mampu beli SATUAN
-                let capableAccounts = accountsData.filter(acc => {
-                    const potWdp = Math.min((acc.wdp_days || 0) * 20, 140);
-                    return (acc.diamond + potWdp) >= unitPrice;
-                });
-
-                // Urutkan dari saldo terbanyak (Strategy: Secure Stock first)
-                capableAccounts.sort((a, b) => b.diamond - a.diamond);
-
-                // Jika jumlah akun mampu >= Qty yang diminta
-                if (capableAccounts.length >= qty) {
-                    // Ambil N akun teratas
-                    const squad = capableAccounts.slice(0, qty);
-                    const nicks = squad.map(a => a.nick).join(',');
-                    const display = squad.map(a => a.nick).join(' & ');
-                    
+                const capable = accountsData.filter(acc => {
+                    const pot = Math.min((acc.wdp_days || 0) * 20, 140);
+                    return (acc.diamond || 0) + pot >= unitPrice;
+                }).sort((a, b) => (b.diamond || 0) - (a.diamond || 0));
+                if (capable.length >= qty) {
+                    const squad = capable.slice(0, qty);
                     comboOption = {
-                        label: `✨ COMBO: ${display} (Split Order)`,
-                        val: nicks // Value dipisah koma: "arda1,arda2"
+                        val: squad.map(a => a.nick).join(','),
+                        label: 'COMBO: ' + squad.map(a => a.nick + ' - Sisa ' + (a.diamond || 0).toLocaleString('id-ID') + ' DM').join(' & ')
                     };
                 }
             }
 
-            // --- RENDER KE DROPDOWN ---
-
-            // Opsi Combo (Prioritas jika Single tidak ada, atau sebagai alternatif)
             if (comboOption) {
-                const grp = document.createElement('optgroup');
-                grp.label = "⚡ REKOMENDASI SPLIT (COMBO)";
                 const opt = document.createElement('option');
                 opt.value = comboOption.val;
                 opt.innerText = comboOption.label;
-                grp.appendChild(opt);
-                select.appendChild(grp);
+                select.appendChild(opt);
             }
-
-            // Opsi Single
-            if (singleCandidates.length > 0) {
-                // Urutkan: Available (Real) dulu, baru Forecast
-                singleCandidates.sort((a, b) => b.diamond - a.diamond);
-                
-                const grp = document.createElement('optgroup');
-                grp.label = "👤 AKUN TUNGGAL (SINGLE)";
-                singleCandidates.forEach(cand => {
-                    const opt = document.createElement('option');
-                    opt.value = cand.val;
-                    opt.innerText = cand.label;
-                    grp.appendChild(opt);
-                });
-                select.appendChild(grp);
-            }
-
-            // Fallback jika kosong
+            singleCandidates.sort((a, b) => (b.diamond || 0) - (a.diamond || 0));
+            singleCandidates.forEach(c => {
+                const opt = document.createElement('option');
+                opt.value = c.val;
+                opt.innerText = c.label;
+                select.appendChild(opt);
+            });
             if (singleCandidates.length === 0 && !comboOption) {
                 const opt = document.createElement('option');
-                opt.innerText = "❌ Tidak ada akun/kombinasi yang mencukupi!";
                 opt.disabled = true;
+                opt.innerText = 'Tidak ada akun yang mencukupi';
                 select.appendChild(opt);
-            } else {
-                select.selectedIndex = 1; // Auto select opsi pertama valid
+            } else if (select.options.length > 1) {
+                select.selectedIndex = 1;
             }
         }
     </script>
-
+    <%- include('./bottom_nav') %>
 </body>
 </html>

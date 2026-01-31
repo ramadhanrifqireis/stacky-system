@@ -1,8 +1,9 @@
 const Account = require('../models/Account');
 const Order = require('../models/Order');
+const Setting = require('../models/Setting');
 
 class ApiController {
-    // Callback Topup (Dipanggil oleh script Python)
+    // Callback Topup (Dipanggil oleh script Python / setelah Digiflazz success)
     static callbackTopup(req, res) {
         const { nick, status, action, qty } = req.body;
         
@@ -10,18 +11,15 @@ class ApiController {
             const multiplier = parseInt(qty) || 1;
             
             if (action === 'force_add') {
-                // Topup Paksa (Tambah Stok)
+                // Topup Paksa: selalu tambah stok real (abaikan pending)
                 const success = Account.addStock(nick, multiplier);
-                if (success) console.log(`[API] Topup Sukses: ${nick} (x${multiplier})`);
+                if (success) console.log(`[API] Topup Paksa: ${nick} +${multiplier} paket`);
             } else {
-                // Pelunasan Hutang (Cuma hapus flag pending)
-                // Implementasi sederhana, kalau mau detail bisa update Account.js
-                const { index, all } = Account.findByNick(nick);
-                if (index !== -1 && all[index].pending_wdp) {
-                    all[index].pending_wdp = false;
-                    if(all[index].last_req) delete all[index].last_req;
-                    Account.saveAll(all);
-                    console.log(`[API] Hutang Lunas: ${nick}`);
+                // Normal: bayar hutang dulu (pending_wdp), sisa baru tambah real
+                const result = Account.applyDigiSuccess(nick, multiplier);
+                if (result.success) {
+                    if (result.paidDebt > 0) console.log(`[API] Hutang lunas: ${nick} (${result.paidDebt} paket)`);
+                    if (result.addedReal > 0) console.log(`[API] Stok real: ${nick} +${result.addedReal} paket`);
                 }
             }
             res.json({ status: 'success' });
@@ -52,6 +50,18 @@ class ApiController {
         
         console.log(`[API] Order ${orderId} updated to ${status}. Note: ${note}`);
         res.json({ status: 'ok' });
+    }
+
+    /** Simpan target harga WDP BR & TR untuk notifikasi (Termux) */
+    static saveWdpTargets(req, res) {
+        const WDP_BR = String(req.body.WDP_BR || '0').trim();
+        const WDP_TR = String(req.body.WDP_TR || '0').trim();
+        const targets = Setting.get('price_targets') || { WDP_BR: '0', WDP_TR: '0' };
+        targets.WDP_BR = WDP_BR || '0';
+        targets.WDP_TR = WDP_TR || '0';
+        Setting.update('price_targets', targets);
+        console.log('[API] WDP targets saved:', targets);
+        res.redirect('/real-stock');
     }
 }
 

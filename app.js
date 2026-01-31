@@ -24,9 +24,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-// --- 3. ROUTING ---
+// --- 3. ROUTING --- (API dulu agar /api/* tidak tertangkap 404 oleh web)
+app.use('/api', apiRoutes);   // Semua API (save-product, save-receipt-template, dll)
 app.use('/', webRoutes);      // Semua halaman HTML
-app.use('/api', apiRoutes);   // Semua API JSON
 
 // --- 4. START SERVICES ---
 // Menjalankan scheduler di background (Auto-WDP & Notif)

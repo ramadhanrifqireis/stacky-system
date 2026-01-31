@@ -39,11 +39,15 @@ class Scheduler {
             let totalIncome = 0;
 
             accounts.forEach(acc => {
-                // Logika: Punya sisa hari DAN belum klaim hari ini
-                if (acc.wdp_days > 0 && acc.last_wdp_date !== todayStr) {
+                // Hari WDP hutang (last_req.days) dibeku: tidak dikonsumsi scheduler, tidak dapat DM
+                const debtDays = (acc.last_req && typeof acc.last_req === 'object') ? (acc.last_req.days || 0) : 0;
+                const realWdpDays = Math.max(0, (acc.wdp_days || 0) - debtDays);
+
+                // Hanya konsumsi hari WDP "real"; hari hutang tetap beku
+                if (realWdpDays > 0 && acc.last_wdp_date !== todayStr) {
                     acc.diamond += gameConfig.limits.wdp_daily_reward;
-                    acc.wdp_days -= 1;
-                    acc.last_wdp_date = todayStr; // Stempel hari ini
+                    acc.wdp_days -= 1; // Kurangi total; last_req.days tidak diubah
+                    acc.last_wdp_date = todayStr;
 
                     totalIncome += gameConfig.limits.wdp_daily_reward;
                     changed = true;

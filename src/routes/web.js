@@ -23,12 +23,18 @@ router.get('/orders', OrderController.monitor);
 router.post('/process-order', OrderController.process);
 router.post('/finish-order', OrderController.finish);
 router.post('/cancel-order', OrderController.cancel);
+router.post('/delay-order', OrderController.delay);
 
-// === REAL STOCK & SUPPLY (Kulakan / Supply) ===
+// === MAIN STOCK (Supply / Topup Digiflazz) ===
 router.get('/real-stock', ProductController.realStock); // <--- INI URL YANG HILANG TADI!
 router.post('/process-order-digi', OrderController.processDigi); // Ini untuk tombol "Gas Order"
 
 // === PRICE WATCHER ===
 router.get('/price-watcher', PriceWatcherController.index);
+
+// === API fallback (agar POST /api/save-product tetap jalan jika request sampai ke web) ===
+router.post('/api/save-product', DashboardController.saveProduct);
+router.post('/api/save-receipt-template', DashboardController.saveReceiptTemplate);
+router.post('/api/save-account', DashboardController.saveAccount);
 
 module.exports = router;

@@ -24,11 +24,12 @@ class Notifier {
                 }
             });
         } else {
-            // Fallback untuk Windows/Development (Cuma log aja)
-            console.log('\n🔔 [MOCK NOTIFICATION] -----------------------');
-            console.log(`Title : ${title}`);
-            console.log(`Msg   : ${message}`);
-            console.log('-----------------------------------------------\n');
+            // Mock notification dinonaktifkan sementara (hindari spam console)
+            // Uncomment di bawah jika ingin debug notif di Windows/Development:
+            // console.log('\n🔔 [MOCK NOTIFICATION] -----------------------');
+            // console.log(`Title : ${title}`);
+            // console.log(`Msg   : ${message}`);
+            // console.log('-----------------------------------------------\n');
         }
     }
 }

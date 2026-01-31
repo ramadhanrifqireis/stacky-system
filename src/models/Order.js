@@ -20,7 +20,7 @@ class Order {
         return true;
     }
 
-    static moveActiveToHistory(orderId, status) {
+    static moveActiveToHistory(orderId, status, extraFields = {}) {
         const data = db.read();
         if (!data.active) return null;
 
@@ -28,6 +28,7 @@ class Order {
         if (idx !== -1) {
             const order = data.active[idx];
             order.status = status;
+            Object.assign(order, extraFields); // e.g. receipt_data untuk struk Itemku
             
             if (!data.history) data.history = [];
             data.history.unshift(order); // Masuk history paling atas
@@ -46,6 +47,17 @@ class Order {
             order.notified = true;
             db.write(data);
         }
+    }
+
+    /** Update order di active (untuk delay: status, resume_at, receipt_data) */
+    static updateActive(orderId, updates) {
+        const data = db.read();
+        if (!data.active) return null;
+        const idx = data.active.findIndex(o => o.id === orderId);
+        if (idx === -1) return null;
+        Object.assign(data.active[idx], updates);
+        db.write(data);
+        return data.active[idx];
     }
 }
 

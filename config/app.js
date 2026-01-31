@@ -8,6 +8,8 @@ module.exports = {
         port: 3000, // Port default
         env: 'development', // Mode pengembangan
     },
+    // Mock notification di console (Windows/Dev) — false = matikan spam log
+    mockNotifications: false,
     system: {
         timezone: 'Asia/Jakarta', 
         currencyLocale: 'id-ID',

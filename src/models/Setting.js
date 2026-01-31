@@ -5,13 +5,15 @@ const db = new JSONDriver('database/core/settings.json', {
 });
 
 class Setting {
-    static get() {
-        return db.read();
+    /** Get full settings object, or single key: get() / get('receipt_template') */
+    static get(key) {
+        const data = db.read();
+        return key !== undefined ? data[key] : data;
     }
 
     static update(key, value) {
         const data = db.read();
-        data[key] = value; // Update value by key
+        data[key] = value;
         db.write(data);
         return data;
     }

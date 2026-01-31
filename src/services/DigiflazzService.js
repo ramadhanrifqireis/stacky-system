@@ -48,6 +48,35 @@ class DigiflazzService {
             return 0;
         }
     }
+
+    /**
+     * API publik Digiflazz: daftar harga WDP termurah (tanpa auth).
+     * Sumber: https://digiflazz.com/api/v1/product?search=weekly%20diamond%20pass
+     * Mengembalikan { brazil, turkey, min } untuk Indonesia & Turkey saja.
+     */
+    static async getWdpCheapestPublic() {
+        try {
+            const response = await axios.get(
+                'https://digiflazz.com/api/v1/product?search=weekly%20diamond%20pass',
+                { timeout: 10000 }
+            );
+            const data = response.data && response.data.data;
+            if (!Array.isArray(data)) return { brazil: null, turkey: null, min: null };
+
+            let brazil = null, turkey = null;
+            data.forEach(item => {
+                const type = (item.type || '').toString();
+                const price = item.lowest_price != null ? parseInt(item.lowest_price, 10) : null;
+                if (type === 'Brazil' && price != null) brazil = price;
+                if (type === 'Turkey' && price != null) turkey = price;
+            });
+            const min = [brazil, turkey].filter(Boolean).length ? Math.min(...[brazil, turkey].filter(Boolean)) : null;
+            return { brazil, turkey, min };
+        } catch (error) {
+            console.error("[DIGI WDP PUBLIC]", error.message);
+            return { brazil: null, turkey: null, min: null };
+        }
+    }
 }
 
 module.exports = DigiflazzService;

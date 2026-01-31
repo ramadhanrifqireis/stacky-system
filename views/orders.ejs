@@ -1,304 +1,478 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Monitor Order</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Monitor Pesanan</title>
+    <link rel="stylesheet" href="/css/store.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
-        body { background-color: #f0f2f5; padding-bottom: 80px; }
-        .order-card { border-radius: 12px; border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.05); margin-bottom: 15px; }
-        .search-box { border-radius: 20px; border: 1px solid #ced4da; padding-left: 20px; }
-        .btn-action { font-size: 0.85rem; font-weight: 600; padding: 8px 0; }
-        .target-text { font-family: monospace; font-size: 0.9rem; color: #0d6efd; }
+        body { padding-bottom: 100px; }
+        .order-card { cursor: pointer; }
+        .order-card .icon-wrap { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .order-card .icon-wrap.manual { background: var(--primary-bg); color: var(--primary); }
+        .order-card .icon-wrap.digi { background: #FFF4E5; color: #E67E22; }
+        .order-card .mid { flex: 1; min-width: 0; }
+        .order-card .item-name { font-size: 15px; font-weight: 700; color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .order-card .target-line { font-size: 12px; color: var(--text-sec); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px; }
+        .order-card .badge-pill { padding: 4px 10px; border-radius: 20px; font-size: 10px; font-weight: 700; }
+        .order-card .date-small { font-size: 11px; color: var(--text-sec); margin-top: 4px; }
+        .order-card .sender-line { font-size: 11px; color: #9ca3af; margin-top: 4px; }
+        .tabs-nav-orders { display: flex; background: #f0f2f5; padding: 4px; border-radius: 14px; margin-bottom: 16px; }
+        .tabs-nav-orders .tab-item { flex: 1; text-align: center; padding: 10px; font-size: 13px; font-weight: 600; color: #8e8e93; border-radius: 10px; }
+        .tabs-nav-orders .tab-item.active { background: white; color: var(--text-main); box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .tab-content-orders { display: none; }
+        .tab-content-orders.active { display: block; }
+        .search-input { width: 100%; padding: 12px 16px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.06); background: #F2F2F7; font-size: 15px; margin-bottom: 12px; }
+        .search-input:focus { outline: none; border-color: var(--primary); background: white; }
+        #receiptText { font-family: 'Courier New', Courier, monospace; background: #f8f9fa; padding: 15px; border: 1px dashed #ccc; white-space: pre-wrap; border-radius: 8px; max-height: 320px; overflow: auto; font-size: 13px; margin-bottom: 16px; }
+        .btn-salin { background: #eee; color: var(--text-main); width: 100%; padding: 14px; font-weight: 600; border-radius: 12px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        .btn-tutup-sheet { background: var(--danger-bg); color: var(--danger); width: 100%; padding: 14px; font-weight: 600; border-radius: 12px; }
+        .btn-delay { background: #FFF4E5 !important; color: #E67E22 !important; }
+        .btn-delay-sheet { background: #FFF4E5 !important; color: #E67E22 !important; }
+        .btn-cancel-sheet { background: var(--danger-bg) !important; color: var(--danger) !important; }
+        .notif-sent-badge { font-size: 11px; color: var(--success); margin-left: 4px; }
     </style>
 </head>
 <body>
-    <div class="container-fluid p-0 bg-white shadow-sm sticky-top mb-3">
-        <div class="d-flex align-items-center p-3">
-            <a href="/" class="btn btn-light me-3 border btn-lg">←</a>
-            <h5 class="fw-bold m-0">Monitor Pesanan</h5>
-        </div>
-        <div class="px-3 pb-3">
-            <ul class="nav nav-pills w-100 nav-fill p-1 bg-light rounded" id="myTab" role="tablist">
-                <li class="nav-item">
-                    <button class="nav-link rounded shadow-sm <%= searchQuery ? '' : 'active' %>" id="active-tab" data-bs-toggle="tab" data-bs-target="#active">
-                        Berlangsung (<%= active.length %>)
-                    </button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link rounded <%= searchQuery ? 'active' : '' %>" id="history-tab" data-bs-toggle="tab" data-bs-target="#history">
-                        Riwayat
-                    </button>
-                </li>
-            </ul>
-        </div>
+
+    <div class="header">
+        <h1>Pesanan</h1>
+        <a href="/" class="btn" style="width: auto; padding: 8px 12px; background: #f0f2f5; color: var(--primary); text-decoration: none;">
+            <i class="ph-bold ph-arrow-left"></i> Kembali
+        </a>
     </div>
 
-    <div class="container px-3">
-        <div class="tab-content">
-            <div class="tab-pane fade <%= searchQuery ? '' : 'show active' %>" id="active">
-                <% active.forEach(order => { 
-                    const now = Date.now();
-                    const isReady = now >= order.due_date;
-                    const diffDays = Math.ceil((order.due_date - now) / (1000 * 60 * 60 * 24)); 
-                    const gameId = order.executor_id || "ID Tidak Ditemukan";
-                    
-                    const waktuDetail = new Date(order.due_date).toLocaleString('id-ID', { 
-                        day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' 
-                    }).replace(/\./g, ':'); 
-                %>
-                <div class="card order-card <%= isReady ? 'border-start border-5 border-success' : 'border-start border-5 border-warning' %>">
-                    <div class="card-body p-3">
-                        <div class="d-flex justify-content-between mb-2">
-                            <span class="badge bg-secondary align-self-start"><%= order.item_name %></span>
-                            <div class="text-end">
-                                <span class="badge <%= isReady ? 'bg-success' : 'bg-warning text-dark' %>">
-                                    <%= isReady ? 'SIAP KIRIM' : 'H-'+diffDays %>
-                                </span>
-                                <small class="d-block text-muted mt-1 fw-bold" style="font-size: 0.75rem;">
-                                    ⏰ <%= waktuDetail %>
-                                </small>
-                            </div>
-                        </div>
-                        
-                        <h6 class="fw-bold mb-1"><%= order.buyer_name %></h6>
-                        <small class="text-muted d-block mb-1"><%= order.id %></small>
-                        
-                        <div class="bg-light p-2 rounded mb-3 border">
-                            <div class="row g-0">
-                                <div class="col-6 border-end pe-2">
-                                    <small class="d-block text-secondary fw-bold" style="font-size: 0.7rem;">PENERIMA (BUYER)</small>
-                                    <div class="target-text text-truncate"><%= order.target_data %></div>
-                                </div>
-                                <div class="col-6 ps-2">
-                                    <small class="d-block text-secondary fw-bold" style="font-size: 0.7rem;">PENGIRIM (ADMIN)</small>
-                                    <div class="text-success fw-bold text-truncate"><%= order.executor %></div>
-                                </div>
-                            </div>
-                        </div>
+    <div class="container">
+        <input type="text" id="orderSearch" class="input-box" placeholder="Cari ID, nama, target..." style="margin-bottom: 12px;" autocomplete="off">
+        <div class="tabs-nav-orders">
+            <div class="tab-item <%= searchQuery ? '' : 'active' %>" data-tab="active">Berlangsung (<%= active.length %>)</div>
+            <div class="tab-item <%= searchQuery ? 'active' : '' %>" data-tab="history">Riwayat</div>
+        </div>
 
-                        <div class="d-grid gap-2">
-                            <button onclick="showStrukOptions('<%= order.id %>', '<%= order.item_name %>', <%= order.created_at %>, '<%= order.target_data %>', '<%= order.executor %>', '<%= gameId %>')" class="btn btn-primary btn-sm fw-bold shadow-sm">
-                                📜 Buat Struk / Receipt
-                            </button>
-
-                            <div class="d-flex gap-2 mt-1">
-                                <form action="/cancel-order" method="POST" class="flex-fill" onsubmit="return confirm('Yakin BATALKAN order ini? Stok akan dikembalikan.')">
-                                    <input type="hidden" name="id" value="<%= order.id %>">
-                                    <button class="btn btn-outline-danger btn-sm w-100 btn-action">✖ Batal</button>
-                                </form>
-
-                                <% if(isReady) { %>
-                                <form action="/finish-order" method="POST" class="flex-fill" onsubmit="return confirm('Pastikan item SUDAH DIKIRIM di game sebelum klik ini!')">
-                                    <input type="hidden" name="id" value="<%= order.id %>">
-                                    <button class="btn btn-success btn-sm w-100 btn-action">✅ Selesai</button>
-                                </form>
-                                <% } else { %>
-                                    <button class="btn btn-light btn-sm flex-fill disabled btn-action">⏳ Tunggu</button>
-                                <% } %>
-                            </div>
-                        </div>
+        <div id="panel-active" class="tab-content-orders <%= searchQuery ? '' : 'active' %>">
+            <% active.forEach(order => {
+                const now = Date.now();
+                const isReady = now >= order.due_date;
+                const diffDays = Math.ceil((order.due_date - now) / (1000 * 60 * 60 * 24));
+                const orderType = (order.type || 'MANUAL').toUpperCase();
+                const waktuDetail = new Date(order.due_date).toLocaleString('id-ID', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }).replace(/\./g, ':');
+                const senderNick = order.sender_nick || order.executor || '-';
+                const createdStr = new Date(order.created_at).toLocaleString('id-ID', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' }).replace(/\./g, ':');
+            %>
+            <div class="card order-card order-card-searchable" style="margin-bottom: 12px;" data-search-text="<%= (order.item_name + ' ' + order.id + ' ' + (order.buyer_name || '') + ' ' + (order.target_data || '') + ' ' + (senderNick || '')).toLowerCase().replace(/"/g, '') %>"
+                 data-order-id="<%= order.id %>" data-item-name="<%= (order.item_name || '').replace(/"/g, '&quot;') %>" data-target="<%= (order.target_data || '').replace(/"/g, '&quot;') %>" data-buyer="<%= (order.buyer_name || '').replace(/"/g, '&quot;') %>"
+                 data-sender-nick="<%= (senderNick || '').replace(/"/g, '&quot;') %>" data-sender-id="<%= ((order.sender_id != null && order.sender_id !== '' ? order.sender_id : (order.executor_id || ''))).toString().replace(/"/g, '&quot;') %>" data-created-at="<%= order.created_at %>" data-due-date="<%= order.due_date %>" data-receipt-b64="" data-is-active="1" data-is-ready="<%= isReady ? '1' : '0' %>"
+                 onclick="openOrderMenu(this)">
+                <div class="flex-row" style="align-items: flex-start; gap: 12px;">
+                    <div class="icon-wrap <%= orderType === 'DIGI' ? 'digi' : 'manual' %>">
+                        <% if (orderType === 'DIGI') { %><i class="ph-fill ph-lightning" style="font-size: 24px;"></i><% } else { %><i class="ph-fill ph-user" style="font-size: 24px;"></i><% } %>
+                    </div>
+                    <div class="mid">
+                        <div class="item-name"><%= order.item_name %></div>
+                        <div class="target-line"><%= order.target_data %></div>
+                        <div class="sender-line">Pengirim: <%= senderNick %></div>
+                    </div>
+                    <div style="text-align: right; flex-shrink: 0;">
+                        <span class="badge-pill <%= isReady ? 'bg-green' : 'bg-gray' %>" style="<%= isReady ? 'background: var(--success-bg); color: var(--success);' : 'background: #eee; color: #666;' %>"><%= isReady ? 'Siap' : 'H-' + diffDays %></span>
+                        <div class="date-small"><%= waktuDetail %></div>
                     </div>
                 </div>
-                <% }) %>
-                <% if(active.length === 0) { %> <div class="text-center mt-5 text-muted">Tidak ada pesanan aktif.</div> <% } %>
             </div>
+            <% }) %>
+            <% if (active.length === 0) { %>
+            <div style="text-align: center; padding: 40px 20px; color: var(--text-sec);">
+                <i class="ph-duotone ph-package" style="font-size: 48px;"></i>
+                <p style="margin: 12px 0 0;">Tidak ada pesanan aktif.</p>
+            </div>
+            <% } %>
+        </div>
 
-            <div class="tab-pane fade <%= searchQuery ? 'show active' : '' %>" id="history">
-                <form action="/orders" method="GET" class="mb-3">
-                    <input type="text" name="q" class="form-control search-box" placeholder="🔍 Cari ID Order / ID Game / Nama..." value="<%= searchQuery %>">
-                </form>
-                <div class="list-group list-group-flush rounded shadow-sm">
-                    <% history.forEach(h => { const tgl = new Date(h.created_at).toLocaleDateString('id-ID'); %>
-                        <div class="list-group-item p-3 border-bottom">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="mb-0 fw-bold"><%= h.buyer_name %></h6>
-                                <span class="badge <%= h.status === 'CANCELLED' ? 'bg-danger' : 'bg-success' %>"><%= h.status %></span>
-                            </div>
-                            <small class="text-muted d-block"><%= h.item_name %></small>
-                            <small class="text-muted d-block mt-1" style="font-size: 0.8rem;">
-                                ID: <%= h.id %><br>Target: <%= h.target_data %>
-                            </small>
-                            
-                            <% if(h.status === 'DONE') { %>
-                                <button onclick="showSentInfoOptions('<%= h.id %>', '<%= h.item_name %>', '<%= h.target_data %>')" class="btn btn-sm btn-outline-success w-100 mt-2 fw-bold">
-                                    📱 Info Sudah Dikirim
-                                </button>
-                            <% } %>
-
-                            <div class="d-flex justify-content-between align-items-end mt-2">
-                                <span class="badge bg-light text-dark border">Via: <%= h.executor %></span>
-                                <small class="text-muted fst-italic"><%= tgl %></small>
-                            </div>
-                        </div>
-                    <% }) %>
-                    <% if(history.length === 0) { %> <div class="text-center py-3 text-muted">Tidak ditemukan.</div> <% } %>
+        <div id="panel-history" class="tab-content-orders <%= searchQuery ? 'active' : '' %>">
+            <% history.forEach(h => {
+                const tgl = new Date(h.created_at).toLocaleDateString('id-ID');
+                const hType = (h.type || 'MANUAL').toUpperCase();
+                const searchText = ((h.buyer_name || '') + ' ' + (h.item_name || '') + ' ' + (h.id || '') + ' ' + (h.target_data || '')).toLowerCase().replace(/"/g, '');
+                const hSenderNick = h.sender_nick || h.executor || '-';
+                const hCreatedStr = new Date(h.created_at).toLocaleString('id-ID', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' }).replace(/\./g, ':');
+                const hReceiptB64 = Buffer.from(h.receipt_data || '').toString('base64');
+            %>
+            <div class="card order-card order-card-searchable" style="margin-bottom: 12px; cursor: pointer;" data-search-text="<%= (searchText + ' ' + (hSenderNick || '')).toLowerCase().replace(/"/g, '') %>"
+                 data-order-id="<%= h.id %>" data-item-name="<%= (h.item_name || '').replace(/"/g, '&quot;') %>" data-target="<%= (h.target_data || '').replace(/"/g, '&quot;') %>" data-buyer="<%= (h.buyer_name || '').replace(/"/g, '&quot;') %>"
+                 data-sender-nick="<%= (hSenderNick || '').replace(/"/g, '&quot;') %>" data-sender-id="<%= ((h.sender_id != null && h.sender_id !== '' ? h.sender_id : (h.executor_id || ''))).toString().replace(/"/g, '&quot;') %>" data-created-at="<%= h.created_at %>" data-due-date="<%= h.due_date || '' %>" data-receipt-b64="<%= hReceiptB64 %>" data-is-active="0" data-status="<%= h.status %>"
+                 onclick="openOrderMenu(this)">
+                <div class="flex-row" style="align-items: flex-start; gap: 12px;">
+                    <div class="icon-wrap <%= hType === 'DIGI' ? 'digi' : 'manual' %>" style="width: 44px; height: 44px;">
+                        <% if (hType === 'DIGI') { %><i class="ph-fill ph-lightning" style="font-size: 22px;"></i><% } else { %><i class="ph-fill ph-user" style="font-size: 22px;"></i><% } %>
+                    </div>
+                    <div class="mid">
+                        <div class="item-name"><%= h.item_name %></div>
+                        <div class="target-line"><%= h.target_data %></div>
+                        <div class="sender-line">Pengirim: <%= hSenderNick %></div>
+                    </div>
+                    <div style="text-align: right; flex-shrink: 0;">
+                        <span class="badge <%= h.status === 'CANCELLED' ? 'bg-red' : 'bg-green' %>"><%= h.status %></span>
+                        <div class="date-small"><%= tgl %></div>
+                    </div>
                 </div>
             </div>
+            <% }) %>
+            <% if (history.length === 0) { %>
+            <div style="text-align: center; padding: 40px 20px; color: var(--text-sec);">
+                <i class="ph-duotone ph-archive" style="font-size: 48px;"></i>
+                <p style="margin: 12px 0 0;">Tidak ditemukan.</p>
+            </div>
+            <% } %>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Modal Action Sheet: Info Detail + Struk + Tombol Aksi -->
+    <div class="modal-overlay" id="receiptOverlay" onclick="closeOrderMenu()"></div>
+    <div class="bottom-sheet" id="sheet">
+        <div class="sheet-handle"></div>
+        <h3 style="margin: 0 0 4px; font-size: 18px; font-weight: 700;">Detail Pesanan</h3>
+        <p style="margin: 0 0 12px; font-size: 13px; color: var(--text-sec);" id="sheetSubtitle">—</p>
+
+        <div class="info-detail-block" style="background: #F2F2F7; border-radius: 12px; padding: 12px; margin-bottom: 16px;">
+            <div style="font-size: 11px; text-transform: uppercase; color: var(--text-sec); margin-bottom: 8px; font-weight: 600;">Info Detail</div>
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+                <i class="ph ph-user-gear" style="font-size: 16px; color: var(--primary);"></i>
+                <span id="sheetSenderNick" style="font-size: 14px; font-weight: 600;">—</span>
+            </div>
+            <div style="font-size: 12px; color: var(--text-sec); margin-bottom: 2px;">Waktu Order: <span id="sheetCreatedAt">—</span></div>
+            <div style="font-size: 12px; color: var(--text-sec);">ID Transaksi: <span id="sheetOrderId" class="font-monospace">—</span></div>
+        </div>
+
+        <div style="font-size: 11px; text-transform: uppercase; color: var(--text-sec); margin-bottom: 6px; font-weight: 600;">Struk</div>
+        <pre id="receiptText"></pre>
+
+        <!-- Struk A: Copy Info Add Friend (hanya order aktif / Pending) -->
+        <div id="sheetGroupReceiptA" style="display: none; margin-bottom: 12px;">
+            <div class="small text-muted mb-2">Instruksi Add Friend (Struk A)</div>
+            <div class="flex-row" style="gap: 8px; margin-bottom: 8px;">
+                <button type="button" class="btn-salin" id="btnCopyStrukAId" style="flex: 1; margin-bottom: 0;"><i class="ph-bold ph-copy"></i> 🇮🇩 IND</button>
+                <button type="button" class="btn-salin" id="btnCopyStrukAEn" style="flex: 1; margin-bottom: 0;"><i class="ph-bold ph-copy"></i> 🇬🇧 ENG</button>
+            </div>
+        </div>
+        <!-- Struk B: Copy Bukti Kirim (hanya order Success/DONE) -->
+        <div id="sheetGroupReceiptB" style="display: none; margin-bottom: 12px;">
+            <div class="small text-muted mb-2">Bukti Kirim (Struk B)</div>
+            <div class="flex-row" style="gap: 8px; margin-bottom: 8px;">
+                <button type="button" class="btn-salin" id="btnCopyStrukBId" style="flex: 1; margin-bottom: 0;"><i class="ph-bold ph-copy"></i> 🇮🇩 IND</button>
+                <button type="button" class="btn-salin" id="btnCopyStrukBEn" style="flex: 1; margin-bottom: 0;"><i class="ph-bold ph-copy"></i> 🇬🇧 ENG</button>
+            </div>
+        </div>
+
+        <!-- Grup Utama: Selesaikan (hanya active + siap) -->
+        <div id="sheetGroupPrimary" style="display: none; margin-bottom: 12px;">
+            <form id="formFinish" action="/finish-order" method="POST" onsubmit="return confirm('Anda yakin ingin mengubah status pesanan ini? Pastikan item sudah dikirim di game.');">
+                <input type="hidden" name="id" id="formFinishId">
+                <button type="submit" class="btn-primary" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                    <i class="ph-bold ph-check-circle"></i> Selesaikan Pesanan
+                </button>
+            </form>
+        </div>
+
+        <!-- Grup Sekunder: Tunda + Batal (active only, kecil) -->
+        <div id="sheetGroupSecondary" style="display: none; gap: 8px; margin-bottom: 12px;" class="flex-row">
+            <form id="formDelay" action="/delay-order" method="POST" style="flex: 1;">
+                <input type="hidden" name="id" id="formDelayId">
+                <input type="hidden" name="days" id="formDelayDays">
+                <button type="button" class="btn btn-delay-sheet" style="width: 100%; padding: 10px; font-size: 12px;"><i class="ph-bold ph-clock-countdown"></i> Tunda</button>
+            </form>
+            <form id="formCancel" action="/cancel-order" method="POST" style="flex: 1;" onsubmit="return confirm('Anda yakin ingin mengubah status pesanan ini? Stok akan dikembalikan.');">
+                <input type="hidden" name="id" id="formCancelId">
+                <button type="submit" class="btn btn-cancel-sheet" style="width: 100%; padding: 10px; font-size: 12px;"><i class="ph-bold ph-x"></i> Batal</button>
+            </form>
+        </div>
+
+        <!-- History DONE: fallback Salin Struk (struk tersimpan) -->
+        <button type="button" class="btn-salin" id="btnSalinStruk" style="display: none;">
+            <i class="ph-bold ph-copy"></i> Salin Struk Tersimpan
+        </button>
+        <button type="button" class="btn-tutup-sheet" onclick="closeOrderMenu()">
+            <i class="ph-bold ph-x"></i> Tutup
+        </button>
+    </div>
+
+    <script type="application/json" id="receiptTemplatesJson">{"a_id":<%- JSON.stringify(typeof receipt_template_a_id !== 'undefined' ? receipt_template_a_id : '') %>,"a_en":<%- JSON.stringify(typeof receipt_template_a_en !== 'undefined' ? receipt_template_a_en : '') %>,"b_id":<%- JSON.stringify(typeof receipt_template_b_id !== 'undefined' ? receipt_template_b_id : '') %>,"b_en":<%- JSON.stringify(typeof receipt_template_b_en !== 'undefined' ? receipt_template_b_en : '') %>}</script>
+    <script type="application/json" id="accountsIndexJson"><%- JSON.stringify(typeof accounts !== 'undefined' ? accounts : []) %></script>
     <script>
-        // ==========================================
-        // 1. STRUK PEMBELIAN (ADD FRIEND) - FIXED SPACING
-        // ==========================================
-        function showStrukOptions(orderId, item, createdAt, buyerData, adminNick, adminId) {
-            Swal.fire({
-                title: 'Pilih Bahasa Struk',
-                text: 'Format Pesanan (Add Friend)',
-                icon: 'question',
-                showCancelButton: true,
-                showDenyButton: true,
-                confirmButtonText: '🇮🇩 Indonesia',
-                denyButtonText: '🇬🇧 English',
-                cancelButtonText: 'Batal',
-                confirmButtonColor: '#0d6efd',
-                denyButtonColor: '#6c757d'
-            }).then((result) => {
-                if (result.isConfirmed) generateStruk('id', orderId, item, createdAt, buyerData, adminNick, adminId);
-                else if (result.isDenied) generateStruk('en', orderId, item, createdAt, buyerData, adminNick, adminId);
+        var receiptTemplates = (function(){ var el = document.getElementById('receiptTemplatesJson'); return el ? JSON.parse(el.textContent) : { a_id: '', a_en: '', b_id: '', b_en: '' }; })();
+        var accountsIndex = (function() {
+            var el = document.getElementById('accountsIndexJson');
+            var list = el ? JSON.parse(el.textContent || '[]') : [];
+            var map = {};
+            list.forEach(function(acc) {
+                if (acc && acc.nick) map[acc.nick] = acc.id || acc.game_id || '-';
             });
+            return map;
+        })();
+
+        function resolveSenderIdsByNick(senderNick) {
+            var nicks = (senderNick || '').split(',').map(function(x) { return x.trim(); }).filter(Boolean);
+            if (nicks.length === 0) return '-';
+            return nicks.map(function(n) { return accountsIndex[n] || '-'; }).join(',');
+        }
+
+        function buildReceiptFromTemplate(template, data) {
+            if (!template) return '';
+            return template
+                .replace(/%BUYER%/g, (data.buyer || '-').toString())
+                .replace(/%ITEM%/g, (data.item || '-').toString())
+                .replace(/%SENDER_NICK%/g, (data.senderNick || '-').toString())
+                .replace(/%SENDER_ID%/g, (data.senderId || '-').toString())
+                .replace(/%DATE%/g, (data.dateStr || '-').toString());
+        }
+
+        function getReceiptDateStr(createdAt, dueDate) {
+            var ts = dueDate && parseInt(dueDate, 10) ? parseInt(dueDate, 10) : (parseInt(createdAt, 10) || Date.now()) + 7 * 24 * 60 * 60 * 1000;
+            var d = new Date(ts);
+            var day = d.getDate(), month = d.getMonth() + 1, year = d.getFullYear();
+            return day + '/' + month + '/' + year + ', pukul 15:00 WIB';
+        }
+
+        (function tabs() {
+            document.querySelectorAll('.tabs-nav-orders .tab-item').forEach(function(el) {
+                el.addEventListener('click', function() {
+                    var t = this.getAttribute('data-tab');
+                    document.querySelectorAll('.tabs-nav-orders .tab-item').forEach(function(x) { x.classList.remove('active'); });
+                    this.classList.add('active');
+                    document.querySelectorAll('.tab-content-orders').forEach(function(p) { p.classList.remove('active'); });
+                    document.getElementById('panel-' + t).classList.add('active');
+                });
+            });
+        })();
+
+        (function searchBar() {
+            var input = document.getElementById('orderSearch');
+            if (!input) return;
+            input.addEventListener('input', function() {
+                var q = (this.value || '').toLowerCase().trim();
+                document.querySelectorAll('.order-card-searchable').forEach(function(card) {
+                    var text = (card.getAttribute('data-search-text') || card.textContent || '').toLowerCase();
+                    card.style.display = q === '' || text.indexOf(q) !== -1 ? '' : 'none';
+                });
+            });
+        })();
+
+        var currentReceiptData = '';
+        var currentOrderId = '';
+        var currentReceiptCardData = null;
+
+        function openOrderMenu(cardEl) {
+            var d = cardEl.dataset;
+            var orderId = d.orderId || '-';
+            var itemName = (d.itemName || '').replace(/&quot;/g, '"');
+            var target = (d.target || '').replace(/&quot;/g, '"');
+            var buyer = (d.buyer || '').replace(/&quot;/g, '"');
+            var senderNick = (d.senderNick || '').replace(/&quot;/g, '"') || '-';
+            var senderId = (d.senderId || '').replace(/&quot;/g, '"') || '-';
+            if (!senderId || senderId === '-') {
+                senderId = resolveSenderIdsByNick(senderNick);
+            }
+            var createdAt = parseInt(d.createdAt, 10) || 0;
+            var dueDate = d.dueDate || '';
+            var receiptB64 = d.receiptB64 || '';
+            var isActive = d.isActive === '1';
+            var isReady = d.isReady === '1';
+            var notified = d.notified === '1';
+            var status = (d.status || '').toUpperCase();
+
+            var sheetNotifiedLine = document.getElementById('sheetNotifiedLine');
+            if (sheetNotifiedLine) sheetNotifiedLine.style.display = (isActive && notified) ? 'block' : 'none';
+
+            var createdStr = createdAt ? new Date(createdAt).toLocaleString('id-ID', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' }).replace(/\./g, ':') : '-';
+            var dateStr = getReceiptDateStr(createdAt, dueDate);
+
+            document.getElementById('sheetSubtitle').textContent = itemName ? itemName + ' · ' + target : '—';
+            document.getElementById('sheetSenderNick').textContent = senderNick;
+            document.getElementById('sheetCreatedAt').textContent = createdStr;
+            document.getElementById('sheetOrderId').textContent = orderId;
+
+            try { currentReceiptData = receiptB64 ? atob(receiptB64) : ''; } catch (e) { currentReceiptData = ''; }
+            document.getElementById('receiptText').textContent = currentReceiptData || (isActive ? 'Struk akan tersedia setelah pesanan selesai.' : 'Struk tidak tersedia.');
+
+            currentReceiptCardData = {
+                buyer: buyer,
+                item: itemName,
+                target: target,
+                orderId: orderId,
+                senderNick: senderNick,
+                senderId: senderId,
+                dateStr: dateStr
+            };
+
+            var groupPrimary = document.getElementById('sheetGroupPrimary');
+            var groupSecondary = document.getElementById('sheetGroupSecondary');
+            var groupReceiptA = document.getElementById('sheetGroupReceiptA');
+            var groupReceiptB = document.getElementById('sheetGroupReceiptB');
+            var btnSalin = document.getElementById('btnSalinStruk');
+
+            if (isActive) {
+                groupPrimary.style.display = isReady ? 'block' : 'none';
+                groupSecondary.style.display = 'flex';
+                groupReceiptA.style.display = 'block';
+                groupReceiptB.style.display = 'none';
+                btnSalin.style.display = 'none';
+                currentOrderId = orderId;
+                document.getElementById('formFinishId').value = orderId;
+                document.getElementById('formDelayId').value = orderId;
+                document.getElementById('formCancelId').value = orderId;
+            } else {
+                groupPrimary.style.display = 'none';
+                groupSecondary.style.display = 'none';
+                groupReceiptA.style.display = 'none';
+                groupReceiptB.style.display = status === 'DONE' ? 'block' : 'none';
+                btnSalin.style.display = currentReceiptData ? 'flex' : 'none';
+            }
+
+            document.getElementById('receiptOverlay').classList.add('active');
+            document.getElementById('sheet').classList.add('active');
+        }
+
+        function closeOrderMenu() {
+            document.getElementById('receiptOverlay').classList.remove('active');
+            document.getElementById('sheet').classList.remove('active');
+        }
+
+        document.getElementById('btnSalinStruk').addEventListener('click', function() {
+            if (currentReceiptData) {
+                navigator.clipboard.writeText(currentReceiptData).then(function() {
+                    if (typeof Swal !== 'undefined') Swal.fire({ icon: 'success', title: 'Struk disalin!', toast: true, position: 'top-end', showConfirmButton: false, timer: 2000 });
+                    else alert('Struk disalin!');
+                });
+            }
+        });
+
+        function buildSenderList(nickStr, idStr) {
+            var nicks = (nickStr || '').split(',').map(function(x) { return x.trim(); }).filter(Boolean);
+            var ids = (idStr || '').split(',').map(function(x) { return x.trim(); }).filter(Boolean);
+            if (nicks.length <= 1) {
+                return 'Nick : ' + (nicks[0] || '-') + '\nID   : ' + (ids[0] || '-');
+            }
+            return nicks.map(function(n, i) {
+                return (i + 1) + '. Nick : ' + n + '\n   ID   : ' + (ids[i] || '-');
+            }).join('\n');
+        }
+
+        function buildInfoPengirimanReceipt(lang, data) {
+            var senderList = buildSenderList(data.senderNick, data.senderId);
+            if (lang === 'en') {
+                return '==============================\n' +
+                    '      ORDER DETAILS\n' +
+                    '==============================\n\n' +
+                    'ORDER DATA\n' +
+                    'No.           : ' + (data.orderId || '-') + '\n' +
+                    'Item         : ' + (data.item || '-') + '\n' +
+                    'Target      : ' + (data.target || '-') + '\n' +
+                    'Ship date : ' + (data.dateStr || '-') + '\n\n' +
+                    'SENDER INFO\n' + senderList + '\n' +
+                    '------------------------------\n' +
+                    'IMPORTANT:\n' +
+                    'Please add the accounts above.\n' +
+                    '==============================';
+            }
+            return '==============================\n' +
+                '      RINCIAN PEMESANAN\n' +
+                '==============================\n\n' +
+                'DATA PESANAN\n' +
+                'No.           : ' + (data.orderId || '-') + '\n' +
+                'Item         : ' + (data.item || '-') + '\n' +
+                'Target      : ' + (data.target || '-') + '\n' +
+                'Tgl Kirim  : ' + (data.dateStr || '-') + '\n\n' +
+                'INFO PENGIRIM\n' + senderList + '\n' +
+                '------------------------------\n' +
+                'PENTING:\n' +
+                'Silakan add (tambah teman) akun\n' +
+                'di atas agar gift bisa dikirim.\n' +
+                '==============================';
+        }
+
+        var defaultTemplateA = 'Halo kak, mohon Add Friend akun ini: %SENDER_NICK% (ID: %SENDER_ID%) agar item bisa dikirim.\nPesanan: %ITEM% | Pembeli: %BUYER% | %DATE%';
+        var defaultTemplateAEn = 'Hello, please Add Friend this account: %SENDER_NICK% (ID: %SENDER_ID%) so we can send the item.\nOrder: %ITEM% | Buyer: %BUYER% | %DATE%';
+        var defaultTemplateB = 'Pesanan %ITEM% sudah dikirim. Terima kasih, %BUYER%.\n%DATE%';
+        var defaultTemplateBEn = 'Order %ITEM% has been sent. Thank you, %BUYER%.\n%DATE%';
+
+        function copyStrukA(lang) {
+            if (!currentReceiptCardData) return;
+            var text = buildInfoPengirimanReceipt(lang, currentReceiptCardData);
+            navigator.clipboard.writeText(text).then(function() {
+                if (typeof Swal !== 'undefined') Swal.fire({ icon: 'success', title: 'Info Add Friend disalin!', toast: true, position: 'top-end', showConfirmButton: false, timer: 2000 });
+                else alert('Info Add Friend disalin!');
+            });
+        }
+        function copyStrukB(lang) {
+            if (!currentReceiptCardData) return;
+            var tpl = lang === 'en' ? (receiptTemplates.b_en || defaultTemplateBEn) : (receiptTemplates.b_id || defaultTemplateB);
+            var text = buildReceiptFromTemplate(tpl, currentReceiptCardData);
+            navigator.clipboard.writeText(text).then(function() {
+                if (typeof Swal !== 'undefined') Swal.fire({ icon: 'success', title: 'Bukti kirim disalin!', toast: true, position: 'top-end', showConfirmButton: false, timer: 2000 });
+                else alert('Bukti kirim disalin!');
+            });
+        }
+        document.getElementById('btnCopyStrukAId').addEventListener('click', function() { copyStrukA('id'); });
+        document.getElementById('btnCopyStrukAEn').addEventListener('click', function() { copyStrukA('en'); });
+        document.getElementById('btnCopyStrukBId').addEventListener('click', function() { copyStrukB('id'); });
+        document.getElementById('btnCopyStrukBEn').addEventListener('click', function() { copyStrukB('en'); });
+
+        document.querySelector('.btn-delay-sheet').addEventListener('click', function(e) {
+            e.preventDefault();
+            var days = prompt('Tunda berapa hari?', '7');
+            if (days != null && days.trim() !== '') {
+                var num = parseInt(days, 10);
+                if (num >= 1) {
+                    document.getElementById('formDelayDays').value = num;
+                    document.getElementById('formDelay').submit();
+                }
+            }
+        });
+
+        function copyToClipboard(text, successMsg) {
+            navigator.clipboard.writeText(text).then(function() {
+                if (typeof Swal !== 'undefined') Swal.fire({ icon: 'success', title: successMsg, toast: true, position: 'top-end', showConfirmButton: false, timer: 2000 });
+            }).catch(function(err) { alert('Gagal menyalin'); });
+        }
+
+        function showStrukOptions(orderId, item, createdAt, buyerData, adminNick, adminId) {
+            if (typeof Swal === 'undefined') { generateStruk('id', orderId, item, createdAt, buyerData, adminNick, adminId); return; }
+            Swal.fire({ title: 'Pilih Bahasa', showCancelButton: true, showDenyButton: true, confirmButtonText: 'Indonesia', denyButtonText: 'English', cancelButtonText: 'Batal' })
+                .then(function(r) {
+                    if (r.isConfirmed) generateStruk('id', orderId, item, createdAt, buyerData, adminNick, adminId);
+                    else if (r.isDenied) generateStruk('en', orderId, item, createdAt, buyerData, adminNick, adminId);
+                });
         }
 
         function generateStruk(lang, orderId, item, createdAt, buyerData, adminNickStr, adminIdStr) {
-            const dateObj = new Date(createdAt);
-            const wibTime = dateObj.getTime() + (7 * 3600000); 
-            const wibDateObj = new Date(wibTime);
-            const hourWIB = wibDateObj.getUTCHours(); 
-            let addDays = hourWIB >= 15 ? 8 : 7;
-            const targetDate = new Date(wibTime);
-            targetDate.setUTCDate(targetDate.getUTCDate() + addDays);
-            
-            const d = targetDate.getUTCDate();
-            const m = targetDate.getUTCMonth() + 1;
-            const y = targetDate.getUTCFullYear();
-            
-            let dateString = "";
-            if (lang === 'id') dateString = `${d}/${m}/${y}, pukul 15:00 WIB`;
-            else dateString = `${m}/${d}/${y}, 08:00 UTC`;
-
-            const nicks = adminNickStr.split(',');
-            const ids = adminIdStr.split(',');
-            let senderList = "";
-            
-            if (nicks.length === 1) {
-                senderList = `Nick : ${nicks[0]}\nID   : ${ids[0]}`;
-            } else {
-                for (let i = 0; i < nicks.length; i++) {
-                    senderList += `${i+1}. Nick : ${nicks[i]}\n   ID   : ${ids[i] || '-'}\n`;
-                }
-                senderList = senderList.trim();
-            }
-
-            // PERBAIKAN SPASI PRESISI DISINI
-            let text = "";
-            if (lang === 'id') {
-                text = `==============================
-      RINCIAN PEMESANAN
-==============================
-
-DATA PESANAN
-No.           : ${orderId}
-Item         : ${item}
-Target      : ${buyerData}
-Tgl Kirim  : ${dateString}
-
-INFO PENGIRIM
-${senderList}
-------------------------------
-PENTING:
-Silakan add (tambah teman) akun
-di atas agar gift bisa dikirim.
-==============================`;
-            } else {
-                text = `==============================
-      ORDER DETAILS
-==============================
-
-ORDER DATA
-No.           : ${orderId}
-Item         : ${item}
-Target      : ${buyerData}
-Ship date : ${dateString}
-
-SENDER INFO
-${senderList}
-------------------------------
-IMPORTANT:
-Please add (add as a friend) the accounts
-above so the gift can be sent.
-==============================`;
-            }
-
-            copyToClipboard(text, lang === 'id' ? '✅ Struk ID Disalin!' : '✅ Receipt EN Copied!');
+            var dateObj = new Date(createdAt);
+            var wibTime = dateObj.getTime() + (7 * 3600000);
+            var targetDate = new Date(wibTime);
+            targetDate.setUTCDate(targetDate.getUTCDate() + (targetDate.getUTCHours() >= 15 ? 8 : 7));
+            var d = targetDate.getUTCDate(), m = targetDate.getUTCMonth() + 1, y = targetDate.getUTCFullYear();
+            var dateString = lang === 'id' ? d + '/' + m + '/' + y + ', pukul 15:00 WIB' : m + '/' + d + '/' + y + ', 08:00 UTC';
+            var nicks = (adminNickStr || '').split(','), ids = (adminIdStr || '').split(',');
+            var senderList = nicks.length === 1 ? 'Nick : ' + nicks[0] + '\nID   : ' + (ids[0] || '-') : nicks.map(function(n, i) { return (i+1) + '. Nick : ' + n + '\n   ID   : ' + (ids[i] || '-'); }).join('\n');
+            var text = lang === 'id' ? '==============================\n      RINCIAN PEMESANAN\n==============================\n\nDATA PESANAN\nNo.           : ' + orderId + '\nItem         : ' + item + '\nTarget      : ' + buyerData + '\nTgl Kirim  : ' + dateString + '\n\nINFO PENGIRIM\n' + senderList + '\n------------------------------\nPENTING:\nSilakan add (tambah teman) akun\ndi atas agar gift bisa dikirim.\n==============================' : '==============================\n      ORDER DETAILS\n==============================\n\nORDER DATA\nNo.           : ' + orderId + '\nItem         : ' + item + '\nTarget      : ' + buyerData + '\nShip date : ' + dateString + '\n\nSENDER INFO\n' + senderList + '\n------------------------------\nIMPORTANT:\nPlease add the accounts above.\n==============================';
+            copyToClipboard(text, lang === 'id' ? 'Struk disalin!' : 'Receipt copied!');
         }
 
-        // ==========================================
-        // 2. INFO SUDAH DIKIRIM (FORMAT NICK ID ZONE)
-        // ==========================================
         function showSentInfoOptions(orderId, item, targetData) {
-            Swal.fire({
-                title: 'Info Sudah Dikirim',
-                text: 'Pilih bahasa pesan konfirmasi',
-                icon: 'success',
-                showCancelButton: true,
-                showDenyButton: true,
-                confirmButtonText: '🇮🇩 Indonesia',
-                denyButtonText: '🇬🇧 English',
-                cancelButtonText: 'Batal',
-                confirmButtonColor: '#198754',
-                denyButtonColor: '#6c757d'
-            }).then((result) => {
-                if (result.isConfirmed) generateSentInfo('id', orderId, item, targetData);
-                else if (result.isDenied) generateSentInfo('en', orderId, item, targetData);
-            });
+            if (typeof Swal === 'undefined') { generateSentInfo('id', orderId, item, targetData); return; }
+            Swal.fire({ title: 'Info Dikirim', showCancelButton: true, showDenyButton: true, confirmButtonText: 'Indonesia', denyButtonText: 'English' })
+                .then(function(r) {
+                    if (r.isConfirmed) generateSentInfo('id', orderId, item, targetData);
+                    else if (r.isDenied) generateSentInfo('en', orderId, item, targetData);
+                });
         }
 
         function generateSentInfo(lang, orderId, item, targetData) {
-            // FORMAT DB: "123456 (1234) Nickname"
-            // OUTPUT: "Nickname 123456 (1234)"
-            
-            let finalTarget = targetData;
-            const splitIdx = targetData.indexOf(')');
-            
-            if (splitIdx !== -1) {
-                const idZone = targetData.substring(0, splitIdx + 1).trim(); // "123456 (1234)"
-                const nick = targetData.substring(splitIdx + 1).trim(); // "Nickname"
-                finalTarget = `${nick} ${idZone}`;
-            }
-
-            let text = "";
-            if (lang === 'id') {
-                text = `Halo Kak,
-Pesanan ${item} (${orderId}) telah berhasil dikirim.
-Dikirim ke akun: ${finalTarget}
-
-Terima kasih telah berbelanja di Imam Store.
-Silakan cek katalog kami untuk promo dan produk menarik lainnya.
-Kami tunggu pesanan berikutnya. Happy Gaming! 🌟`;
-            } else {
-                text = `Hello,
-Your order ${item} (${orderId}) has been successfully sent.
-Delivered to account: ${finalTarget}
-
-Thank you for shopping at Imam Store.
-Feel free to check our catalog for other products and promos.
-We look forward to your next order. Happy gaming! 🌟`;
-            }
-
-            copyToClipboard(text, lang === 'id' ? '✅ Info ID Disalin!' : '✅ Info EN Copied!');
-        }
-
-        function copyToClipboard(text, successMsg) {
-            navigator.clipboard.writeText(text).then(() => {
-                Swal.fire({ icon: 'success', title: successMsg, toast: true, position: 'top-end', showConfirmButton: false, timer: 2000 });
-            }).catch(err => {
-                Swal.fire({ icon: 'error', title: 'Gagal menyalin', text: err });
-            });
+            var idx = (targetData || '').indexOf(')');
+            var finalTarget = idx !== -1 ? (targetData.substring(idx + 1).trim() + ' ' + targetData.substring(0, idx + 1).trim()) : targetData;
+            var text = lang === 'id' ? 'Halo Kak,\nPesanan ' + item + ' (' + orderId + ') telah dikirim.\nDikirim ke: ' + finalTarget + '\n\nTerima kasih!' : 'Hello,\nOrder ' + item + ' (' + orderId + ') has been sent.\nDelivered to: ' + finalTarget + '\n\nThank you!';
+            copyToClipboard(text, 'Info disalin!');
         }
     </script>
+    <%- include('./bottom_nav') %>
 </body>
 </html>

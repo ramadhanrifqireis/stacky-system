@@ -3,19 +3,22 @@
 <head>
     <title>Settings</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/store.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
+        body { background: var(--bg-body); padding-bottom: 120px; }
         .modal-body { max-height: 60vh; overflow-y: auto; }
         /* Memastikan SweetAlert terlihat jelas di atas elemen lain */
         .swal2-container { z-index: 20000 !important; }
+        .settings-header { background: var(--surface); }
     </style>
 </head>
-<body class="bg-light">
-    <div class="container-fluid p-0 bg-white shadow-sm sticky-top">
-        <div class="d-flex align-items-center p-3">
-            <a href="/" class="btn btn-light me-3 border">←</a>
-            <h5 class="fw-bold m-0">⚙️ Pengaturan</h5>
+<body>
+    <div class="header settings-header">
+        <div style="display:flex; align-items:center; gap:10px;">
+            <a href="/" class="btn" style="width:auto; padding:6px 10px; background:#f0f2f5; color: var(--primary); text-decoration:none;">←</a>
+            <h1>Pengaturan</h1>
         </div>
     </div>
 
@@ -31,6 +34,41 @@
                 <div class="alert alert-info small border-0 bg-info-subtle text-info-emphasis mt-2 mb-0 py-2">
                     ℹ️ Ketik <code>!setlog</code> di grup WA untuk mengubah.
                 </div>
+            </div>
+        </div>
+
+        <div class="card border-0 shadow-sm mb-3">
+            <div class="card-body">
+                <h6 class="fw-bold text-primary mb-2">TEMPLATE STRUK (Dual-Receipt)</h6>
+                <p class="text-muted small mb-2">Struk A = instruksi Add Friend (Pending). Struk B = bukti kirim (Success). Kosongkan untuk format default.</p>
+                <p class="small mb-2 text-secondary">Keyword: <code>%BUYER%</code> <code>%ITEM%</code> <code>%SENDER_NICK%</code> <code>%SENDER_ID%</code> <code>%DATE%</code></p>
+                <ul class="nav nav-tabs mb-2 small" id="receiptTab" role="tablist">
+                    <li class="nav-item" role="presentation"><button class="nav-link active" id="tab-a-id" data-bs-toggle="tab" data-bs-target="#pane-a-id" type="button">A (Follow) 🇮🇩</button></li>
+                    <li class="nav-item" role="presentation"><button class="nav-link" id="tab-a-en" data-bs-toggle="tab" data-bs-target="#pane-a-en" type="button">A (Follow) 🇬🇧</button></li>
+                    <li class="nav-item" role="presentation"><button class="nav-link" id="tab-b-id" data-bs-toggle="tab" data-bs-target="#pane-b-id" type="button">B (Success) 🇮🇩</button></li>
+                    <li class="nav-item" role="presentation"><button class="nav-link" id="tab-b-en" data-bs-toggle="tab" data-bs-target="#pane-b-en" type="button">B (Success) 🇬🇧</button></li>
+                </ul>
+                <form action="/api/save-receipt-template" method="POST">
+                    <div class="tab-content" id="receiptTabContent">
+                        <div class="tab-pane fade show active" id="pane-a-id" role="tabpanel">
+                            <label class="small text-muted">Template A (Follow Info) - Indonesia</label>
+                            <textarea name="receipt_template_a_id" class="form-control font-monospace small mt-1" rows="6" placeholder="Halo kak, mohon Add Friend akun ini: %SENDER_NICK% (ID: %SENDER_ID%) agar item bisa dikirim.&#10;Pesanan: %ITEM% | Pembeli: %BUYER% | %DATE%"><%= typeof receipt_template_a_id !== 'undefined' ? receipt_template_a_id : '' %></textarea>
+                        </div>
+                        <div class="tab-pane fade" id="pane-a-en" role="tabpanel">
+                            <label class="small text-muted">Template A (Follow Info) - English</label>
+                            <textarea name="receipt_template_a_en" class="form-control font-monospace small mt-1" rows="6" placeholder="Hello, please Add Friend this account: %SENDER_NICK% (ID: %SENDER_ID%) so we can send the item.&#10;Order: %ITEM% | Buyer: %BUYER% | %DATE%"><%= typeof receipt_template_a_en !== 'undefined' ? receipt_template_a_en : '' %></textarea>
+                        </div>
+                        <div class="tab-pane fade" id="pane-b-id" role="tabpanel">
+                            <label class="small text-muted">Template B (Success) - Indonesia</label>
+                            <textarea name="receipt_template_b_id" class="form-control font-monospace small mt-1" rows="6" placeholder="Pesanan %ITEM% sudah dikirim. Terima kasih, %BUYER%.&#10;%DATE%"><%= typeof receipt_template_b_id !== 'undefined' ? receipt_template_b_id : '' %></textarea>
+                        </div>
+                        <div class="tab-pane fade" id="pane-b-en" role="tabpanel">
+                            <label class="small text-muted">Template B (Success) - English</label>
+                            <textarea name="receipt_template_b_en" class="form-control font-monospace small mt-1" rows="6" placeholder="Order %ITEM% has been sent. Thank you, %BUYER%.&#10;%DATE%"><%= typeof receipt_template_b_en !== 'undefined' ? receipt_template_b_en : '' %></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3 w-100 fw-bold">Simpan Semua Template Struk</button>
+                </form>
             </div>
         </div>
 
@@ -126,20 +164,24 @@
     <script>
         // --- FUNGSI PRODUK ---
         function addProduct() {
+            if (document.activeElement) document.activeElement.blur();
             Swal.fire({
                 title: 'Tambah Produk',
                 html: `<input id="swal-name" class="form-control mb-2" placeholder="Nama Item"><input id="swal-price" type="number" class="form-control" placeholder="Harga (DM)">`,
                 showCancelButton: true, confirmButtonText: 'Simpan',
+                focusConfirm: false,
                 preConfirm: () => ({ name: document.getElementById('swal-name').value, price: document.getElementById('swal-price').value })
             }).then((res) => {
                 if (res.isConfirmed && res.value.name) postProduct('add', null, res.value.name, res.value.price);
             });
         }
         function editProduct(id, name, price) {
+            if (document.activeElement) document.activeElement.blur();
             Swal.fire({
                 title: 'Edit Produk',
-                html: `<input id="swal-name" class="form-control mb-2" value="${name}"><input id="swal-price" type="number" class="form-control" value="${price}">`,
+                html: `<input id="swal-name" class="form-control mb-2" value="${name.replace(/"/g, '&quot;')}"><input id="swal-price" type="number" class="form-control" value="${price}">`,
                 showCancelButton: true, confirmButtonText: 'Update',
+                focusConfirm: false,
                 preConfirm: () => ({ name: document.getElementById('swal-name').value, price: document.getElementById('swal-price').value })
             }).then((res) => {
                 if (res.isConfirmed) postProduct('edit', id, res.value.name, res.value.price);
@@ -151,17 +193,18 @@
             document.body.appendChild(form); form.submit();
         }
 
-        // --- FUNGSI AKUN (FIXED INPUT FOCUS) ---
+        // --- FUNGSI AKUN (hindari autofocus warning) ---
         function addAccount() {
+            if (document.activeElement) document.activeElement.blur();
             Swal.fire({
                 title: 'Tambah Akun Baru',
-                // FIX UTAMA: Targetkan elemen modal agar Swal muncul "di dalam" modal
                 target: document.getElementById('accountModal'),
                 html: `
                     <input id="add-nick" class="form-control mb-2 fw-bold" placeholder="Nickname (mis: tacer1)">
                     <input id="add-id" class="form-control font-monospace" placeholder="ID Game (mis: 123456(1234))">
                 `,
                 showCancelButton: true, confirmButtonText: 'TAMBAH',
+                focusConfirm: false,
                 preConfirm: () => ({ nick: document.getElementById('add-nick').value, id: document.getElementById('add-id').value })
             }).then((res) => {
                 if (res.isConfirmed && res.value.nick) postAccount('add', null, res.value.nick, res.value.id);
@@ -169,17 +212,18 @@
         }
 
         function editAccount(oldNick, oldId) {
+            if (document.activeElement) document.activeElement.blur();
             Swal.fire({
                 title: `Edit ${oldNick}`,
-                // FIX UTAMA: Targetkan elemen modal
                 target: document.getElementById('accountModal'),
                 html: `
                     <label class="small text-muted">Nickname</label>
-                    <input id="edit-nick" class="form-control mb-2 fw-bold" value="${oldNick}">
+                    <input id="edit-nick" class="form-control mb-2 fw-bold" value="${(oldNick || '').replace(/"/g, '&quot;')}">
                     <label class="small text-muted">ID Game</label>
-                    <input id="edit-id" class="form-control font-monospace" value="${oldId}">
+                    <input id="edit-id" class="form-control font-monospace" value="${(oldId || '').replace(/"/g, '&quot;')}">
                 `,
                 showCancelButton: true, confirmButtonText: 'SIMPAN',
+                focusConfirm: false,
                 preConfirm: () => ({ nick: document.getElementById('edit-nick').value, id: document.getElementById('edit-id').value })
             }).then((res) => {
                 if (res.isConfirmed) postAccount('edit', oldNick, res.value.nick, res.value.id);
@@ -197,5 +241,6 @@
             document.body.appendChild(form); form.submit();
         }
     </script>
+    <%- include('./bottom_nav') %>
 </body>
 </html>

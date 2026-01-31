@@ -104,8 +104,8 @@ class InventoryController {
             }
 
             await Account.saveAll(accounts);
-            Log.add('UPDATE_STOCK', logMessage);
-            
+            await Log.create(logMessage);
+
             console.log(`✅ Sukses Update: ${logMessage}`);
             res.redirect('/inventory');
 
@@ -124,7 +124,7 @@ class InventoryController {
             const newAccounts = accounts.filter(a => a.nick !== nickname);
             
             await Account.saveAll(newAccounts);
-            Log.add('DELETE_ACCOUNT', `Menghapus akun: ${nickname}`);
+            await Log.create(`[DELETE] Menghapus akun: ${nickname}`);
             res.redirect('/inventory');
         } catch (error) {
             res.status(500).send("Gagal hapus akun.");

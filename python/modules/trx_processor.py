@@ -19,13 +19,13 @@ class TrxProcessor:
                 # TAPI, cara profesional adalah lewat API. Mari kita pakai API Client.
                 
                 # --- CARA CEPAT (BACA FILE JSON) ---
-                # Karena Python dan Node.js di satu folder Termux, kita bisa baca orders.json
+                # Path multi-platform via settings (pathlib)
                 import json
-                import os
-                
-                path = "database/core/orders.json"
-                if os.path.exists(path):
-                    with open(path, 'r') as f:
+                from config.settings import ORDERS_JSON
+
+                path = ORDERS_JSON
+                if path.exists():
+                    with open(path, 'r', encoding='utf-8') as f:
                         data = json.load(f)
                         
                     active_orders = data.get('active', [])

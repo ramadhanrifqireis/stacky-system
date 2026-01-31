@@ -11,8 +11,8 @@
 
     <div class="header">
         <h1>Gudang Akun</h1>
-        <button class="btn" style="width: auto; padding: 8px 12px; background: #f0f2f5; color: var(--primary);" onclick="alert('Tambah akun manual di file accounts.json untuk saat ini.')">
-            <i class="ph-bold ph-plus"></i> Baru
+        <button type="button" class="btn" style="width: auto; padding: 8px 12px; background: var(--primary); color: #fff;" onclick="bukaModalTambah()">
+            <i class="ph-bold ph-plus"></i> Tambah Akun
         </button>
     </div>
 
@@ -30,6 +30,11 @@
             </div>
         </div>
 
+        <% if (typeof err !== 'undefined' && err === 'duplicate') { %>
+        <div style="background: #fef3c7; color: #92400e; padding: 10px 14px; border-radius: 12px; margin-bottom: 12px; font-size: 13px;">
+            Nick sudah dipakai. Gunakan nickname lain.
+        </div>
+        <% } %>
         <h3 style="margin: 25px 0 10px; font-size: 13px; text-transform: uppercase; color: #888; letter-spacing: 1px;">
             Daftar Akun (<%= accounts.length %>)
         </h3>
@@ -55,7 +60,11 @@
 
                         <div style="text-align: right;">
                             <div class="diamond-count"><%= acc.diamond.toLocaleString('id-ID') %></div>
-                            
+                            <% if (acc.pending_wdp) { %>
+                                <span class="badge" style="display: inline-flex; align-items: center; gap: 4px; background: #f59e0b; color: #fff; font-size: 11px; margin-bottom: 4px;">
+                                    <i class="ph-fill ph-warning" style="font-size: 12px;"></i> Hutang
+                                </span><br>
+                            <% } %>
                             <% if(acc.wdp_remaining > 0) { %>
                                 <span class="badge bg-green" style="display: inline-flex; align-items: center; gap: 4px;">
                                     <i class="ph-fill ph-calendar-check" style="font-size: 12px;"></i> 
@@ -79,12 +88,45 @@
         <% } %>
     </div>
 
+    <!-- Modal Tambah Akun Baru -->
+    <div class="modal-overlay" id="overlayTambah" onclick="tutupModalTambah()"></div>
+    <div class="bottom-sheet" id="sheetTambah">
+        <div class="sheet-handle"></div>
+        <h3 style="margin: 0 0 16px; font-size: 18px;">Tambah Akun Baru</h3>
+        <form action="/api/save-account" method="POST">
+            <input type="hidden" name="action" value="add">
+            <input type="hidden" name="redirect" value="/inventory">
+            <label style="font-size: 12px; color: #666; display: block; margin-bottom: 4px;">Nickname</label>
+            <input type="text" name="nick" class="input-box" placeholder="Contoh: arda1" required style="margin-bottom: 12px;">
+            <label style="font-size: 12px; color: #666; display: block; margin-bottom: 4px;">ID Game (User ID + Zone)</label>
+            <input type="text" name="id" class="input-box" placeholder="Contoh: 1599704184(4458)" required style="margin-bottom: 16px;">
+            <div style="display: flex; gap: 10px;">
+                <button type="button" class="btn" style="flex: 1; background: #eee;" onclick="tutupModalTambah()">Batal</button>
+                <button type="submit" class="btn-primary" style="flex: 1;"><i class="ph-bold ph-check"></i> Simpan</button>
+            </div>
+        </form>
+    </div>
+
 <div class="modal-overlay" id="overlay" onclick="tutupModal()"></div>
     <div class="bottom-sheet" id="sheet">
         <div class="sheet-handle"></div>
-        <div style="text-align: center; margin-bottom: 25px;">
+        <div style="text-align: center; margin-bottom: 15px;">
             <h3 id="modalTitle" style="margin:0; font-size: 20px;">-</h3>
             <p id="modalSub" style="margin: 5px 0 0; color: #888; font-size: 14px;">-</p>
+        </div>
+
+        <div style="background: #f0f2f5; border-radius: 12px; padding: 10px 14px; margin-bottom: 15px;">
+            <div style="font-size: 11px; color: #666; margin-bottom: 6px;">Mode input:</div>
+            <div style="display: flex; gap: 10px;">
+                <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; flex: 1;">
+                    <input type="radio" name="modeInput" value="0" id="modeBiasa" checked>
+                    <span>Biasa (real)</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; flex: 1;">
+                    <input type="radio" name="modeInput" value="1" id="modePenyesuaian">
+                    <span>Penyesuaian (hutang)</span>
+                </label>
+            </div>
         </div>
 
         <div class="tabs-nav">
@@ -103,6 +145,7 @@
             <form action="/api/update-stok" method="POST">
                 <input type="hidden" name="nickname" class="target-nick">
                 <input type="hidden" name="action" value="inject_wdp">
+                <input type="hidden" name="penyesuaian" id="penyesuaianInject" value="0">
                 
                 <p style="font-size: 12px; color: #666; margin-bottom: 10px;">Paket WDP Masuk:</p>
                 <div class="grid-3">
@@ -118,18 +161,20 @@
         </div>
 
         <div id="tab-koreksi" class="tab-content">
-            <form action="/api/update-stok" method="POST" style="margin-bottom: 15px;">
+            <form action="/api/update-stok" method="POST" class="form-koreksi" style="margin-bottom: 15px;">
                 <input type="hidden" name="nickname" class="target-nick">
                 <input type="hidden" name="action" value="manual_dm">
+                <input type="hidden" name="penyesuaian" class="penyesuaianKoreksi" value="0">
                 <label style="font-size:12px; color:#666;">Edit Diamond Manual</label>
                 <div class="flex-row" style="gap:10px;">
                     <input type="number" name="amount" class="input-box" placeholder="+/- (Contoh: -50)" style="margin:0">
                     <button type="submit" class="btn" style="width:auto; background:#eee; margin:0">Ok</button>
                 </div>
             </form>
-            <form action="/api/update-stok" method="POST">
+            <form action="/api/update-stok" method="POST" class="form-koreksi">
                 <input type="hidden" name="nickname" class="target-nick">
                 <input type="hidden" name="action" value="manual_days">
+                <input type="hidden" name="penyesuaian" class="penyesuaianKoreksi" value="0">
                 <label style="font-size:12px; color:#666;">Edit Hari Manual</label>
                 <div class="flex-row" style="gap:10px;">
                     <input type="number" name="days" class="input-box" placeholder="+/- (Contoh: +1)" style="margin:0">
@@ -139,23 +184,30 @@
         </div>
 
         <div id="tab-hapus" class="tab-content">
-             <form action="/api/delete-account" method="POST" onsubmit="return confirm('Hapus permanen?');">
-                <input type="hidden" name="nickname" class="target-nick">
+             <form action="/api/save-account" method="POST" onsubmit="return confirm('Hapus akun ini permanen? Stok akan hilang.');">
+                <input type="hidden" name="action" value="delete">
+                <input type="hidden" name="oldNick" class="target-nick">
+                <input type="hidden" name="redirect" value="/inventory">
                 <button type="submit" class="btn-danger"><i class="ph-bold ph-trash"></i> Hapus Akun</button>
             </form>
         </div>
     </div>
 
-    <%- include('partials/bottom_nav') %>
+    <%- include('./bottom_nav') %>
 
     <script>
+        function syncPenyesuaian() {
+            var val = document.getElementById('modePenyesuaian') && document.getElementById('modePenyesuaian').checked ? '1' : '0';
+            var inj = document.getElementById('penyesuaianInject');
+            if (inj) inj.value = val;
+            document.querySelectorAll('.penyesuaianKoreksi').forEach(function(el) { el.value = val; });
+        }
+
         function bukaKelola(nick, id, dm, days) {
             document.getElementById('modalTitle').innerText = nick;
-            document.getElementById('modalSub').innerText = `ID: ${id} • ${parseInt(dm).toLocaleString()} DM • ${days} Hari`;
-            
-            // Set value ke semua hidden input class 'target-nick'
-            document.querySelectorAll('.target-nick').forEach(el => el.value = nick);
-            
+            document.getElementById('modalSub').innerText = 'ID: ' + id + ' • ' + (parseInt(dm) || 0).toLocaleString() + ' DM • ' + days + ' Hari';
+            document.querySelectorAll('.target-nick').forEach(function(el) { el.value = nick; });
+            syncPenyesuaian();
             gantiTab('tab-inject', document.querySelector('.tab-item'));
             document.getElementById('overlay').classList.add('active');
             document.getElementById('sheet').classList.add('active');
@@ -166,6 +218,15 @@
             document.getElementById('sheet').classList.remove('active');
         }
 
+        function bukaModalTambah() {
+            document.getElementById('overlayTambah').classList.add('active');
+            document.getElementById('sheetTambah').classList.add('active');
+        }
+        function tutupModalTambah() {
+            document.getElementById('overlayTambah').classList.remove('active');
+            document.getElementById('sheetTambah').classList.remove('active');
+        }
+
         function gantiTab(id, btn) {
             document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
             document.querySelectorAll('.tab-item').forEach(el => el.classList.remove('active'));
@@ -174,6 +235,10 @@
         }
 
         function setWdp(n) { document.getElementById('wdpInput').value = n; }
+
+        document.querySelectorAll('input[name="modeInput"]').forEach(function(radio) {
+            radio.addEventListener('change', syncPenyesuaian);
+        });
     </script>
 </body>
 </html>

@@ -1,7 +1,17 @@
+import sys
 import time
 from core.logger import log
 from core.api_client import ApiClient
 from modules.topup_listener import TopupListener
+
+# Fix Python crash di Windows: terminal default bukan UTF-8, emoji error
+if sys.platform == 'win32':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
+    except Exception:
+        pass  # Fallback jika reconfigure tidak tersedia (Python lama)
+
 
 def main():
     log.info("==========================================")

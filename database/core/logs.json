@@ -1,6 +1,121 @@
 {
   "audit": [
     {
+      "time": "31/1/2026, 12.57.05",
+      "action": "UPDATE_STOCK",
+      "details": "[MANUAL] arda16: Diamond +20 [REAL]"
+    },
+    {
+      "time": "31/1/2026, 12.56.57",
+      "action": "UPDATE_STOCK",
+      "details": "[MANUAL] arda16: Diamond 0 [REAL]"
+    },
+    {
+      "time": "31/1/2026, 12.56.50",
+      "action": "UPDATE_STOCK",
+      "details": "[MANUAL] arda15: Diamond 0 [REAL]"
+    },
+    {
+      "time": "31/1/2026, 12.56.33",
+      "action": "UPDATE_STOCK",
+      "details": "[MANUAL] arda10: Diamond -240 [REAL]"
+    },
+    {
+      "time": "31/1/2026, 12.56.26",
+      "action": "UPDATE_STOCK",
+      "details": "[MANUAL] arda10: WDP -35 Hari [REAL]"
+    },
+    {
+      "time": "31/1/2026, 12.56.15",
+      "action": "UPDATE_STOCK",
+      "details": "[MANUAL] arda10: WDP +7 Hari [REAL]"
+    },
+    {
+      "time": "31/1/2026, 12.56.09",
+      "action": "UPDATE_STOCK",
+      "details": "[MANUAL] arda10: WDP +7 Hari [REAL]"
+    },
+    {
+      "time": "31/1/2026, 12.55.58",
+      "action": "UPDATE_STOCK",
+      "details": "[MANUAL] arda10: Diamond 0 [REAL]"
+    },
+    {
+      "time": "31/1/2026, 12.32.13",
+      "action": "UPDATE_STOCK",
+      "details": "[INJECT] 1: +2 Paket (+160 DM, +14 Hari) [PENYESUAIAN / HUTANG]"
+    },
+    {
+      "time": "31/1/2026, 12.32.05",
+      "action": "UPDATE_STOCK",
+      "details": "[INJECT] 1: +2 Paket (+160 DM, +14 Hari) [REAL]"
+    },
+    {
+      "time": "31/1/2026, 12.32.00",
+      "action": "UPDATE_STOCK",
+      "details": "[INJECT] 1: +1 Paket (+80 DM, +7 Hari) [REAL]"
+    },
+    {
+      "time": "31/1/2026, 11.50.39",
+      "action": "ORDER_CANCEL",
+      "details": "Order OD000000152249215 dibatalkan."
+    },
+    {
+      "time": "31/1/2026, 11.50.28",
+      "action": "NEW_ORDER",
+      "details": "Order Manual OD000000152249215 dibuat oleh arda41"
+    },
+    {
+      "time": "30/1/2026, 19.19.44",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152453507 selesai."
+    },
+    {
+      "time": "30/1/2026, 19.19.39",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152453507 selesai."
+    },
+    {
+      "time": "30/1/2026, 17.03.44",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152439228 selesai."
+    },
+    {
+      "time": "30/1/2026, 16.42.25",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152431352 selesai."
+    },
+    {
+      "time": "30/1/2026, 16.39.46",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152428875 selesai."
+    },
+    {
+      "time": "30/1/2026, 16.38.32",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152427732 selesai."
+    },
+    {
+      "time": "30/1/2026, 16.37.42",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152422697 selesai."
+    },
+    {
+      "time": "30/1/2026, 16.36.52",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152424806 selesai."
+    },
+    {
+      "time": "30/1/2026, 16.35.53",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152417978 selesai."
+    },
+    {
+      "time": "30/1/2026, 16.34.03",
+      "action": "ORDER_DONE",
+      "details": "Order OD000000152379707 selesai."
+    },
+    {
       "time": "29/1/2026, 17.15.33",
       "action": "REQ_CREDIT",
       "details": "Input Stok tacer26 (Manual Web)"
